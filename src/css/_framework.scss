@@ -53,6 +53,13 @@ a{
     }
 }
 .link{
+    color: $link-color;
+    transition: .3s;
+
+    &:hover, &:focus{
+        color: $link-hover-color;
+    }
+
     &_inverse{
         color: $link-hover-color;
         &:hover{

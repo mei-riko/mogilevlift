@@ -6,9 +6,13 @@
 @import "grid.scss";
 @import "position.scss";
 
-@import "other/button.scss";
 @import "other/footer.scss";
-@import "other/form.scss";
 @import "other/header.scss";
 @import "other/nav.scss";
 @import "other/pagination.scss";
+
+@import "form/button.scss";
+@import "form/checkbox.scss";
+@import "form/form.scss";
+@import "form/input.scss";
+@import "form/jGrowl.scss";
