@@ -1,0 +1,116 @@
+html,body {
+    font-size: map-get($font-size, 'xl');;
+    line-height: $line-height;
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: $font-family-base;
+    font-weight: $font-weight-heading;
+    line-height: $line-height-heading;
+    margin-bottom: map-get($spacers, 4);
+}
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
+* + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
+    margin-top: map-get($spacers, 6);
+}
+.h1,h1          {font-size: 2.3rem;}
+.h1_size_xl     {font-size: 4rem;}
+.h1_size_md     {font-size: 3.2rem;}
+
+.h2,h2          {font-size: 1.9rem;}
+.h3,h3          {font-size: 1.7rem;}
+.h4,h4          {font-size: 1.5rem;}
+.h5,h5          {font-size: 1.2rem;}
+.h6,h6          {font-size: 1rem;}
+
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: map-get($spacers, 3);
+
+    &:last-child{
+        margin-bottom: map-get($spacers, 0);
+    }
+}
+ol, ul{
+    padding: 0;
+    margin-bottom: map-get($spacers, 3);
+}
+a{
+    display: inline-block;
+    outline: none;
+    transition: .3s;
+
+    color: $link-color;
+
+    &:hover, &:focus{
+        color: $link-hover-color;
+        outline: none;
+    }
+}
+.link{
+    color: $link-color;
+    transition: .3s;
+
+    &:hover, &:focus{
+        color: $link-hover-color;
+    }
+
+    &_inverse{
+        color: $link-hover-color;
+        &:hover{
+            color: $link-color;
+        }
+    }
+    &_underline{
+        text-decoration: underline;
+    }
+}
+.blockquote, blockquote{}
+
+.p-relative{position: relative;}
+.p-sticky{position: sticky; top: 0; left: 0; z-index: 101;}
+.p-absolute{position: absolute; top: 0; left: 0; z-index: 101;}
+
+.d{
+    &-flex{display: flex;}
+    &-none{display: none;}
+    &-block{display: block;}
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .d-xl{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .d-lg{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .d-md{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .d-sm{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
+    }
+}
