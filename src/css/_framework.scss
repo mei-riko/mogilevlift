@@ -1,8 +1,10 @@
 html,body {
-    font-size: map-get($font-size, 'xl');;
-    line-height: $line-height;
+    font-size: map-get($font-size, 'xl');
+    line-height: $line-height-base;
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
+
+    background: $body-color;
 }
 *,
 *::before,
@@ -10,21 +12,25 @@ html,body {
     box-sizing: inherit;
 }
 
+.bg-lines{
+    background: $body-color url("../img/lines.svg");
+    background-repeat-y: repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: $font-family-base;
     font-weight: $font-weight-heading;
     line-height: $line-height-heading;
-    margin-bottom: map-get($spacers, 4);
+    margin-bottom: map-get($spacers, 1);
 }
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
-    margin-top: map-get($spacers, 6);
+    margin-top: map-get($spacers, 3);
 }
 .h1,h1          {font-size: 2.3rem;}
-.h1_size_xl     {font-size: 4rem;}
-.h1_size_md     {font-size: 3.2rem;}
-
 .h2,h2          {font-size: 1.9rem;}
 .h3,h3          {font-size: 1.7rem;}
 .h4,h4          {font-size: 1.5rem;}
@@ -34,7 +40,7 @@ h1, h2, h3, h4, h5, h6,
 p {
     font-size: 1rem;
     margin-top: 0;
-    margin-bottom: map-get($spacers, 3);
+    margin-bottom: map-get($spacers, 1);
 
     &:last-child{
         margin-bottom: map-get($spacers, 0);
@@ -58,23 +64,24 @@ a{
 }
 .link{
     color: $link-color;
-    transition: .3s;
-
     &:hover, &:focus{
         color: $link-hover-color;
     }
 
-    &_inverse{
+    &-inverse{
         color: $link-hover-color;
         &:hover{
             color: $link-color;
         }
     }
-    &_underline{
+    &-underline{
         text-decoration: underline;
     }
 }
-.blockquote, blockquote{}
+.blockquote, blockquote{
+    padding: $spacer/2 0 $spacer $spacer;
+    border-left: 4px solid $white;
+}
 
 .p-relative{position: relative;}
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101;}
@@ -87,6 +94,9 @@ a{
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    html,body {
+        font-size: map-get($font-size, 'lg');
+    }
     .d-xl{
         &-flex{display: flex;}
         &-none{display: none;}

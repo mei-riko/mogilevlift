@@ -1,0 +1,39 @@
+.nav_secondary{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+
+    &__item{
+        position: relative;
+        
+        padding: 8px 20px;
+        color: $light-grey;
+        text-transform: uppercase;
+
+        font-size: map-get($font-size, 'md');
+        font-weight: 300;
+
+        &:hover, &:focus{
+            color: $white;
+            text-decoration: none;
+        }
+
+        & + .nav_secondary__item{
+            &:before{
+                content: '';
+                display: block;
+
+                width: 1px;
+                height: 16px;
+
+                position: absolute;
+                top: calc(50% - 8px);
+                left: 0;
+                opacity: .8;
+
+                background-color: $light-grey;
+            }
+        }
+    }
+}

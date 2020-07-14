@@ -1,0 +1,82 @@
+.btn{
+    outline: none;
+    box-shadow: none;
+    border:none;
+
+    &:hover,
+    &:focus{
+        outline: none;
+        box-shadow: none;
+        border:none;
+        text-decoration: none;        
+    }
+
+    &__inside{
+        position: relative;
+        z-index: 2;
+    }
+
+    &_main{
+        position: relative;
+        overflow: hidden;
+
+        background: none;
+        color: $black;
+        font-weight: 800;
+
+        border-radius: 24px;
+        padding: 8px 22px;
+
+        &:hover,&:focus{
+            color: $dark-grey;
+
+            &:after{
+                transform: translateY(-5px);
+            }
+        }
+
+        &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height: calc(100% + 15px);
+            background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+            transform: translateY(-15px);
+
+            transition: .4s;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+
+    &_action{
+        position: relative;
+        overflow: hidden;
+        border-radius: 32px;
+
+        background: linear-gradient( 90deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+
+        &__inside{
+            display: block;
+            padding: 16px 40px;
+            margin: 2px;
+            border-radius: 32px;
+
+            text-transform: uppercase;
+            color: $white;
+
+            background-color: $body-color;
+
+            transition: 0.4s;
+        }
+
+        &:hover, &:focus{
+            .btn_action__inside{
+                background-color: rgba(25,26,30,0.8);
+            }
+        }
+    }
+}

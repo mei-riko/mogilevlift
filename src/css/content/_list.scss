@@ -1,0 +1,36 @@
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__item{
+        margin-bottom: 5px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.list_circle{
+    &__item{
+        position: relative;
+        padding-left: map-get($map: $spacers, $key: 1);
+        margin-bottom: 5px;
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &:before{
+            content:'';
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+
+            background: linear-gradient( 90deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+
+            position: absolute;
+            left: 0;
+            top: .5rem;              
+        }
+    }
+}

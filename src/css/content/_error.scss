@@ -1,0 +1,8 @@
+.error{
+    padding: map-get($map: $spacers, $key: 4) 0;
+
+    &__title{
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+}

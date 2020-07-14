@@ -1,0 +1,25 @@
+.table-responsive{
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table{
+    border: 1px solid $border-color;
+    background-color: $body-color;
+
+    .thead{
+        background-color: lighten($color: $body-color, $amount: 4);
+    }
+    .tline{
+        padding: 15px 30px;
+    }
+
+    .tcol{
+        border-top: 1px solid $border-color;
+    }
+}
+
+* + .table-responsive,
+* + .table{
+    margin-top: $spacer;
+}

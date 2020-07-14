@@ -8,6 +8,8 @@ $gold                 : #ece298;
 $dark-gold            : #887145;
 
 $border-color         : #28282f;
+$body-color           : #191a1e;
+$text-color           : #ffffff;
 
 $link-color           : #ece298 !default;
 $link-hover-color     : #887145 !default;
@@ -28,12 +30,16 @@ $grid-breakpoints: (
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 960px,
-  xl: 1480px
+  lg: 940px,
+  xl: 1450px
 ) !default;
 
-$font-family-base     : "Noto Sans",    "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base     : "Fira Sans",    "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo,            Monaco, Consolas,   "Liberation Mono",   "Courier New",    monospace !default;
+
+$font-size-base  : 1rem;
+$font-weight-base: 400;
+$line-height-base: 1.6;
 
 $font-size: (
   xs: 0,
@@ -43,7 +49,8 @@ $font-size: (
   xl: 20px
 ) !default;
 $font-weight        : 400;
-$font-weight-heading: 600;
+$font-weight-heading: 800;
+$font-weight-bold   : 800;
 $line-height        : 1.6;
 $line-height-heading: 1.2;
 

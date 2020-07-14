@@ -1,0 +1,16 @@
+.nav{
+    &__item{
+        & + .nav__item{
+            margin-top: $spacer/3;
+        }
+        & + .nav__item_group{
+            margin-top: $spacer/2;
+        }
+        
+        &_group{
+            & + .nav__item{
+                margin-top: $spacer/2;
+            }
+        }
+    }
+}

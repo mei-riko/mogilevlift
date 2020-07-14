@@ -1,0 +1,19 @@
+.nav_footer{
+    &__title{
+        color: $white;
+        font-weight: 800;
+        margin-bottom: map-get($map: $spacers, $key: 1);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__subtitle{
+        color: $light-grey;
+        font-size: map-get($font-size, 'sm');
+        
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

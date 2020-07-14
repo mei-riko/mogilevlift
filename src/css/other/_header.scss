@@ -1,0 +1,30 @@
+.header{
+    padding: map-get($map: $spacers, $key: 1) 0;
+    border-bottom: 1px solid $border-color;
+
+    &__phone{
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 1;
+        color: $white;
+
+        &:hover, &:focus{
+            text-decoration: none;
+            color: $gold;
+        }
+    }
+    &__link{
+        font-size: map-get($font-size, 'sm');
+        color: $light-grey;
+        @extend .text-spacing-50;
+        margin-top: $spacer/4;
+        margin-bottom: $spacer/2;
+    }
+
+    &__btn{
+        // font-size: map-get($font-size, 'sm');
+        .btn_action__inside{
+            padding: 12px 24px;
+        }
+    }
+}

@@ -8,6 +8,8 @@
 
 @import "content/offset";
 @import "content/text";
+@import "content/list";
+@import "content/table";
 
 @import "nav/nav";
 @import "nav/secondary";
@@ -16,6 +18,7 @@
 
 @import "other/footer";
 @import "other/header";
+@import "other/modal";
 @import "other/pagination";
 
 @import "form/button";
@@ -27,4 +30,5 @@
 @import "image/image";
 @import "image/logo";
 
-@import "content/page";
+@import "content/content";
+@import "content/error";

@@ -1,0 +1,38 @@
+header.header
+    .header__element
+    .container
+        .row.align-items-end
+            .col-2
+                a.logo.logo_header(href="index.html") 
+                    span.logo__intro С нами путь быстрее!
+            .col-8
+                a.navbar-toggle#nav(data-trigger="click")
+                .navbar-collapse
+                    .nav.nav_secondary
+                        a.nav_secondary__item(href="#") Документы
+                        a.nav_secondary__item(href="#") О компании
+                        a.nav_secondary__item(href="#") Проекты
+                        a.nav_secondary__item(href="#") Контакты
+                    .nav.nav_header
+                        a.nav_header__item(href="#") Лифты
+                        a.nav_header__item(href="#") Эскалаторы
+                        a.nav_header__item(href="#") Подъемники и платформы
+                        a.nav_header__item.nav_header__item--active(href="#") Услуги
+                        a.nav_header__item(href="#") Запчасти
+            .col-2.text-right
+                a.header__phone(href="8 812 214 55 00") 8 812 214 55 00 
+                a.link.header__link(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
+                a.btn.btn_action.header__btn(href="#") 
+                    span.btn_action__inside Расчёт 
+                        span.d-sm-none лифта
+a.scrollTop#scrollTop(href="#" data-trigger="click")
+.modal#callback
+    p.h3 Наш менеджер свяжется с вами!
+    form.form(action="")
+        input.form__input.input.input--full.phone.error(type="text" placeholder="Контактный телефон")
+        .form-validation.error Обязательно для заполнения
+        button.btn.btn_action.form__btn Оставить заявку
+        .form__agree.checkbox
+            input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
+            label.checkbox__label(for="agree") согласен с 
+                a.link-underline(href="/policy.pdf" target="_blank") обработкой персональных данных

@@ -2,6 +2,16 @@
 .text-black{color: $black;}
 .text-gold{color: $gold;}
 
+.text-decoration{
+    position: relative;
+    display: inline-block;
+    
+    &:after{
+        content:'';
+        display: block;
+    }
+}
+
 .text-uppercase{text-transform: uppercase;}
 .text-bold,strong,b{font-weight: 700;}
 
@@ -12,6 +22,22 @@
     &-right{text-align: right;}
     &-center{text-align: center;}
     &-left{text-align: left;}
+}
+
+@function spacing($unit, $return: 'px', $base: 16) {
+    @if $return == 'em' {
+      @return ($unit) / 1000;
+    } @else {
+      @return ($unit * $base) / 1000;
+    }
+  }
+.text{
+    &-spacing-50{
+        letter-spacing: spacing(50) + px;
+    }
+    &-spacing-100{
+        letter-spacing: spacing(100) + px;
+    }
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
