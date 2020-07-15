@@ -96,10 +96,10 @@
         }
 
         &:hover, &:focus{
-            color: darken($color: $gold, $amount: 10);
+            color: darken($color: $gold, $amount: 5);
             .btn_link__arrow{
                 path{
-                    fill: darken($color: $gold, $amount: 10);
+                    fill: $dark-gold;
                 }
             }
         }

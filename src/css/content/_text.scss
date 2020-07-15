@@ -1,4 +1,5 @@
 .text-white{color: $white;}
+.text-grey{color: $light-grey;}
 .text-black{color: $black;}
 .text-gold{color: $gold;}
 
@@ -13,7 +14,8 @@
 }
 
 .text-uppercase{text-transform: uppercase;}
-.text-bold,strong,b{font-weight: 700;}
+.text-bold,strong,b{font-weight: 800;}
+.text-light{font-weight: 300;}
 
 .text-small,small,.small{font-size: 0.9rem;}
 .text-lead,small,.lead{font-size: 1.2rem;}
@@ -22,6 +24,23 @@
     &-right{text-align: right;}
     &-center{text-align: center;}
     &-left{text-align: left;}
+}
+
+.subtitle{
+    position: relative;
+    padding-bottom: $spacer/2;
+    margin-bottom: map-get($map: $spacers, $key: 2);
+
+    &:before{
+        content:'';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60px;
+        height: 2px;
+        background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+    }
 }
 
 @function spacing($unit, $return: 'px', $base: 16) {

@@ -1,0 +1,28 @@
+.docs{
+    display: flex;
+    flex-wrap: nowrap;
+
+    &__img{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    &__title{
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: $spacer;
+
+        color: $light-grey;
+        line-height: 1.2;
+        font-size: map-get($map: $font-size, $key: md);
+
+    }
+}
+
+.docs-pdf{
+    &__title{
+        font-size: 1.25rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: $spacer/2;
+    }
+}

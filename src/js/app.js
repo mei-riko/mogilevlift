@@ -10,6 +10,18 @@ $(document).ready(() =>{
     return false;
   });
 
+  $(".page-nav__item").click(function() {
+    let height = $(this).closest(".page-nav").outerHeight();
+    console.log( height );
+    $("html, body").animate({
+       scrollTop: $($(this).attr("href")).offset().top - height + "px"
+    }, {
+       duration: 500,
+       easing: "swing"
+    });
+    return false;
+  });
+
   // Input mask
   if( $('.phone').length > 0 ) {
     $(".phone").inputmask({

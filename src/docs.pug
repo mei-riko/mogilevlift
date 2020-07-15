@@ -1,0 +1,122 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Spares Category
+
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        section.bg-lines.container.content-header.pt-4.pb-4
+            .row
+                .col-6.col-md-12
+                    p.subtitle Документы
+                    h1.h2.text-bold Ab illo inventore veritatis et harum quidem rerum facilis est
+                .col-12.col-md-12
+                    p.text-grey.text-light Lorem ipsum dolor sit amet. Est, omnis voluptas sit, amet, consectetur, adipisci velit, sed quia dolor. Soluta nobis est eligendi optio, cumque nihil impedit, quo minus. Velit esse, quam nihil impedit, quo voluptas sit aspernatur. Ea commodi autem vel illum. Reiciendis voluptatibus maiores alias consequatur aut fugit, sed quia dolor repellendus. Illo inventore veritatis et dolorum fuga veritatis et quas. Vel illum, qui ratione voluptatem sequi nesciunt.
+        nav.page-nav.p-sticky
+            .container
+                a.page-nav__item(href="#section-1") Пример блока с jpg
+                a.page-nav__item(href="#section-2") Пример блока с pdf
+                a.page-nav__item(href="#section-3") Пример блока с jpg+pdf
+        section#section-1.pt-3.pb-3
+            .container
+                p.subtitle Пример блока с jpg
+                .row
+                    .col-3.col-md-6
+                        .docs
+                            a.docs__img(data-fancybox href="../img/demo-doc.png")
+                                img.img-fluid(src="../img/demo-doc.png" alt="" title="")
+                            p.docs__title 2015 Дилерский договор 001
+                    .col-3.col-md-6
+                        .docs
+                            .docs__img
+                                img.img-fluid(src="../img/demo-doc.png" alt="" title="")
+                            p.docs__title Благодарственное письмо 2010&nbsp;г. Могилёвлифт
+                    .col-3.col-md-6
+                        .docs
+                            .docs__img
+                                img.img-fluid(src="../img/demo-doc.png" alt="" title="")
+                            p.docs__title Росжилкоммун сертификация 2010&nbsp;г. Могилёвлифт
+        section#section-2.pt-3.pb-3.border-top
+            .container
+                p.subtitle Пример блока с pdf
+                .row
+                    .col-4.col-md-6.docs-pdf
+                        p.docs-pdf__title Лицензия Росатом на сооружение
+                        p
+                            a.btn.btn_link(href="#") Просмотреть pdf-файл
+                                svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                    .col-4.col-md-6.docs-pdf
+                        p.docs-pdf__title Сертификат ГОСТ 56002-2014
+                        p
+                            a.btn.btn_link(href="#") Просмотреть pdf-файл
+                                svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                    .col-4.col-md-6.docs-pdf
+                        p.docs-pdf__title Лицензия Росатом на проектирование
+                        p
+                            a.btn.btn_link(href="#") Просмотреть pdf-файл
+                                svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                    .col-4.col-md-6.docs-pdf.mt-2
+                        p.docs-pdf__title Лицензия Росатом на проектирование
+                        p
+                            a.btn.btn_link(href="#") Просмотреть pdf-файл
+                                svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        section#section-3.pt-3.pb-3.border-top
+            .container
+                p.subtitle Пример блока с jpg+pdf
+                .row
+                    .col-3.col-md-6
+                        .docs
+                            a.docs__img(data-fancybox href="../img/demo-doc.png")
+                                img.img-fluid(src="../img/demo-doc.png" alt="" title="")
+                            p.docs__title 2015 Дилерский договор 001
+                    .col-3.col-md-6
+                        .docs
+                            .docs__img
+                                img.img-fluid(src="../img/demo-doc.png" alt="" title="")
+                            p.docs__title Благодарственное письмо 2010&nbsp;г. Могилёвлифт
+                    .col-3.col-md-6
+                        .docs
+                            .docs__img
+                                img.img-fluid(src="../img/demo-doc.png" alt="" title="")
+                            p.docs__title Росжилкоммун сертификация 2010&nbsp;г. Могилёвлифт
+                    .col-3.col-md-6
+                        .docs
+                            a.docs__img(data-fancybox href="../img/demo-doc.png")
+                                img.img-fluid(src="../img/demo-doc.png" alt="" title="")
+                            p.docs__title 2015 Дилерский договор 001
+                .row.mt-3
+                    .col-4.col-md-6.docs-pdf
+                        p.docs-pdf__title Лицензия Росатом на сооружение
+                        p
+                            a.btn.btn_link(href="#") Просмотреть pdf-файл
+                                svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                    .col-4.col-md-6.docs-pdf
+                        p.docs-pdf__title Сертификат ГОСТ 56002-2014
+                        p
+                            a.btn.btn_link(href="#") Просмотреть pdf-файл
+                                svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                    .col-4.col-md-6.docs-pdf
+                        p.docs-pdf__title Лицензия Росатом на проектирование
+                        p
+                            a.btn.btn_link(href="#") Просмотреть pdf-файл
+                                svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        include chunks/footer.pug
+
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        script(src="./js/jquery.fancybox.min.js")
+
+        script(src="./js/jquery.inputmask.min.js")
+        script(src="./js/app.min.js")

@@ -439,6 +439,14 @@ a:hover, a:focus {
   border-left: 4px solid #ffffff;
 }
 
+.border-top {
+  border-top: 1px solid #28282f;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #28282f;
+}
+
 .p-relative {
   position: relative;
 }
@@ -662,7 +670,7 @@ a:hover, a:focus {
 
 @media all and (max-width: 1600px) {
   .container {
-    width: 1450px;
+    width: 1360px;
   }
   .col-xl-1 {
     -webkit-box-flex: 0;
@@ -2173,6 +2181,10 @@ a:hover, a:focus {
   color: #ffffff;
 }
 
+.text-grey {
+  color: #c2c2c2;
+}
+
 .text-black {
   color: #191a1e;
 }
@@ -2196,7 +2208,11 @@ a:hover, a:focus {
 }
 
 .text-bold, strong, b {
-  font-weight: 700;
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
 }
 
 .text-small, small, .small {
@@ -2217,6 +2233,25 @@ a:hover, a:focus {
 
 .text-left {
   text-align: left;
+}
+
+.subtitle {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+}
+
+.subtitle:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 2px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#735731), to(#e6e19d));
+  background: -o-linear-gradient(bottom, #735731 0%, #e6e19d 100%);
+  background: linear-gradient(0deg, #735731 0%, #e6e19d 100%);
 }
 
 .text-spacing-50, .header__link {
@@ -2388,6 +2423,43 @@ a:hover, a:focus {
   left: 0;
   opacity: .8;
   background-color: #c2c2c2;
+}
+
+.page-nav {
+  background: #28282f;
+  padding: 30px 0;
+  font-size: 16px;
+}
+
+.page-nav__item {
+  position: relative;
+  color: #ffffff;
+  margin-right: 60px;
+}
+
+.page-nav__item:hover, .page-nav__item:focus {
+  color: #ece298;
+  text-decoration: none;
+}
+
+.page-nav__item:after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  right: -30px;
+  top: calc( 50% - 3px);
+}
+
+.page-nav__item:last-child {
+  margin-right: 0;
+}
+
+.page-nav__item:last-child::after {
+  display: none;
 }
 
 .nav_header {
@@ -2659,11 +2731,11 @@ a:hover, a:focus {
 }
 
 .btn_link:hover, .btn_link:focus {
-  color: #e4d66d;
+  color: #e8dc82;
 }
 
 .btn_link:hover .btn_link__arrow path, .btn_link:focus .btn_link__arrow path {
-  fill: #e4d66d;
+  fill: #887145;
 }
 
 .checkbox {
@@ -2821,6 +2893,41 @@ a:hover, a:focus {
   max-width: 100%;
 }
 
+.stats_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.stats_icon__image {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80px;
+  flex: 0 0 80px;
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+
+.stats_icon__image .img-fluid, .stats_icon__image .content img, .content .stats_icon__image img {
+  height: 44px;
+  margin-left: 0;
+}
+
+.stats_icon__title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 44px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 calc(100% - 80px);
+  flex: 0 0 calc(100% - 80px);
+  max-width: calc(100% - 80px);
+  margin-bottom: 15px;
+}
+
 .preview {
   width: 100%;
 }
@@ -2859,27 +2966,41 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+.docs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.docs__img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.docs__title {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 30px;
+  color: #c2c2c2;
+  line-height: 1.2;
+  font-size: 16px;
+}
+
+.docs-pdf__title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
 .content-header {
   border-bottom: 1px solid #28282f;
-}
-
-.content-header__subtitle {
-  position: relative;
-  padding-bottom: 15px;
-  margin-bottom: 45px;
-}
-
-.content-header__subtitle:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 60px;
-  height: 2px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#735731), to(#e6e19d));
-  background: -o-linear-gradient(bottom, #735731 0%, #e6e19d 100%);
-  background: linear-gradient(0deg, #735731 0%, #e6e19d 100%);
 }
 
 .content-header__title {
