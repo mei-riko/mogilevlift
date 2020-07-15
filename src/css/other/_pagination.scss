@@ -1,0 +1,34 @@
+.pagination{
+    @extend .list;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+
+    &__item{
+        margin-right: 12px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        width: 30px;
+        line-height: 30px;
+        background-color: $border-color;
+        color: $white;
+
+        &:hover, &:focus{
+            background-color: lighten($color: $border-color, $amount: 3);
+            text-decoration: none;
+            color: $white;
+        }
+    }
+    &__active{
+        display: block;
+        width: 30px;
+        border: 4px solid $gold;
+        background-color: $border-color;
+        line-height: 22px;
+    }
+}

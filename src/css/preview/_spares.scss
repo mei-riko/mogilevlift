@@ -1,0 +1,24 @@
+.preview_spares{
+    padding: $spacer;
+    background-color: $grey;
+    color: $black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &__image{
+        height: 90px;
+        width: 100%;
+
+        background: no-repeat center / contain;
+    }
+
+    &_link{
+        &:hover, &:focus{
+            background-color: darken($color: $grey, $amount: 3);
+            text-decoration: none;
+        }
+    }
+}

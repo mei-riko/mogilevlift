@@ -3,8 +3,7 @@
     box-shadow: none;
     border:none;
 
-    &:hover,
-    &:focus{
+    &:hover, &:focus{
         outline: none;
         box-shadow: none;
         border:none;
@@ -16,6 +15,7 @@
         z-index: 2;
     }
 
+    // Button Type
     &_main{
         position: relative;
         overflow: hidden;
@@ -51,7 +51,6 @@
             z-index: 1;
         }
     }
-
     &_action{
         position: relative;
         overflow: hidden;
@@ -76,6 +75,32 @@
         &:hover, &:focus{
             .btn_action__inside{
                 background-color: rgba(25,26,30,0.8);
+            }
+        }
+    }
+    &_link{
+        position: relative;
+        padding-right: 30px;
+        font-size: map-get($map: $font-size, $key: md);
+        font-weight: 800;
+
+        &__arrow{
+            position: absolute;
+            right: 0;
+            top: calc(50% - 12px);
+
+            path{
+                fill: $gold;
+                transition: .4s;
+            }
+        }
+
+        &:hover, &:focus{
+            color: darken($color: $gold, $amount: 10);
+            .btn_link__arrow{
+                path{
+                    fill: darken($color: $gold, $amount: 10);
+                }
             }
         }
     }

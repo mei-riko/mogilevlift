@@ -8,3 +8,8 @@
 .img-border{
     border: 1px solid $border-color;
 }
+
+.no-img{
+    background: url("../img/no-img.png") no-repeat center / cover!important;
+    border: 1px solid $light-grey;
+}

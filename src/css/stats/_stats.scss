@@ -1,0 +1,14 @@
+.stats{
+    &__title{
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: $spacer/3;
+    }
+    &__content{
+        font-weight: 300;
+        line-height: 1.2;
+        color: $light-grey;
+        width: 220px;
+        max-width: 100%;
+    }
+}

@@ -30,5 +30,13 @@
 @import "image/image";
 @import "image/logo";
 
+@import "stats/stats";
+@import "stats/full";
+
+@import "preview/preview";
+@import "preview/product";
+@import "preview/spares";
+
+@import "content/content-header";
 @import "content/content";
 @import "content/error";
