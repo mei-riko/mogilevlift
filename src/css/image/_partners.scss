@@ -1,0 +1,12 @@
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item{
+        display: flex;
+        align-items: center;
+
+        height: 75px;
+    }
+}

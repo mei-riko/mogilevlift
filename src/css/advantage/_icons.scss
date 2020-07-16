@@ -1,0 +1,85 @@
+.advantage_icon{
+    position: relative;
+    overflow: hidden;
+
+    height: 100%;
+    padding-left: 170px;
+
+    &__elem{
+        position: absolute;
+        bottom: 40px;
+        left: -40px;
+        z-index: 1;
+
+        width: 270px;
+        height: 270px;
+        path{
+            fill: rgba(29, 30, 34, 1);
+        }
+    }
+    &__elem-in{
+        width: 100px;
+        height: 100px;
+
+        position: absolute;
+        left: 0; 
+        top : 0;
+        z-index: 3;
+
+        path{
+            fill: rgba(47, 48, 54, 1);
+        }
+    }
+
+    &__image-block{
+        position: absolute;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+
+        bottom: $spacer;
+        left: $spacer;
+    }
+    &__image{
+        width: 30px;
+
+        position: absolute;
+        left: calc( 50% - 20px ); 
+        top : calc( 50% - 15px );
+        z-index: 4;
+    }
+
+    &__subtitle{
+        position: relative;
+        z-index: 11;
+
+        font-size: map-get($map: $font-size, $key: md);
+        font-weight: 300;
+        margin-bottom: $spacer/2;
+
+        color: $gold;
+        text-transform: uppercase;
+
+        @extend .text-spacing-100;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .advantage_icon{
+        padding-left: 120px;
+
+        &__elem-in{
+            width: 70px;
+            height: 70px;
+        }
+        &__image-block{
+            width: 70px;
+            height: 70px;
+        }
+        &__image {
+            width: 24px;
+            left: calc( 50% - 15px);
+            top: calc( 50% - 12px);
+        }
+    }
+}

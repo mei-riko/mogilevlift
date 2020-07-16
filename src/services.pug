@@ -1,0 +1,131 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Services
+
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700,800&display=swap" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        section.content-header
+            .container.bg-lines.pt-4.pb-4
+                p.subtitle Услуги «Могилевлифт»
+                h1.content-header__title Применяем современные передовые&nbsp;технологии, механизмы и&nbsp;материалы.
+                .row.justify-content-end.mt-2.mb-2
+                    .col-3.col-md-12.stats
+                        p.stats__title 1927 дней
+                        p.stats__content гарантия на&nbsp;все выполненные работы
+                    .col-3.col-md-12.stats
+                        p.stats__title 900 проектов
+                        p.stats__content под&nbsp;ключ выполнено по&nbsp;России
+                    .col-3.col-md-12.stats
+                        p.stats__title 3370&nbsp;лифтов
+                        p.stats__content поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России
+                .row.justify-content-end
+                    .col-3.col-md-12
+                        a.btn.btn_link(href="#") Получить консультацию
+                            svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        section.pt-3.pb-3
+            .container.advantage-container
+                .row
+                    .col-4
+                        .advantage.advantage_icon.border
+                            svg.advantage_icon__elem(viewBox="0 0 270 270")
+                                path(fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z")
+                            .advantage_icon__image-block
+                                img.advantage_icon__image.img-fluid(src="../img/interface.svg")
+                                svg.advantage_icon__elem-in(viewBox="0 0 100 100")
+                                    path(fill-rule="evenodd" d="M99.453,50.000 L61.674,99.480 L0.547,80.580 L0.547,19.420 L61.674,0.520 L99.453,50.000 Z")
+                            p.advantage_icon__subtitle Фокусировка
+                            p.h5.advantage__title Понимаем цели и задачи каждого клиента
+                    .col-4
+                        .advantage.advantage_icon.border
+                            svg.advantage_icon__elem(viewBox="0 0 270 270")
+                                path(fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z")
+                            .advantage_icon__image-block
+                                img.advantage_icon__image.img-fluid(src="../img/photo.svg")
+                                svg.advantage_icon__elem-in(viewBox="0 0 100 100")
+                                    path(fill-rule="evenodd" d="M99.453,50.000 L61.674,99.480 L0.547,80.580 L0.547,19.420 L61.674,0.520 L99.453,50.000 Z")
+                            p.advantage_icon__subtitle Скорость
+                            p.h5.advantage__title 85% проектов сдаём раньше указанного срока
+                    .col-4
+                        .advantage.advantage_icon.border
+                            svg.advantage_icon__elem(viewBox="0 0 270 270")
+                                path(fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z")
+                            .advantage_icon__image-block
+                                img.advantage_icon__image.img-fluid(src="../img/timer.svg")
+                                svg.advantage_icon__elem-in(viewBox="0 0 100 100")
+                                    path(fill-rule="evenodd" d="M99.453,50.000 L61.674,99.480 L0.547,80.580 L0.547,19.420 L61.674,0.520 L99.453,50.000 Z")
+                            p.advantage_icon__subtitle Ответственность
+                            p.h5.advantage__title Действует гарантия 5&nbsp;лет на&nbsp;все выполненные работы
+        section.pt-3.pb-3
+            .container
+                .row
+                    .col-3
+                        h2.h1 Услуги компании
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 01
+                            p.preview__title.preview_service__title.text-uppercase Проектирование
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 02
+                            p.preview__title.preview_service__title.text-uppercase Монтаж
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 03
+                            p.preview__title.preview_service__title.text-uppercase Строительство
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 04
+                            p.preview__title.preview_service__title.text-uppercase Ремонт и&nbsp;замена
+                            p.preview__subinfo  капитальный ремонт и&nbsp;замена
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 05
+                            p.preview__title.preview_service__title.text-uppercase Продажа
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 06
+                            p.preview__title.preview_service__title.text-uppercase Консультации
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 07
+                            p.preview__title.preview_service__title.text-uppercase Регистрация
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 08
+                            p.preview__title.preview_service__title.text-uppercase Демонтаж
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3
+                        .preview.preview_service.border
+                            .preview_service__hover
+                            .preview_service__num 09
+                            p.preview__title.preview_service__title.text-uppercase Лизинг
+                            p.preview__subinfo  лифтов и подъемников
+        include chunks/footer.pug
+
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        script(src="./js/jquery.fancybox.min.js")
+
+        script(src="./js/jquery.inputmask.min.js")
+        script(src="./js/app.min.js")

@@ -1,0 +1,16 @@
+.preview_project{
+    color: $white;
+    background-color: $body-color;
+    
+    &__image{
+        width: 100%;
+        height: 140px;
+        background: $grey no-repeat center / cover;
+
+        margin-bottom: $spacer/2;
+
+        &_logo{
+            background-size: 70px;
+        }
+    }
+}

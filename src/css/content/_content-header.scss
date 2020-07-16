@@ -1,7 +1,18 @@
 .content-header{
     border-bottom: 1px solid $border-color;
+
     &__title{
         margin-top: 0;
         margin-bottom: 0;
+
+        font-size: 72px;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .content-header{
+        &__title{
+            font-size: 60px;
+        }
     }
 }

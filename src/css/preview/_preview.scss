@@ -1,8 +1,18 @@
 .preview{
     width: 100%;
+
+    &:hover, &:focus{
+        text-decoration: none;
+    }
+
     &__title{
         line-height: 1.2;
         font-weight: 800;
         margin-bottom: $spacer/2;
+    }
+    &__subinfo{
+        color: $light-grey;
+        font-weight: 300;
+        font-size: map-get($map: $font-size, $key: sm);
     }
 }

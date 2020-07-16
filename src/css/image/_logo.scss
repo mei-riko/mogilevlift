@@ -1,7 +1,7 @@
 .logo{
     &_header{
         font-size: map-get($font-size, 'sm');
-        font-weight: 800;
+        font-weight: $font-weight-bold;
         line-height: 1.2;
         
         text-align: center;

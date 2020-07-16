@@ -11,26 +11,27 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-        section.bg-lines.container.content-header.pt-4.pb-4
-            .row
-                .col-6.col-md-12
-                    p.subtitle Запчасти
-                    h1.content-header__title Полный список категорий запчастей, которые доступны для&nbsp;заказа 
-            .row.justify-content-end.mt-3.mb-2
-                .col-3.col-md-12.stats
-                    p.stats__title 15% экономии
-                    p.stats__content бюджета в&nbsp;среднем у&nbsp;наших клиентов
-                .col-3.col-md-12.stats
-                    p.stats__title 900 проектов
-                    p.stats__content под&nbsp;ключ выполнено по&nbsp;России
-                .col-3.col-md-12.stats
-                    p.stats__title 3370&nbsp;лифтов
-                    p.stats__content поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России
-            .row.justify-content-end
-                .col-3.col-md-12
-                    a.btn.btn_link(href="#") Получить консультацию
-                        svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
-                            path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        section.content-header
+            .container.bg-lines.pt-4.pb-4
+                .row
+                    .col-6.col-md-12
+                        p.subtitle Запчасти
+                        h1.mt-0.mb-0 Полный список категорий запчастей, которые доступны для&nbsp;заказа 
+                .row.justify-content-end.mt-3.mb-2
+                    .col-3.col-md-12.stats
+                        p.stats__title 15% экономии
+                        p.stats__content бюджета в&nbsp;среднем у&nbsp;наших клиентов
+                    .col-3.col-md-12.stats
+                        p.stats__title 900 проектов
+                        p.stats__content под&nbsp;ключ выполнено по&nbsp;России
+                    .col-3.col-md-12.stats
+                        p.stats__title 3370&nbsp;лифтов
+                        p.stats__content поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России
+                .row.justify-content-end
+                    .col-3.col-md-12
+                        a.btn.btn_link(href="#") Получить консультацию
+                            svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
         section.container
             .row.pt-1.pb-1
                 .col-2.col-md-4.col-sm-6

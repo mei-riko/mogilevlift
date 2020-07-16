@@ -1,0 +1,14 @@
+.advantage{
+    padding: $spacer;
+
+    &__title{
+        position: relative;
+        z-index: 11;
+        margin-top: 0;   
+    }
+
+
+    &-container{
+        padding: 0;
+    }
+}

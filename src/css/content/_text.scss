@@ -14,7 +14,7 @@
 }
 
 .text-uppercase{text-transform: uppercase;}
-.text-bold,strong,b{font-weight: 800;}
+.text-bold,strong,b{font-weight: $font-weight-bold;}
 .text-light{font-weight: 300;}
 
 .text-small,small,.small{font-size: 0.9rem;}

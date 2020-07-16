@@ -22,7 +22,7 @@
 
         background: none;
         color: $black;
-        font-weight: 800;
+        font-weight: $font-weight-bold;
 
         border-radius: 24px;
         padding: 8px 22px;
@@ -82,7 +82,7 @@
         position: relative;
         padding-right: 30px;
         font-size: map-get($map: $font-size, $key: md);
-        font-weight: 800;
+        font-weight: $font-weight-bold;
 
         &__arrow{
             position: absolute;

@@ -31,7 +31,7 @@ html(lang="ru")
                     a.btn.btn_link(href="#") Получить консультацию
                         svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
                             path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
-        section.pt-3.pb-3.container.bg-lines
+        section.pt-3.pb-4.container.bg-lines
             .row
                 .col-8
                     p.subtitle Проекты в цифрах
@@ -86,6 +86,67 @@ html(lang="ru")
                             img.img-fluid(src="../img/technology.svg" alt="" title="")
                         .stats_icon__title 20
                         .stats__content лифтов для&nbsp;атомных электростанций
+        section.bg-light
+            .partners.container.pt-1.pb-1
+                .partners__item
+                    img.img-fluid(src="../logo/01.png")
+                .partners__item
+                    img.img-fluid(src="../logo/02.png")
+                .partners__item
+                    img.img-fluid(src="../logo/03.png")
+                .partners__item
+                    img.img-fluid(src="../logo/04.png")
+                .partners__item
+                    img.img-fluid(src="../logo/05.png")
+                .partners__item
+                    img.img-fluid(src="../logo/06.png")
+                .partners__item
+                    img.img-fluid(src="../logo/07.png")
+                .partners__item
+                    img.img-fluid(src="../logo/08.png")
+                .partners__item
+                    img.img-fluid(src="../logo/09.png")
+                .partners__item
+                    img.img-fluid(src="../logo/10.png")
+                .partners__item
+                    img.img-fluid(src="../logo/11.png")
+        section.pt-1.pb-4.container.bg-lines
+            .row
+                .col-3.col-md-6.mt-3
+                    a.preview.preview_project.text-center(href="#")
+                        .preview_project__image.preview_project__image_logo(style="background-image:url('../logo/01.png')")
+                        .preview__title Олимпийский парк: проектирование и монтаж
+                        .preview__subinfo г. Сочи, бул. Жуковского, д. 32
+                .col-3.col-md-6.mt-3
+                    a.preview.preview_project.text-center(href="#")
+                        .preview_project__image.preview_project__image_logo(style="background-image:url('../logo/04.png')")
+                        .preview__title Больница №23: монтаж, проектирование, поставка
+                        .preview__subinfo г. СПб, пр. Ветеранов, д. 14
+                .col-3.col-md-6.mt-3
+                    a.preview.preview_project.text-center(href="#")
+                        .preview_project__image.preview_project__image(style="background-image:url('../img/demo-small.png')")
+                        .preview__title Дом в ЖК “Кристал” проектирование и монтаж
+                        .preview__subinfo г. Сочи, бул. Жуковского, д. 32
+                .col-3.col-md-6.mt-3
+                    a.preview.preview_project.text-center(href="#")
+                        .preview_project__image.preview_project__image_logo(style="background-image:url('../logo/07.png')")
+                        .preview__title Олимпийский парк: проектирование и монтаж
+                        .preview__subinfo г. Сочи, бул. Жуковского, д. 32
+                .col-3.col-md-6.mt-3
+                    a.preview.preview_project.text-center(href="#")
+                        .preview_project__image.preview_project__image(style="background-image:url('../img/demo-small.png')")
+                        .preview__title Дом в ЖК “Кристал” проектирование и монтаж
+                        .preview__subinfo г. Сочи, бул. Жуковского, д. 32
+            .mt-3
+                ul.pagination
+                    li.pagination__item
+                        a.pagination__link(href="?page=1") 1
+                    li.pagination__item
+                        span.pagination__active 2
+                    li.pagination__item
+                        a.pagination__link(href="?page=3") 3
+                    li.pagination__item
+                        a.pagination__link(href="?page=4") 4
         include chunks/footer.pug
 
         link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
