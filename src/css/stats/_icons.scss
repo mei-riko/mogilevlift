@@ -15,7 +15,7 @@
     }
     &__title{
         font-size: 64px;
-        font-weight: 800;
+        font-weight: $font-weight-bold;
         line-height: 44px;
 
         flex: 0 0 calc(100% - 80px);

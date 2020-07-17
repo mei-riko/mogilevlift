@@ -14,11 +14,6 @@
         position: relative;
         padding-left: map-get($map: $spacers, $key: 1);
         margin-bottom: 5px;
-        
-        &:last-child{
-            margin-bottom: 0;
-        }
-
         &:before{
             content:'';
             display: block;
@@ -31,6 +26,26 @@
             position: absolute;
             left: 0;
             top: .5rem;              
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &_secondary{
+            &:after{
+                content:'';
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+    
+                background: $body-color;
+    
+                position: absolute;
+                left: 0;
+                top: .5rem;
+                transform: translate(2px, 2px);            
+            }
         }
     }
 }

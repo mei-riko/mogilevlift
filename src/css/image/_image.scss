@@ -13,3 +13,29 @@
     background: url("../img/no-img.png") no-repeat center / cover!important;
     border: 1px solid $light-grey;
 }
+
+.img-hover{
+    position: relative;
+    overflow: hidden;
+
+    &__main{
+        transition: .4s;
+    }
+    &__secondary{
+        position: absolute;
+        left:0;
+        top:0;
+        transform: translateY(100%);
+        transition: .4s;
+    }
+
+    &:hover, &:focus{
+        .img-hover__secondary{
+            transform: translateY(0);
+        }
+    }
+}
+
+.img-descrition{
+    margin-top: $spacer/2;
+}

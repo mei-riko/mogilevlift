@@ -1,7 +1,11 @@
 .preview_service{
     position: relative;
     padding: $spacer;
-    padding-left: 110px;
+    padding-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     height:180px;
     background-color: $body-color;
@@ -10,9 +14,53 @@
         position: absolute;
         top: 0;
         left: $spacer/2;
+        z-index: 3;
+
         font-size: 180px;
-        font-weight: 900;
+        font-weight: 800;
         line-height: 180px;
-        color: $border-color;
+        color: #1d1e22;
+    }
+    &__title{
+        font-size: 24px;
+        margin-bottom: $spacer/4;
+    }
+}
+a.preview_service{
+    color: $white;
+    &:hover, &:focus{
+        background-color: lighten($color: $body-color, $amount: 1);
+        &:before{
+            content: '';
+            display: block;
+            background-color: lighten($color: $body-color, $amount: 1);
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            z-index: 2;
+        }
+        &:after{
+            content: '';
+            display: block;
+            background: linear-gradient( 90deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .preview_service{
+        &__title{
+            font-size: 20px;
+        }
     }
 }

@@ -21,7 +21,7 @@
 .docs-pdf{
     &__title{
         font-size: 1.25rem;
-        font-weight: 800;
+        font-weight: $font-weight-bold;
         line-height: 1.2;
         margin-bottom: $spacer/2;
     }

@@ -1,0 +1,33 @@
+.slider_border{
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+
+    &__content{
+        margin: 0;
+        padding: 0;
+        &.slick-dotted.slick-slider{
+            margin-bottom: 0;
+        }
+    }
+    &__title{
+        font-size: 1.25rem;
+        padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
+        border-bottom: 1px solid $border-color;
+        margin: 0;
+    }
+    &__item{
+        padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 2);
+    }
+    .slick-list{
+        // border-bottom: 1px solid $border-color;
+    }
+    .slick-dots{
+        border-top: 1px solid $border-color;
+        position: unset;
+        padding: $spacer map-get($map: $spacers, $key: 2);
+    }
+    .slick-prev{
+    }
+    .slick-next{
+    }
+}

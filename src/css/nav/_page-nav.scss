@@ -7,13 +7,8 @@
     &__item{
         position: relative;
         color: $white;
-
-        &:hover, &:focus{
-            color: $gold;
-            text-decoration: none;
-        }
-
         margin-right: map-get($map: $spacers, $key: 3);
+
         &:after{
             content:'';
             display: block;
@@ -26,12 +21,20 @@
             right: -(map-get($map: $spacers, $key: 1));
             top: calc( 50% - 3px);
         }
-
         &:last-child{
             margin-right: 0;
             &::after{
                 display: none;
             }
+        }
+
+        &:hover, &:focus{
+            color: $gold;
+            text-decoration: none;
+        }
+
+        &_small{
+            font-size: map-get($map: $font-size, $key: sm);
         }
     }
 }

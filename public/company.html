@@ -1,0 +1,403 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Company Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <header class="header">
+      <div class="header__element"></div>
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-2"><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
+          <div class="col-8"><a class="navbar-toggle" id="nav" data-trigger="click"></a>
+            <div class="navbar-collapse">
+              <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
+              <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
+            </div>
+          </div>
+          <div class="col-2 text-right"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-sm-none">лифта</span></span></a></div>
+        </div>
+      </div>
+    </header><a class="scrollTop" id="scrollTop" href="#" data-trigger="click"></a>
+    <div class="modal" id="callback">
+      <p class="h3">Наш менеджер свяжется с вами!</p>
+      <form class="form" action="">
+        <input class="form__input input input--full phone error" type="text" placeholder="Контактный телефон"/>
+        <div class="form-validation error">Обязательно для заполнения</div>
+        <button class="btn btn_action form__btn">Оставить заявку</button>
+        <div class="form__agree checkbox">
+          <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
+          <label class="checkbox__label" for="agree">согласен с <a class="link-underline" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
+        </div>
+      </form>
+    </div>
+    <section class="bg-lines container content-header pt-4 pb-4">
+      <div class="row">
+        <div class="col-6 col-md-12">
+          <p class="subtitle">О компании</p>
+          <h1 class="h2 text-bold">Создаем комфортные условия для&nbsp;жизни и&nbsp;работы</h1>
+        </div>
+      </div>
+      <div class="row justify-content-end mt-2 mb-2">
+        <div class="col-3 col-md-12 stats">
+          <p class="stats__title">15% экономии</p>
+          <p class="stats__content">бюджета в&nbsp;среднем у&nbsp;наших клиентов</p>
+        </div>
+        <div class="col-3 col-md-12 stats">
+          <p class="stats__title">900 проектов</p>
+          <p class="stats__content">под&nbsp;ключ выполнено по&nbsp;России</p>
+        </div>
+        <div class="col-3 col-md-12 stats">
+          <p class="stats__title">3370&nbsp;лифтов</p>
+          <p class="stats__content">поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России</p>
+        </div>
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-3 col-md-12"><a class="btn btn_link" href="#">Получить консультацию
+            <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
+              <path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z "></path>
+            </svg></a></div>
+      </div>
+    </section>
+    <nav class="page-nav p-sticky">
+      <div class="container"><a class="page-nav__item page-nav__item_small" href="#section-1">Сильные стороны компании</a><a class="page-nav__item page-nav__item_small" href="#section-2">Эксклюзивные права на реализацию</a><a class="page-nav__item page-nav__item_small" href="#section-3">Сферы поставки оборудования</a><a class="page-nav__item page-nav__item_small" href="#section-4">Участие в социальнозначимых проектах</a></div>
+    </nav>
+    <section class="container pt-4 pb-4 blockquote-person">
+      <div class="row no-gutters align-items-center border">
+        <div class="col-8">
+          <div class="blockquote-gold">
+            <p class="text-light">Могилевлифт партнер лидеров российского бизнеса и государственных структур: реализовано свыше 900 проектов в различных отраслях.</p>
+            <p class="text-light">Мы способствуем созданию комфортных условий для жизни и работы в России. Уверенность в собственных силах и готовность к преодолению любых препятствий позволяет стабильно достигать поставленных целей и выполнять свои обязательства.</p>
+            <p class="text-bold mt-2">Генеральный директор «Могилёвлифт»</p>
+          </div>
+        </div>
+        <div class="col-4"><img class="img-fluid" src="../img/person.png" alt="" title=""/></div>
+      </div>
+    </section>
+    <section class="pt-3 pb-3 border-top">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-5">
+            <h3>Партнёры «Могилёвлифт» всегда <span class="text-gold">довольны </span>нашей работой.</h3>
+          </div>
+          <div class="col-7 text-right"><a class="btn btn_show-more" href="#partners" data-fancybox="data-fancybox"><span class="btn_show-more__elem"> 
+                <div class="btn_show-more__text">+</div>
+                <div class="btn_show-more__circle"></div>
+                <div class="btn_show-more__circle"></div>
+                <div class="btn_show-more__circle"></div></span>Показать больше</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light">
+      <div class="container pt-1 pb-1">
+        <div class="partners partners_preview">
+          <div class="partners__item"><img class="img-fluid" src="../logo/01.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/02.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/03.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/04.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/05.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/06.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/07.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/08.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/09.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/10.png"/></div>
+          <div class="partners__item"><img class="img-fluid" src="../logo/11.png"/></div>
+        </div>
+      </div>
+    </section>
+    <section class="container bg-lines pt-3 pb-3">
+      <div class="slider slider_inside-container">
+        <div class="slider__content" id="reviews-full"><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a></div>
+      </div>
+    </section>
+    <section class="container border-top bg-lines pt-3 pb-3">
+      <p class="subtitle">Преимущества</p>
+      <h3 class="heading mb-0">Сильные стороны компании</h3>
+      <div class="row">
+        <div class="col-3 mt-3">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item text-uppercase text-gold text-bold">Оперативность</p>
+            <div class="mt-1"></div>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">Поставки лифтового оборудования от&nbsp;3&nbsp;недель</p>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">85% проектов сдаем раньше зафиксированных сроков</p>
+          </div>
+        </div>
+        <div class="col-3 mt-3">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item text-uppercase text-gold text-bold">Ответственность</p>
+            <div class="mt-1"></div>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">Поставки лифтового оборудования от&nbsp;3&nbsp;недель</p>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">85% проектов сдаем раньше зафиксированных сроков</p>
+          </div>
+        </div>
+        <div class="col-3 mt-3">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item text-uppercase text-gold text-bold">Фокус на клиентах</p>
+            <div class="mt-1"></div>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">Поставки лифтового оборудования от&nbsp;3&nbsp;недель</p>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">85% проектов сдаем раньше зафиксированных сроков</p>
+          </div>
+        </div>
+        <div class="col-3 mt-3">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item text-uppercase text-gold text-bold">Компетенции</p>
+            <div class="mt-1"></div>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">Поставки лифтового оборудования от&nbsp;3&nbsp;недель</p>
+            <p class="list_btn_show-more__circle__item list_btn_show-more__circle__item_secondary text-light text-grey">85% проектов сдаем раньше зафиксированных сроков</p>
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item text-uppercase text-gold text-bold">Профессионализм</p>
+            <div class="mt-1"></div>
+            <p class="text-light text-grey">Интеллект человека играет ключевую роль в создании комфортного и безопасного мира, способствуя прогрессу и повышению качества жизни. Мы поддерживаем наших сотрудников в их профессиональном развитии и поощряем честное открытое общение, создавая благоприятную атмосферу для работы. Их талант, знания и навыки позволяют достигать поставленных целей и задавать новые стандарты отрасли лифтового оборудования.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 mt-1">
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="../img/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../img/after.png" alt="" title=""/></div>
+          <p class="img-descrition">Ведущий специалист по&nbsp;проектированию</p>
+        </div>
+        <div class="col-3 mt-1">
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="../img/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../img/after.png" alt="" title=""/></div>
+          <p class="img-descrition">Ведущий специалист по&nbsp;поставкам</p>
+        </div>
+        <div class="col-3 mt-1">
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="../img/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../img/after.png" alt="" title=""/></div>
+          <p class="img-descrition">Главный инженер</p>
+        </div>
+        <div class="col-3 mt-1">
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="../img/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../img/after.png" alt="" title=""/></div>
+          <p class="img-descrition">Старший менеджер по&nbsp;продажам</p>
+        </div>
+      </div>
+    </section>
+    <section class="container border-top pt-3 pb-3">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <h3 class="heading mb-2">Эксклюзивные права на&nbsp;реализацию</h3>
+          <p class="text-grey">
+            С 2005 года Могилевлифт является официальным диллером с эксклюзивными правами на реализацию оборудования. Мы предоставляем своим клиентам цены ниже, чем напрямую через завод.</p>
+          <p class="text-grey">Могилёвлифтмаш — завод по производству лифтового оборудования. Он занимает 100 Га и в год производит в среднем 12 000 лифтового оборудования. Около 67% продаж приходится на Россию. Востребованность лифтового оборудования объясняется качеством, вариативностью и надежностью.</p>
+        </div>
+        <div class="col-6"><img class="img-fluid" src="../img/demo.jpg" alt="" title=""/></div>
+      </div>
+      <p class="h5">Благодаря «Могилёвлифтмаш» <br/> мы&nbsp;можем предложить:</p>
+      <div class="row mt-1 text-grey">
+        <div class="col-4">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item">Более 300 моделей оборудовани</p>
+            <p class="list_btn_show-more__circle__item">Соответствие ГОСТам и Регламентам</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item">Более 300 моделей оборудовани</p>
+            <p class="list_btn_show-more__circle__item">Соответствие ГОСТам и Регламентам</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="list list_btn_show-more__circle">
+            <p class="list_btn_show-more__circle__item">Более 300 моделей оборудовани</p>
+            <p class="list_btn_show-more__circle__item">Соответствие ГОСТам и Регламентам</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container border-top bg-lines pt-3 pb-4">
+      <div class="row">
+        <div class="col-8">
+          <p class="subtitle">Статистика</p>
+          <h4>Взаимодействуем со всеми сферами деятельности</h4>
+          <p class="text-grey">Возможность поставлять лифтовое оборудование по нестандартным требованиям и техническим характеристикам, позволяет нам взаимодействовать со всеми сферами деятельности</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/wheelchair.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">358</div>
+            <div class="stats__content">лифтов оборудовали для&nbsp;инвалидов</div>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/architectonic.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">37</div>
+            <div class="stats__content">лифтов оборудовали в&nbsp;больницах</div>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/store.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">15</div>
+            <div class="stats__content">лифтов для&nbsp;торговых комплексов</div>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/home.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">78</div>
+            <div class="stats__content">лифтов оборудовали для&nbsp;коттеджей</div>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/hostel.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">31</div>
+            <div class="stats__content">лифт поставили для&nbsp;гостиниц</div>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/education.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">43</div>
+            <div class="stats__content">лифта в&nbsp;учебных заведениях</div>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/building.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">97</div>
+            <div class="stats__content">лифтов поставлено в&nbsp;жилые дома</div>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 mt-3">
+          <div class="stats stats_icon">
+            <div class="stats_icon__image"><img class="img-fluid" src="../img/technology.svg" alt="" title=""/></div>
+            <div class="stats_icon__title">20</div>
+            <div class="stats__content">лифтов для&nbsp;атомных электростанций</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="border-top">
+      <div class="container">
+        <h2 class="heading pt-3 pb-3">Участие в социальнозначимых проектах</h2>
+      </div>
+      <div class="border-top">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-5 pt-1 pb-1">
+              <p class="h5">Подготовка Сочи к Олимпиаде</p>
+              <div class="lines mt-1 mb-1"></div>
+              <p class="text-light text-grey text-small">Интеллект человека играет ключевую роль в создании комфортного и безопасного мира, способствуя прогрессу и повышению качества жизни. Мы поддерживаем наших сотрудников в их профессиональном развитии и поощряем честное открытое общение, создавая благоприятную атмосферу для работы. Их талант, знания и навыки позволяют достигать поставленных целей и задавать новые стандарты отрасли лифтового оборудования.</p>
+            </div>
+            <div class="col-6">
+              <div class="slider slider_gallery slider_border">
+                <div class="slider_border__content gallery-slider"><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-6">
+              <div class="slider slider_gallery slider_border">
+                <div class="slider_border__content gallery-slider"><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a></div>
+              </div>
+            </div>
+            <div class="col-5 pt-1 pb-1">
+              <p class="h5">Участие в Городских проектах</p>
+              <div class="lines mt-1 mb-1"></div>
+              <p class="text-light text-grey text-small">Интеллект человека играет ключевую роль в создании комфортного и безопасного мира, способствуя прогрессу и повышению качества жизни. Мы поддерживаем наших сотрудников в их профессиональном развитии и поощряем честное открытое общение, создавая благоприятную атмосферу для работы. Их талант, знания и навыки позволяют достигать поставленных целей и задавать новые стандарты отрасли лифтового оборудования.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container border-top pt-3 pb-3">
+      <div class="row justify-content-center">
+        <div class="col-9 text-center">
+          <p class="heading text-bold">Бесплатная консультация специалиста уже через <span class="text-decoration text-gold">5</span> минут</p><a class="btn btn_main" href="#"> <span class="btn__inside">Нужна консультация</span></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container bg-lines pt-3 pb-3">
+        <div class="row">
+          <div class="col-3">
+            <nav class="nav nav_footer">
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Лифты</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Коттеджные</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Без машинного помещения</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Панорамные</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Энергосберегающие</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Для многоквартирных домов</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Для торговых центров</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Больничные</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Инвалидные</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Грузовые автомобильные</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Грузовые для кафе и ресторанов</a></div>
+            </nav>
+          </div>
+          <div class="col-3">
+            <nav class="nav nav_footer">
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Подъемники</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Платформы для инвалидов</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Подъемник в бассейн</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Эскалатор</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Роторная парковка</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Строительные подъемники</a></div>
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Запчасти</a></div>
+            </nav>
+          </div>
+          <div class="col-3">
+            <nav class="nav nav_footer">
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Услуги</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Проектирование</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Монтаж</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Пусконаладочные работы</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Консультации</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Строительство лифтовых шахт</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Демонтаж</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Регистрация лифтов</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Капитальный реонт и замена</a></div>
+              <div class="nav__item"><a class="nav_footer__subtitle" href="#">Лизинг</a></div>
+            </nav>
+          </div>
+          <div class="col-3">
+            <nav class="nav nav_footer">
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Документы</a></div>
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">О компании</a></div>
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Отзывы</a></div>
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Проекты</a></div>
+              <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Контакты</a></div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="subfooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <p class="subfooter__text">© 2005-2020. Все права защищены.</p>
+          </div>
+          <div class="col-4 text-center">
+            <p class="subfooter__text">Могилевлифт - поставки лифтов, подъемников, запчастей.</p>
+          </div>
+          <div class="col-4 text-right">
+            <p class="subfooter__text">Сайт разработан <a class="subfooter__link" href="https://websoho.ru">студией «SOHO»</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link href="./css/jquery.fancybox.min.css" rel="stylesheet"/>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <link href="./css/slick.css" rel="stylesheet"/>
+    <link href="./css/slick-theme.css" rel="stylesheet"/>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.inputmask.min.js"></script>
+    <script src="./js/app.min.js"></script>
+  </body>
+</html>

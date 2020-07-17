@@ -1,0 +1,9 @@
+.slider_gallery{
+    // padding: 0 30px;
+    .slick-list{
+        margin: 0 30px;
+    }
+    &__item{
+        padding: $spacer 0;
+    }
+}

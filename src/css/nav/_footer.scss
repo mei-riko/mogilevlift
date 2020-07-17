@@ -1,7 +1,7 @@
 .nav_footer{
     &__title{
         color: $white;
-        font-weight: 800;
+        font-weight: $font-weight-bold;
         margin-bottom: map-get($map: $spacers, $key: 1);
 
         &:last-child{

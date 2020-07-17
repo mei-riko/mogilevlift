@@ -58,7 +58,37 @@ $(document).ready(() =>{
   $('a[data-trigger="click"]').click(function(e){
     e.preventDefault();
   })
-	  // Mobile Navbar
+  // Слайдер
+	if( $('.slider').length > 0 ){
+		let $slickReview = $('#reviews');
+		$slickReview.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows      : true,
+			dots        : true,
+			
+			autoplay  : false,
+    });
+    let $slickReviewFull = $('#reviews-full');
+		$slickReviewFull.slick({
+			slidesToShow: 6,
+			slidesToScroll: 6,
+			arrows      : true,
+			dots        : false,
+			
+			autoplay  : false,
+    });
+    let $slickGallery = $('.gallery-slider');
+		$slickGallery.slick({
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			arrows      : true,
+			dots        : true,
+			
+			autoplay  : false,
+    });
+  }
+	// Mobile Navbar
   $(".navbar-toggle#nav").on("click", function(){
     if( !$(this).hasClass("navbar-toggle--active")){
         $(this).addClass("navbar-toggle--active");

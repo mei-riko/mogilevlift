@@ -5,7 +5,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Services
 
-        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700,800&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700;800&display=swap" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
     body
@@ -63,69 +63,94 @@ html(lang="ru")
                                     path(fill-rule="evenodd" d="M99.453,50.000 L61.674,99.480 L0.547,80.580 L0.547,19.420 L61.674,0.520 L99.453,50.000 Z")
                             p.advantage_icon__subtitle Ответственность
                             p.h5.advantage__title Действует гарантия 5&nbsp;лет на&nbsp;все выполненные работы
-        section.pt-3.pb-3
+        section.pt-1.pb-3.border-top
             .container
-                .row
-                    .col-3
+                .row.align-items-center
+                    .col-3.mt-1
                         h2.h1 Услуги компании
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 01
                             p.preview__title.preview_service__title.text-uppercase Проектирование
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 02
                             p.preview__title.preview_service__title.text-uppercase Монтаж
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 03
                             p.preview__title.preview_service__title.text-uppercase Строительство
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 04
                             p.preview__title.preview_service__title.text-uppercase Ремонт и&nbsp;замена
                             p.preview__subinfo  капитальный ремонт и&nbsp;замена
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 05
                             p.preview__title.preview_service__title.text-uppercase Продажа
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 06
                             p.preview__title.preview_service__title.text-uppercase Консультации
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 07
                             p.preview__title.preview_service__title.text-uppercase Регистрация
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 08
                             p.preview__title.preview_service__title.text-uppercase Демонтаж
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3
-                        .preview.preview_service.border
-                            .preview_service__hover
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
                             .preview_service__num 09
                             p.preview__title.preview_service__title.text-uppercase Лизинг
                             p.preview__subinfo  лифтов и подъемников
+        section.border-top
+            .container
+                .row.align-items-center.justify-content-between
+                    .col-7.pt-2.pb-2
+                        h3.heading Нам доверяют многие&nbsp;компании
+                        p.text-grey.text-light Репутация надежного, ответственного и опытного партнера, всегда выполняющего свои  обязательства, позволила компании Могилевлифт построить прочные отношения с компаниями разных масштабов. 
+                        .partners.partners_figure
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/1.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/2.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/3.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/4.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/5.png')")
+                            .partners_figure__line-break
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/3.png')")
+                    .col-4
+                        .slider.slider_border
+                            p.slider_border__title.text-uppercase.text-bold.text-center Отзывы о сотрудничестве
+                            .slider_border__content#reviews
+                                a.slider__item.slider_border__item(href="../img/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../img/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../img/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../img/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../img/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../img/scan.png" alt="" title="")
         include chunks/footer.pug
 
         link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
         script(src="./js/jquery.fancybox.min.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
 
         script(src="./js/jquery.inputmask.min.js")
         script(src="./js/app.min.js")

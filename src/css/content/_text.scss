@@ -42,6 +42,11 @@
         background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
     }
 }
+.lines{
+    width: 60px;
+    height: 2px;
+    background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+}
 
 @function spacing($unit, $return: 'px', $base: 16) {
     @if $return == 'em' {

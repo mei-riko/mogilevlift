@@ -23,11 +23,16 @@ html,body {
 }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6{
+.h1, .h2, .h3, .h4, .h5, .h6,
+.heading{
     font-family: $font-family-base;
     font-weight: $font-weight-heading;
     line-height: $line-height-heading;
     margin-bottom: map-get($spacers, 1);
+
+    &:last-child{
+        margin-bottom: 0;
+    }
 }
 * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
@@ -39,6 +44,8 @@ h1, h2, h3, h4, h5, h6,
 .h4,h4          {font-size: 1.5rem;}
 .h5,h5          {font-size: 1.2rem;}
 .h6,h6          {font-size: 1rem;}
+
+.heading        {font-size: 72px;}
 
 p {
     font-size: 1rem;
@@ -85,10 +92,52 @@ a{
     padding: $spacer/2 0 $spacer $spacer;
     border-left: 4px solid $white;
 }
+.blockquote-gold{
+    padding-left: map-get($map: $spacers, $key: 4);
+    background: url("../img/blockquote.svg") no-repeat left top / 40px;
+}
+.blockquote-person{
+    padding-left: 0;
+    padding-right: 0;
+    
+    .blockquote-gold{
+        background-position-x: map-get($map: $spacers, $key: 2);
+        background-position-y: map-get($map: $spacers, $key: 4);
+        padding: map-get($map: $spacers, $key: 4);
+        padding-left: 120px;
+    }
+}
 
 .border-top{border-top: 1px solid $border-color;}
 .border-bottom{border-bottom: 1px solid $border-color;}
 .border{border: 1px solid $border-color;}
+.border-gradient{
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        background-color: $body-color;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        z-index: 2;
+    }
+    &:after{
+        content: '';
+        display: block;
+        background: linear-gradient( 90deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
 
 .p-relative{position: relative;}
 .p-sticky{position: sticky; top: 0; left: 0; z-index: 101;}
@@ -104,6 +153,7 @@ a{
     html,body {
         font-size: map-get($font-size, 'lg');
     }
+    .heading        {font-size: 60px;}
     .d-xl{
         &-flex{display: flex;}
         &-none{display: none;}

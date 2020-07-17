@@ -1,7 +1,7 @@
 .stats{
     &__title{
         font-size: 26px;
-        font-weight: 800;
+        font-weight: $font-weight-bold;
         margin-bottom: $spacer/3;
     }
     &__content{

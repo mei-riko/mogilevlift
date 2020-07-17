@@ -1,0 +1,307 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Company Page
+
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        section.bg-lines.container.content-header.pt-4.pb-4
+            .row
+                .col-6.col-md-12
+                    p.subtitle О компании
+                    h1.h2.text-bold Создаем комфортные условия для&nbsp;жизни и&nbsp;работы
+            .row.justify-content-end.mt-2.mb-2
+                .col-3.col-md-12.stats
+                    p.stats__title 15% экономии
+                    p.stats__content бюджета в&nbsp;среднем у&nbsp;наших клиентов
+                .col-3.col-md-12.stats
+                    p.stats__title 900 проектов
+                    p.stats__content под&nbsp;ключ выполнено по&nbsp;России
+                .col-3.col-md-12.stats
+                    p.stats__title 3370&nbsp;лифтов
+                    p.stats__content поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России
+            .row.justify-content-end
+                .col-3.col-md-12
+                    a.btn.btn_link(href="#") Получить консультацию
+                        svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                            path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        nav.page-nav.p-sticky
+            .container
+                a.page-nav__item.page-nav__item_small(href="#section-1") Сильные стороны компании
+                a.page-nav__item.page-nav__item_small(href="#section-2") Эксклюзивные права на реализацию
+                a.page-nav__item.page-nav__item_small(href="#section-3") Сферы поставки оборудования
+                a.page-nav__item.page-nav__item_small(href="#section-4") Участие в социальнозначимых проектах
+        section.container.pt-4.pb-4.blockquote-person
+            .row.no-gutters.align-items-center.border
+                .col-8
+                    .blockquote-gold
+                        p.text-light Могилевлифт партнер лидеров российского бизнеса и государственных структур: реализовано свыше 900 проектов в различных отраслях.
+                        p.text-light Мы способствуем созданию комфортных условий для жизни и работы в России. Уверенность в собственных силах и готовность к преодолению любых препятствий позволяет стабильно достигать поставленных целей и выполнять свои обязательства.
+                        p.text-bold.mt-2 Генеральный директор «Могилёвлифт»
+                .col-4
+                    img.img-fluid(src="../img/person.png" alt="" title="")
+        section.pt-3.pb-3.border-top
+            .container
+                .row.align-items-center
+                    .col-5
+                        h3 Партнёры «Могилёвлифт» всегда 
+                            span.text-gold довольны 
+                            | нашей работой.
+                    .col-7.text-right
+                        a.btn.btn_show-more(href="#partners" data-fancybox)
+                            span.btn_show-more__elem 
+                                .btn_show-more__text +
+                                .btn_show-more__circle
+                                .btn_show-more__circle
+                                .btn_show-more__circle
+                            | Показать больше
+        section.bg-light
+            .container.pt-1.pb-1
+                .partners.partners_preview
+                    .partners__item
+                        img.img-fluid(src="../logo/01.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/02.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/03.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/04.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/05.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/06.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/07.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/08.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/09.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/10.png")
+                    .partners__item
+                        img.img-fluid(src="../logo/11.png")
+        section.container.bg-lines.pt-3.pb-3
+            .slider.slider_inside-container
+                .slider__content#reviews-full
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                    a.slider__item(href="../img/demo.jpg" data-fancybox="review")
+                        img.img-fluid(src="../img/scan.png" alt="" title="")
+        section.container.border-top.bg-lines.pt-3.pb-3
+            p.subtitle Преимущества
+            h3.heading.mb-0 Сильные стороны компании
+            .row
+                .col-3.mt-3
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item.text-uppercase.text-gold.text-bold Оперативность
+                        .mt-1
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey 85% проектов сдаем раньше зафиксированных сроков
+                .col-3.mt-3
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item.text-uppercase.text-gold.text-bold Ответственность
+                        .mt-1
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey 85% проектов сдаем раньше зафиксированных сроков
+                .col-3.mt-3
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item.text-uppercase.text-gold.text-bold Фокус на клиентах
+                        .mt-1
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey 85% проектов сдаем раньше зафиксированных сроков
+                .col-3.mt-3
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item.text-uppercase.text-gold.text-bold Компетенции
+                        .mt-1
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+                        p.list_btn_show-more__circle__item.list_btn_show-more__circle__item_secondary.text-light.text-grey 85% проектов сдаем раньше зафиксированных сроков
+                .col-12.mt-3
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item.text-uppercase.text-gold.text-bold Профессионализм
+                        .mt-1
+                        p.text-light.text-grey Интеллект человека играет ключевую роль в создании комфортного и безопасного мира, способствуя прогрессу и повышению качества жизни. Мы поддерживаем наших сотрудников в их профессиональном развитии и поощряем честное открытое общение, создавая благоприятную атмосферу для работы. Их талант, знания и навыки позволяют достигать поставленных целей и задавать новые стандарты отрасли лифтового оборудования.
+            .row
+                .col-3.mt-1
+                    .img-hover
+                        img.img-fluid.img-hover__main(src="../img/before.png" alt="" title="")
+                        img.img-fluid.img-hover__secondary(src="../img/after.png" alt="" title="")
+                    p.img-descrition Ведущий специалист по&nbsp;проектированию
+                .col-3.mt-1
+                    .img-hover
+                        img.img-fluid.img-hover__main(src="../img/before.png" alt="" title="")
+                        img.img-fluid.img-hover__secondary(src="../img/after.png" alt="" title="")
+                    p.img-descrition Ведущий специалист по&nbsp;поставкам
+                .col-3.mt-1
+                    .img-hover
+                        img.img-fluid.img-hover__main(src="../img/before.png" alt="" title="")
+                        img.img-fluid.img-hover__secondary(src="../img/after.png" alt="" title="")
+                    p.img-descrition Главный инженер
+                .col-3.mt-1
+                    .img-hover
+                        img.img-fluid.img-hover__main(src="../img/before.png" alt="" title="")
+                        img.img-fluid.img-hover__secondary(src="../img/after.png" alt="" title="")
+                    p.img-descrition Старший менеджер по&nbsp;продажам
+        section.container.border-top.pt-3.pb-3
+            .row.align-items-center
+                .col-6
+                    h3.heading.mb-2 Эксклюзивные права на&nbsp;реализацию
+                    p.text-grey С 2005 года Могилевлифт является официальным диллером с эксклюзивными правами на реализацию оборудования. 
+                        | Мы предоставляем своим клиентам цены ниже, чем напрямую через завод.
+                    p.text-grey Могилёвлифтмаш — завод по производству лифтового оборудования. Он занимает 100 Га и в год производит в среднем 12 000 лифтового оборудования. Около 67% продаж приходится на Россию. Востребованность лифтового оборудования объясняется качеством, вариативностью и надежностью.
+                .col-6
+                    img.img-fluid(src="../img/demo.jpg" alt="" title="")
+            p.h5 Благодаря «Могилёвлифтмаш» <br/> мы&nbsp;можем предложить:
+            .row.mt-1.text-grey
+                .col-4
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item Более 300 моделей оборудовани
+                        p.list_btn_show-more__circle__item Соответствие ГОСТам и Регламентам
+                .col-4
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item Более 300 моделей оборудовани
+                        p.list_btn_show-more__circle__item Соответствие ГОСТам и Регламентам
+                .col-4
+                    .list.list_btn_show-more__circle
+                        p.list_btn_show-more__circle__item Более 300 моделей оборудовани
+                        p.list_btn_show-more__circle__item Соответствие ГОСТам и Регламентам
+        section.container.border-top.bg-lines.pt-3.pb-4
+            .row
+                .col-8
+                    p.subtitle Статистика
+                    h4 Взаимодействуем со всеми сферами деятельности
+                    p.text-grey Возможность поставлять лифтовое оборудование по нестандартным требованиям и техническим характеристикам, позволяет нам взаимодействовать со всеми сферами деятельности
+            .row
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/wheelchair.svg" alt="" title="")
+                        .stats_icon__title 358
+                        .stats__content лифтов оборудовали для&nbsp;инвалидов
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/architectonic.svg" alt="" title="")
+                        .stats_icon__title 37
+                        .stats__content лифтов оборудовали в&nbsp;больницах
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/store.svg" alt="" title="")
+                        .stats_icon__title 15
+                        .stats__content лифтов для&nbsp;торговых комплексов
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/home.svg" alt="" title="")
+                        .stats_icon__title 78
+                        .stats__content лифтов оборудовали для&nbsp;коттеджей
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/hostel.svg" alt="" title="")
+                        .stats_icon__title 31
+                        .stats__content лифт поставили для&nbsp;гостиниц
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/education.svg" alt="" title="")
+                        .stats_icon__title 43
+                        .stats__content лифта в&nbsp;учебных заведениях
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/building.svg" alt="" title="")
+                        .stats_icon__title 97
+                        .stats__content лифтов поставлено в&nbsp;жилые дома
+                .col-3.col-md-6.mt-3
+                    .stats.stats_icon
+                        .stats_icon__image
+                            img.img-fluid(src="../img/technology.svg" alt="" title="")
+                        .stats_icon__title 20
+                        .stats__content лифтов для&nbsp;атомных электростанций
+        section.border-top
+            .container
+                h2.heading.pt-3.pb-3 Участие в социальнозначимых проектах
+            .border-top
+                .container
+                    .row.align-items-center.justify-content-between
+                        .col-5.pt-1.pb-1
+                            p.h5 Подготовка Сочи к Олимпиаде
+                            .lines.mt-1.mb-1
+                            p.text-light.text-grey.text-small Интеллект человека играет ключевую роль в создании комфортного и безопасного мира, способствуя прогрессу и повышению качества жизни. Мы поддерживаем наших сотрудников в их профессиональном развитии и поощряем честное открытое общение, создавая благоприятную атмосферу для работы. Их талант, знания и навыки позволяют достигать поставленных целей и задавать новые стандарты отрасли лифтового оборудования.
+                        .col-6
+                            .slider.slider_gallery.slider_border
+                                .slider_border__content.gallery-slider
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+            .border-top
+                .container
+                    .row.align-items-center.justify-content-between
+                        .col-6
+                            .slider.slider_gallery.slider_border
+                                .slider_border__content.gallery-slider
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                                    a.slider__item.slider_gallery__item(href="../img/demo.jpg" data-fancybox="review")
+                                        img.img-fluid(src="../img/scan.png" alt="" title="")
+                        .col-5.pt-1.pb-1
+                            p.h5 Участие в Городских проектах
+                            .lines.mt-1.mb-1
+                            p.text-light.text-grey.text-small Интеллект человека играет ключевую роль в создании комфортного и безопасного мира, способствуя прогрессу и повышению качества жизни. Мы поддерживаем наших сотрудников в их профессиональном развитии и поощряем честное открытое общение, создавая благоприятную атмосферу для работы. Их талант, знания и навыки позволяют достигать поставленных целей и задавать новые стандарты отрасли лифтового оборудования.
+        section.container.border-top.pt-3.pb-3
+            .row.justify-content-center
+                .col-9.text-center
+                    p.heading.text-bold Бесплатная консультация специалиста уже через 
+                        span.text-decoration.text-gold 5
+                        |  минут
+                    a.btn.btn_main(href="#") 
+                        span.btn__inside Нужна консультация
+        include chunks/footer.pug
+
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        script(src="./js/jquery.fancybox.min.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
+        script(src="./js/jquery.inputmask.min.js")
+        script(src="./js/app.min.js")
