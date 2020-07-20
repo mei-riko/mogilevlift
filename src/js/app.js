@@ -87,6 +87,15 @@ $(document).ready(() =>{
 			
 			autoplay  : false,
     });
+    let $slickPhoto = $('[data-slider="slick"]');
+    $slickPhoto.slick({
+			slidesToShow: 6,
+			slidesToScroll: 6,
+			arrows      : true,
+			dots        : false,
+			
+			autoplay  : false,
+    });
   }
 	// Mobile Navbar
   $(".navbar-toggle#nav").on("click", function(){

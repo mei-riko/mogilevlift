@@ -1,0 +1,42 @@
+.stats_full{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        padding: map-get($map: $spacers, $key: 3) 0;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        max-width: 25%;
+    }
+    &__title{
+        font-size: 120px;
+        font-weight: $font-weight-bold;
+        line-height: 90px;
+        color: $gold;
+        background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        padding-right: map-get($map: $spacers, $key: 1);
+    }
+    &__content{
+        color: $white;
+        padding-right: $spacer/2; 
+        min-width: 150px;
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .stats_full{
+        &__item{
+            padding: map-get($map: $spacers, $key: 2) 0;
+        }
+        &__title{
+            font-size: 100px;
+            line-height: 90px;
+            padding-right: $spacer/2;
+        }
+    }
+}

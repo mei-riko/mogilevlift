@@ -1,0 +1,26 @@
+.btn_link{
+    position: relative;
+    padding-right: 30px;
+    font-size: map-get($map: $font-size, $key: md);
+    font-weight: $font-weight-bold;
+
+    &__arrow{
+        position: absolute;
+        right: 0;
+        top: calc(50% - 12px);
+
+        path{
+            fill: $gold;
+            transition: .4s;
+        }
+    }
+
+    &:hover, &:focus{
+        color: $dark-gold;
+        .btn_link__arrow{
+            path{
+                fill: $dark-gold;
+            }
+        }
+    }
+}

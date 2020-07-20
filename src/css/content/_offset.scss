@@ -38,6 +38,7 @@
 .pl{
     &-0{padding-left: map-get($spacers, 0);}
 }
+// 1920px
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .mt-xl{
         &-0{margin-top: map-get($spacers, 0);}
@@ -74,6 +75,7 @@
         &-4{padding-bottom: map-get($spacers, 4);}
     }
 }
+// 1400px
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .mt-lg{
         &-0{margin-top: map-get($spacers, 0);}
@@ -110,6 +112,7 @@
         &-4{padding-bottom: map-get($spacers, 4);}
     }
 }
+// 992px
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .mt-md{
         &-0{margin-top: map-get($spacers, 0);}
@@ -146,6 +149,7 @@
         &-4{padding-bottom: map-get($spacers, 4);}
     }
 }
+// 768px
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .mt-sm{
         &-0{margin-top: map-get($spacers, 0);}

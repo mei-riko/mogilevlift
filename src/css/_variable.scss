@@ -21,18 +21,19 @@ $grid-columns         : 12 !default;
 $grid-gutter-width    : 40px !default;
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1600px
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1400px,
+  xl: 1920px
 ) !default;
 
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
-  lg: 940px,
-  xl: 1360px
+  md: 740px,
+  lg: 960px,
+  xl: 1360px,
+  hd: 1640px
 ) !default;
 
 $font-family-base     : "Fira Sans",    "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;

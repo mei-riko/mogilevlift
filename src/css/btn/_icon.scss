@@ -1,0 +1,32 @@
+.btn_icon{
+    display: flex;
+    flex-wrap: nowrap;
+    &__content{
+        display: inline-block;
+        font-size: map-get($map: $font-size, $key: md);
+        line-height: map-get($map: $font-size, $key: xl);
+        font-weight: $font-weight-bold;
+        color: $white;
+        background-color: $border-color;
+        padding: 14px 30px;
+        transition: .4s;
+    }
+    &__img{
+        display: inline-block;
+        padding: 10px 4px;
+        height: 48px;
+        background-color: lighten($color: $border-color, $amount: 4);
+        path{
+            fill: $white;
+        }
+    }
+
+    &:hover, &:focus{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, .15), 0 0 0 10px rgba(255, 255, 255, .10), 0 0 0 15px rgba(255, 255, 255, .05);
+        .btn_icon__content{
+            background-color: lighten($color: $border-color, $amount: 8);
+            // color: $dark-grey;
+            // background-color: $grey;
+        }
+    }
+}

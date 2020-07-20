@@ -11,7 +11,7 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-        section.bg-lines.container.content-header.pt-4.pb-4
+        section.container.bg-lines.pt-4.pb-4.content-header
             .row
                 .col-6.col-md-12
                     p.subtitle Проекты
@@ -31,7 +31,7 @@ html(lang="ru")
                     a.btn.btn_link(href="#") Получить консультацию
                         svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
                             path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
-        section.pt-3.pb-4.container.bg-lines
+        section.container.bg-lines.pt-3.pb-4
             .row
                 .col-8
                     p.subtitle Проекты в цифрах
@@ -111,7 +111,7 @@ html(lang="ru")
                         img.img-fluid(src="../logo/10.png")
                     .partners__item
                         img.img-fluid(src="../logo/11.png")
-        section.pt-1.pb-4.container.bg-lines
+        section.container.bg-lines.pt-1.pb-4
             .row
                 .col-3.col-md-6.mt-3
                     a.preview.preview_project.text-center(href="#")

@@ -1,0 +1,35 @@
+.btn_main{
+    position: relative;
+    overflow: hidden;
+
+    background: none;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+
+    border-radius: 32px;
+    padding: 16px 36px;
+
+    &:hover,&:focus{
+        color: $white;
+
+        &:after{
+            transform: translateY(-5px);
+        }
+    }
+    &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: calc(100% + 15px);
+        background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+        transform: translateY(-15px);
+
+        transition: .4s;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}

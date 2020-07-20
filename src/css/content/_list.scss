@@ -49,3 +49,25 @@
         }
     }
 }
+
+.list_check{
+    &__item{
+        position: relative;
+        padding-left: map-get($map: $spacers, $key: 1);
+        margin-bottom: $spacer;
+        &:before{
+            content:'';
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: url("../img/check-gold.svg") no-repeat center/contain;
+
+            position: absolute;
+            left: 0;
+            top: 2px;              
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
