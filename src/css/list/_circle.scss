@@ -1,0 +1,40 @@
+.list_circle{
+    &__item{
+        position: relative;
+        padding-left: map-get($map: $spacers, $key: 1);
+        margin-bottom: 5px;
+        &:before{
+            content:'';
+            display: block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+
+            background: linear-gradient( 90deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
+
+            position: absolute;
+            left: 0;
+            top: .5rem;              
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &_secondary{
+            &:after{
+                content:'';
+                display: block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+    
+                background: $body-color;
+    
+                position: absolute;
+                left: 0;
+                top: .5rem;
+                transform: translate(2px, 2px);            
+            }
+        }
+    }
+}

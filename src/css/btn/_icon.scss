@@ -22,7 +22,7 @@
     }
 
     &:hover, &:focus{
-        box-shadow: 0 0 0 5px rgba(255, 255, 255, .15), 0 0 0 10px rgba(255, 255, 255, .10), 0 0 0 15px rgba(255, 255, 255, .05);
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .1), 0 0 0 5px rgba(255, 255, 255, .07), 0 0 0 9px rgba(255, 255, 255, .05);
         .btn_icon__content{
             background-color: lighten($color: $border-color, $amount: 8);
             // color: $dark-grey;

@@ -2,6 +2,7 @@
 .text-grey{color: $light-grey;}
 .text-black{color: $black;}
 .text-gold{color: $gold;}
+.text-dark-gold{color: $dark-gold;}
 
 .text-decoration{
     position: relative;
@@ -54,6 +55,12 @@
             opacity: .1;
             animation: opacity-4 1s ease infinite alternate;
             animation-delay: .9s;
+        }
+    }
+
+    &_light{
+        .text-decoration__elem{
+            border-color: $dark-gold;
         }
     }
 }

@@ -32,7 +32,7 @@ html(lang="ru")
                         svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
                             path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
         section.border-top.statistic
-            .container.pt-3.pb-3
+            .container.pt-2.pb-2
                 h2.h4 Лифты от «Могилёвлифт» это:
             .bg-secondary
                 .container
@@ -92,6 +92,20 @@ html(lang="ru")
                             img.img-fluid(src="../img/02.png" alt="" title="")
                         a.slider__item(href="../img/03.png" data-fancybox="review")
                             img.img-fluid(src="../img/03.png" alt="" title="")
+        section.border-top.border-bottom.pt-3.pb-3(style="overflow:hidden;")
+            .container
+                .row.justify-content-center
+                    .col-9.text-center
+                        p.heading.text-bold 
+                            span.p-relative(style="z-index:2;") Узнайте стоимость и выберите дизайн кабины 
+                            span.text-decoration
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__content.text-gold онлайн
+                        a.btn.btn_main(href="#") 
+                            span.btn__inside Конструктор лифта
         section.border-top.pt-1.pb-1
             .container.btn-container
                 .btn-group
@@ -119,51 +133,38 @@ html(lang="ru")
                             span.btn_icon__img
                                 svg(width="24" height="24" viewBox="0 0 24.00 24.00")
                                     path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
-        section.border-top.border-bottom.pt-3.pb-3(style="overflow:hidden;")
-            .container
-                .row.justify-content-center
-                    .col-9.text-center
-                        p.heading.text-bold 
-                            span.p-relative(style="z-index:2;") Узнайте стоимость и выберите дизайн кабины 
-                            span.text-decoration
-                                span.text-decoration__elem
-                                span.text-decoration__elem
-                                span.text-decoration__elem
-                                span.text-decoration__elem
-                                span.text-decoration__content.text-gold онлайн
-                        a.btn.btn_main(href="#") 
-                            span.btn__inside Конструктор лифта
-        section.container.bg-lines.pt-3.pb-3
-            .row
-                .col-6.col-md-12
-                    h1.heading Пассажирские лифты
-            .row.justify-content-end.mt-2
-                .col-9
-                    p.text-grey Lorem ipsum dolor sit amet. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Doloremque laudantium, totam rem aperiam. Voluptas sit, aspernatur aut perferendis doloribus asperiores repellat.. Libero tempore, cum soluta nobis. Animi, id est eligendi optio, cumque nihil impedit, quo minus.
-            .row.justify-content-end.mt-3
-                .col-3.col-md-12
-                    .list.list_check
-                        .list__item.list_check__item
-                            p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
-                            p.text-grey.text-light на&nbsp;электроэнергии
-                        .list__item.list_check__item
-                            p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
-                            p.text-grey.text-light вес всех пассажиров
-                .col-3.col-md-12.stats
-                    .list.list_check
-                        .list__item.list_check__item
-                            p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
-                            p.text-grey.text-light на&nbsp;электроэнергии
-                        .list__item.list_check__item
-                            p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
-                            p.text-grey.text-light вес всех пассажиров
-                .col-3.col-md-12.stats
-                    .list.list_check
-                        .list__item.list_check__item
-                            p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
-                            p.text-grey.text-light на&nbsp;электроэнергии
-                        .list__item.list_check__item
-                            p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
+        section.border-top
+            .container.bg-lines.pt-3.pb-3
+                .row
+                    .col-6.col-md-12
+                        h1.heading Пассажирские лифты
+                .row.justify-content-end.mt-2
+                    .col-9
+                        p.text-grey Lorem ipsum dolor sit amet. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Doloremque laudantium, totam rem aperiam. Voluptas sit, aspernatur aut perferendis doloribus asperiores repellat.. Libero tempore, cum soluta nobis. Animi, id est eligendi optio, cumque nihil impedit, quo minus.
+                .row.justify-content-end.mt-3
+                    .col-3.col-md-12
+                        .list.list_check
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
+                                p.text-grey.text-light на&nbsp;электроэнергии
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
+                                p.text-grey.text-light вес всех пассажиров
+                    .col-3.col-md-12.stats
+                        .list.list_check
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
+                                p.text-grey.text-light на&nbsp;электроэнергии
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
+                                p.text-grey.text-light вес всех пассажиров
+                    .col-3.col-md-12.stats
+                        .list.list_check
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
+                                p.text-grey.text-light на&nbsp;электроэнергии
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
                             p.text-grey.text-light вес всех пассажиров
         section.border-top.pt-3.pb-3
             .container

@@ -3,6 +3,11 @@
     box-shadow: none;
     border:none;
 
+    margin-right: 5px;
+    &:last-of-type{
+        margin-right: 0;
+    }
+    
     &:hover, &:focus{
         outline: none;
         box-shadow: none;
@@ -14,6 +19,8 @@
         position: relative;
         z-index: 2;
     }
+
+
 }
 
 .btn-container{

@@ -1,0 +1,37 @@
+.preview_news{
+    background-color: $white;
+    color: $body-color;
+    padding: $spacer/2;
+
+    height: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    overflow: hidden;
+    margin-bottom: $spacer;
+
+    &__image{
+        width: 100%;
+        height: 140px;
+        background: $grey no-repeat center / cover;
+
+        margin-bottom: $spacer/2;
+    }
+    &__subinfo{
+        color: $border-color;
+        font-size: 12px;
+    }
+    // Main News
+    &--has-image{
+        height: 280px;
+    }
+}
+
+a.preview_news__title{
+    color: $body-color;
+    &:hover, &:focus{
+        color: $dark-gold;
+    }
+}

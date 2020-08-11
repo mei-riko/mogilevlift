@@ -3,14 +3,295 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title Basic Page
+        title Index Page
 
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet")
         link(href='./css/style.css', rel='stylesheet')
 
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-
+        section.slider-container
+            .slider.slider_stats
+                .slider__item.slider_stats__item
+                    .slider_stats__value 3370
+                    p.slider_stats__offer уже более 3370 лифтов и лифтового оборудования поставлено по России
+                    a.btn.btn_secondary(href="#") 
+                            span.btn__inside Получить консультацию
+                .slider__item.slider_stats__item
+                    .slider_stats__value 15
+                    p.slider_stats__offer уже более 3370 лифтов и лифтового оборудования поставлено по России
+                    a.btn.btn_secondary(href="#") 
+                            span.btn__inside Получить консультацию
+                .slider__item.slider_stats__item 
+                    .slider_stats__value 16
+                    p.slider_stats__offer уже более 3370 лифтов и лифтового оборудования поставлено по России
+                    a.btn.btn_secondary(href="#") 
+                            span.btn__inside Получить консультацию
+        section.bg-light
+            .slider.slider_line#line-gallery
+                .slider__item.slider_line__item
+                    img.img-fluid(src="../demo/pic1.png" alt="" title="")
+                .slider__item.slider_line__item
+                    img.img-fluid(src="../demo/pic2.png" alt="" title="")
+                .slider__item.slider_line__item
+                    img.img-fluid(src="../demo/pic3.png" alt="" title="")
+                .slider__item.slider_line__item
+                    img.img-fluid(src="../demo/pic4.png" alt="" title="")
+                .slider__item.slider_line__item
+                    img.img-fluid(src="../demo/pic5.png" alt="" title="")
+        // Клиенты и отзывы
+        section.border-top
+            .container
+                .row.align-items-center.justify-content-between
+                    .col-7.pt-2.pb-2
+                        h3.heading Нам доверяют многие&nbsp;компании
+                        p.text-grey.text-light Репутация надежного, ответственного и опытного партнера, всегда выполняющего свои  обязательства, позволила компании Могилевлифт построить прочные отношения с компаниями разных масштабов. 
+                        .partners.partners_figure
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/1.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/2.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/3.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/4.png')")
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/5.png')")
+                            .partners_figure__line-break
+                            .partners_figure__item.border-gradient
+                                .partners_figure__inside(style="background-image:url('../logo/3.png')")
+                    .col-4
+                        .slider.slider_border
+                            p.slider_border__title.text-uppercase.text-bold.text-center Отзывы о сотрудничестве
+                            .slider_border__content#reviews
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
+        // Преимущества
+        .border-top
+            .container.pt-2.pb-2
+                h4.text-grey Клиенты ценят «Могилёвлифт» за:
+        section.border-top
+            .container
+                .row
+                    .col-4
+                        .advantage.advantage_numeric
+                            p.advantage__title.h2 Оперативность
+                                span.advantage_numeric__step 01
+                            ul.list.list_circle.text-grey
+                                li.list_circle__item Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+                                li.list_circle__item 85% проектов сдаем раньше зафиксированных сроков
+                    .col-4
+                        .advantage.advantage_numeric
+                            p.advantage__title.h2 Ответственность
+                                span.advantage_numeric__step 02
+                            ul.list.list_circle.text-grey
+                                li.list_circle__item Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+                                li.list_circle__item 85% проектов сдаем раньше зафиксированных сроков
+                    .col-4
+                        .advantage.advantage_numeric
+                            p.advantage__title.h2 Фокус на клиента
+                                span.advantage_numeric__step 03
+                            ul.list.list_circle.text-grey
+                                li.list_circle__item Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+                                li.list_circle__item 85% проектов сдаем раньше зафиксированных сроков
+        // Подтвержденные компетенции
+        section.border-top.pt-1.pb-1
+            .container
+                .row.align-items-center
+                    .col-3
+                        p.text-bold.text-grey.text-uppercase.text-spacing-50.lead Подтвержденные компетенции
+                    .col-9
+                        .btn-group
+                            .btn-group__item
+                                a.btn.btn_icon(href="#")
+                                    span.btn_icon__content CPO
+                                    span.btn_icon__img
+                                        svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                            path(d="M15,13h-1v-2.3l-6.7,6.7l-0.7-0.7l6.7-6.7H11V9h4V13z M20,16h-9l1-1h7V5H9v7l-1,1V4h12V16z M6,9v1H4v10h10v-2h1	v3H3V9H6z")
+                            .btn-group__item
+                                a.btn.btn_icon(href="#")
+                                    span.btn_icon__content ISO
+                                    span.btn_icon__img
+                                        svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                            path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                            .btn-group__item
+                                a.btn.btn_icon(href="#")
+                                    span.btn_icon__content Дилерский договор
+                                    span.btn_icon__img
+                                        svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                            path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                            .btn-group__item
+                                a.btn.btn_icon(href="#")
+                                    span.btn_icon__content Сертификаты
+                                    span.btn_icon__img
+                                        svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                            path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                            .btn-group__item
+                                a.btn.btn_icon(href="#")
+                                    span.btn_icon__content Соответствия
+                                    span.btn_icon__img
+                                        svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                            path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        // Лифтовое оборудование
+        section.border-top.border-bottom
+            .container.pt-3.pb-3
+                h2.heading Лифтовое оборудование
+                p.text-grey Применяем передовые современные технологии, механизмы и материалы.
+        section.container.pt-3.pb-2
+            .row
+                .col-3.mb-1
+                    a.preview.preview_product.preview_product--link(href="product.html")
+                        p.preview__title.preview_project__title.text-uppercase Пассажирские лифты
+                        img.preview_produc.preview_project__subinfot__image(src="../demo/01.png")
+                .col-3.mb-1
+                    a.preview.preview_product.preview_product--link(href="product.html")
+                        p.preview__title.preview_project__title.text-uppercase Больничные лифты
+                        img.preview_produc.preview_project__subinfot__image(src="../demo/02.png")
+                .col-3.mb-1
+                    a.preview.preview_product.preview_product--link(href="product.html")
+                        p.preview__title.preview_project__title.text-uppercase Грузовые лифты
+                        img.preview_produc.preview_project__subinfot__image(src="../demo/03.png")
+                .col-3.mb-1
+                    a.preview.preview_product.preview_product--link(href="product.html")
+                        p.preview__title.preview_project__title.text-uppercase Энергосберегающие лифты
+                        img.preview_produc.preview_project__subinfot__image(src="../demo/04.png")
+            p.text-center.text-grey Ознакомьтесь со всеми моделями лифтов 
+            p.text-center
+                a.btn.btn_action(href="#") 
+                    span.btn_action__inside Скачать каталог
+        // Услуги
+        section.border-top.pt-1.pb-3
+            .container
+                .row.align-items-center
+                    .col-3.mt-1
+                        h2.h1 Услуги компании
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 01
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Проектирование
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 02
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Монтаж
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 03
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Строительство
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 04
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Ремонт и&nbsp;замена
+                            p.preview__subinfo.preview_project__subinfo  капитальный ремонт и&nbsp;замена
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 05
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Продажа
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 06
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Консультации
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 07
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Регистрация
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 08
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Демонтаж
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.mt-1
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 09
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Лизинг
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+        // Реализованные проекты
+        aside.bg-separate.border-top.pt-3.pb-3
+            .container
+                .row
+                    .col-6 
+                        h4.h3 Реализованные проекты
+                    .col-6.text-right 
+                        a.text-uppercase(href="#") Все проекты
+                .row
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__logo(style="background-image:url('../logo/01.png')")
+                            .preview__title.preview_project__title Олимпийский парк: проектирование и монтаж
+                            .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__logo(style="background-image:url('../logo/04.png')")
+                            .preview__title.preview_project__title Больница №23: монтаж, проектирование, поставка
+                            .preview__subinfo.preview_project__subinfo г. СПб, пр. Ветеранов, д. 14
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__image(style="background-image:url('../demo/demo-small.png')")
+                            .preview__title.preview_project__title Дом в ЖК “Кристал” проектирование и монтаж
+                            .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__logo(style="background-image:url('../logo/07.png')")
+                            .preview__title.preview_project__title Олимпийский парк: проектирование и монтаж
+                            .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
+        section.pt-1.pb-3.bg-white.text-black(style="overflow:hidden;")
+            .container
+                .row.justify-content-center
+                    .col-9.text-center
+                        p.heading.text-bold 
+                            span.p-relative(style="z-index:2;") Рассчитаем стоимость лифтового оборудования за  
+                            span.text-decoration.text-decoration_light
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__content.text-dark-gold 30
+                            span.p-relative(style="z-index:2;")  минут
+                        p.lead.text-light.mb-2(style="width:500px;max-width:100%;margin-left:auto;margin-right:auto;") Заполните и отправьте форму. Менеджер перезвонит и предложит оптимальный вариант.
+                        a.btn.btn_action(href="#") 
+                            span.btn_action__inside.btn_action__inside--light Скачать опросный лист
+                        a.btn.btn_main(href="#") 
+                            span.btn__inside Отправить форму
+        aside.bg-light.pt-3.pb-1
+            .container
+                .row
+                    .col-4
+                        .preview.preview_news.preview_news--has-image
+                            .preview_news__image(style="background-image:url('../demo/pic1.png')")
+                            a.preview__title.preview_news__title(href="#") Разработка технического задания на проектирование и поставка лифтового оборудования для Ленинградской АЭС-2
+                            .preview_news__subinfo 06.06.2020
+                    .col-8
+                        .row
+                            .col-6
+                                .preview.preview_news
+                                    a.preview__title.preview_news__title(href="#") Подъемная платформа/ лифт для дома с электрическим приводом - AXEL (Италия)
+                                    .preview_news__subinfo 06.06.2020
+                            .col-6
+                                .preview.preview_news
+                                    a.preview__title.preview_news__title(href="#") Пассажирский гидравлический лифт KLEEMANN. Лифт в наличии на складе в Санкт-Петербурге
+                                    .preview_news__subinfo 06.06.2020
+                            .col-6
+                                .preview.preview_news
+                                    a.preview__title.preview_news__title(href="#") Сдача лифтового оборудования Инженерному центру в марте
+                                    .preview_news__subinfo 06.06.2020
         include chunks/footer.pug
+
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        script(src="./js/jquery.fancybox.min.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
         script(src="./js/jquery.inputmask.js")
         script(src="./js/app.min.js")

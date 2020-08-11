@@ -7,7 +7,7 @@
 
     &__inside{
         display: block;
-        padding: 16px 36px;
+        padding: 14px 36px;
         margin: 2px;
         border-radius: 32px;
 
@@ -17,11 +17,20 @@
         background-color: $body-color;
 
         transition: 0.4s;
+        
+        &--light{
+            color: $body-color;
+    
+            background-color: $white;
+        }
     }
-
     &:hover, &:focus{
         .btn_action__inside{
             background-color: rgba(25,26,30,0.8);
+            &--light{
+                background-color: $white;
+                color: $dark-gold;
+            }
         }
     }
 }

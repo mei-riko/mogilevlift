@@ -1,0 +1,16 @@
+.advantage_numeric{
+    padding: map-get($map: $spacers, $key: 3) map-get($map: $spacers, $key: 1);
+    padding-left: map-get($map: $spacers, $key: 2) ;
+    border-left: 1px solid $border-color;
+    
+    &__step{
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(-30px) translateY(15px);
+        color: $light-grey;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+}

@@ -60,7 +60,24 @@ $(document).ready(() =>{
   })
   // Слайдер
 	if( $('.slider').length > 0 ){
-		let $slickReview = $('#reviews');
+    // Stats Slider
+    let $slickStats = $('.slider_stats');
+    $slickStats.slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows      : true,
+			dots        : false,
+			infinite: true,
+      draggable: true,
+      // prevArrow: '<div class="slider_stats__prev"></div>',
+      // nextArrow: '<div class="slider_stats__next"></div>',
+      variableWidth: true,
+      focusOnSelect: true,
+      swipeToSlide: true,
+			autoplay  : false,
+    });
+    // Review Block Col
+    let $slickReview = $('#reviews');
 		$slickReview.slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
@@ -69,6 +86,7 @@ $(document).ready(() =>{
 			
 			autoplay  : false,
     });
+    // Review Block Full Screen
     let $slickReviewFull = $('#reviews-full');
 		$slickReviewFull.slick({
 			slidesToShow: 6,
@@ -95,6 +113,17 @@ $(document).ready(() =>{
 			dots        : false,
 			
 			autoplay  : false,
+    });
+    // Gallery Full Screen
+    let $slickFullScreen = $('#line-gallery');
+		$slickFullScreen.slick({
+			slidesToShow: 4,
+			slidesToScroll: 2,
+			arrows      : false,
+			dots        : false,
+			
+      autoplay  : true,
+      autoplaySpeed: 5000,
     });
   }
 	// Mobile Navbar

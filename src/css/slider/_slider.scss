@@ -18,7 +18,11 @@
             }
         }
     }
-
+    // Overfow Hidden
+    &-container{
+        overflow: hidden;
+    }
+    // Slick
     .slick-dots{
         li{
             background-color: $border-color;

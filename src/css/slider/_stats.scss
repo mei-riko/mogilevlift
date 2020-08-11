@@ -1,0 +1,37 @@
+.slider_stats{
+
+    overflow: visible;
+    max-width: 640px;
+    margin-left: calc(50% - 320px);
+
+    .slick-list{
+        overflow: visible;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+    }
+
+    &__item{
+        margin: 0;
+        text-align: center;
+        padding: 90px 120px;
+        width: 100%;
+        max-width: 640px;
+        transition: .4s;
+
+        &:not(.slick-active){
+            filter: grayscale(1) brightness(.5) opacity(0.5);
+        }
+    }
+    &__value{
+        color: $light-grey;
+        font-size: 150px;
+        font-weight: bold;
+        line-height: 120px;
+    }
+    &__offer{
+        color: $light-grey;
+        width: 240px;
+        max-width: 100%;
+        margin: 15px auto;
+    }
+}

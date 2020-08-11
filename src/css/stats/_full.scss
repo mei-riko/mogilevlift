@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 
     &__item{
-        padding: map-get($map: $spacers, $key: 3) 0;
+        padding: map-get($map: $spacers, $key: 1) 0 0;
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
@@ -31,7 +31,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .stats_full{
         &__item{
-            padding: map-get($map: $spacers, $key: 2) 0;
+            padding: map-get($map: $spacers, $key: 1) 0;
         }
         &__title{
             font-size: 100px;

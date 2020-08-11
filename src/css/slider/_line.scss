@@ -1,0 +1,10 @@
+
+.slider_line{
+    // padding: 0 30px;
+    .slick-list{
+        padding: 0 180px;
+    }
+    &__item{
+        margin: $spacer/3 $spacer/6;
+    }
+}

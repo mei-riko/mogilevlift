@@ -18,11 +18,17 @@ html,body {
     background-size: contain;
     background-position: top center;
 }
+.bg-white{
+    background-color: $white;
+}
 .bg-light{
     background-color: $grey;
 }
 .bg-secondary{
     background-color: $border-color;
+}
+.bg-separate{
+    background: linear-gradient(to bottom, $body-color 60%, $white 40%);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -53,10 +59,10 @@ h1, h2, h3, h4, h5, h6,
 p {
     font-size: 1rem;
     margin-top: 0;
-    margin-bottom: map-get($spacers, 1);
+    margin-bottom: $spacer/2;
 
     &:last-child{
-        margin-bottom: map-get($spacers, 0);
+        margin-bottom: 0;
     }
 }
 ol, ul{
