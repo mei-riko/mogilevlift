@@ -12,16 +12,17 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <header class="header">
       <div class="header__element"></div>
+      <div class="navbar-overlay"></div>
       <div class="container">
-        <div class="row align-items-end">
-          <div class="col-2"><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
-          <div class="col-8"><a class="navbar-toggle" id="nav" data-trigger="click"></a>
-            <div class="navbar-collapse">
-              <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
-              <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
-            </div>
+        <div class="row align-items-end align-items-sm-center">
+          <div class="col-2 col-xs-8 col-md-7 d-flex align-items-center justify-content-sm-between"><a class="navbar-toggle" id="nav" data-trigger="click"></a><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
+          <div class="col-8 navbar-collapse">
+            <div class="navbar-close"></div>
+            <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
+            <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
+            <div class="d-none d-sm-block"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a></div>
           </div>
-          <div class="col-2 text-right"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-sm-none">лифта</span></span></a></div>
+          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-md-none" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-lg-none" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-xs-none d-md-inline d-lg-none">лифта</span></span></a></div>
         </div>
       </div>
     </header><a class="scrollTop" id="scrollTop" href="#" data-trigger="click"></a>
@@ -44,16 +45,16 @@
           <h1 class="h2 text-bold">Выполненные проекты по&nbsp;поставке лифтов и&nbsp;оборудования</h1>
         </div>
       </div>
-      <div class="row justify-content-end mt-2 mb-2">
-        <div class="col-3 col-md-12 stats">
+      <div class="row justify-content-end mt-3 mb-2 mt-md-1 mb-md-1">
+        <div class="col-3 col-md-4 col-xs-12 stats">
           <p class="stats__title">15% экономии</p>
           <p class="stats__content">бюджета в&nbsp;среднем у&nbsp;наших клиентов</p>
         </div>
-        <div class="col-3 col-md-12 stats">
+        <div class="col-3 col-md-4 col-xs-12 stats mt-xs-1">
           <p class="stats__title">900 проектов</p>
           <p class="stats__content">под&nbsp;ключ выполнено по&nbsp;России</p>
         </div>
-        <div class="col-3 col-md-12 stats">
+        <div class="col-3 col-md-4 col-xs-12 stats mt-xs-1">
           <p class="stats__title">3370&nbsp;лифтов</p>
           <p class="stats__content">поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России</p>
         </div>
@@ -65,65 +66,65 @@
             </svg></a></div>
       </div>
     </section>
-    <section class="container bg-lines pt-3 pb-4">
+    <section class="container bg-lines pt-3 pb-4 pt-sm-1 pb-sm-1">
       <div class="row">
-        <div class="col-8">
+        <div class="col-8 col-md-12">
           <p class="subtitle">Проекты в цифрах</p>
           <h2 class="h4">Заказчики «Могилёвлифт» всегда довольны работой</h2>
           <p class="text-grey">Возможность поставлять лифтовое оборудование по нестандартным требованиям и техническим характеристикам, позволяет нам взаимодействовать со всеми сферами деятельности</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/wheelchair.svg" alt="" title=""/></div>
             <div class="stats_icon__title">358</div>
             <div class="stats__content">лифтов оборудовали для&nbsp;инвалидов</div>
           </div>
         </div>
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/architectonic.svg" alt="" title=""/></div>
             <div class="stats_icon__title">37</div>
             <div class="stats__content">лифтов оборудовали в&nbsp;больницах</div>
           </div>
         </div>
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/store.svg" alt="" title=""/></div>
             <div class="stats_icon__title">15</div>
             <div class="stats__content">лифтов для&nbsp;торговых комплексов</div>
           </div>
         </div>
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/home.svg" alt="" title=""/></div>
             <div class="stats_icon__title">78</div>
             <div class="stats__content">лифтов оборудовали для&nbsp;коттеджей</div>
           </div>
         </div>
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/hostel.svg" alt="" title=""/></div>
             <div class="stats_icon__title">31</div>
             <div class="stats__content">лифт поставили для&nbsp;гостиниц</div>
           </div>
         </div>
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/education.svg" alt="" title=""/></div>
             <div class="stats_icon__title">43</div>
             <div class="stats__content">лифта в&nbsp;учебных заведениях</div>
           </div>
         </div>
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/building.svg" alt="" title=""/></div>
             <div class="stats_icon__title">97</div>
             <div class="stats__content">лифтов поставлено в&nbsp;жилые дома</div>
           </div>
         </div>
-        <div class="col-3 col-md-6 mt-3">
+        <div class="col-3 col-md-4 mt-3 col-sm-6 mt-sm-1">
           <div class="stats stats_icon">
             <div class="stats_icon__image"><img class="img-fluid" src="../img/technology.svg" alt="" title=""/></div>
             <div class="stats_icon__title">20</div>
@@ -133,46 +134,48 @@
       </div>
     </section>
     <section class="bg-light">
-      <div class="container pt-1 pb-1">       
-        <div class="partners partners_preview">
-          <div class="partners__item"><img class="img-fluid" src="../logo/01.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/02.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/03.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/04.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/05.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/06.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/07.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/08.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/09.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/10.png"/></div>
-          <div class="partners__item"><img class="img-fluid" src="../logo/11.png"/></div>
+      <div class="container pt-1 pb-1">
+        <div class="partners-container">
+          <div class="partners partners_preview">
+            <div class="partners__item"><img class="img-fluid" src="../logo/01.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/02.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/03.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/04.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/05.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/06.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/07.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/08.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/09.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/10.png"/></div>
+            <div class="partners__item"><img class="img-fluid" src="../logo/11.png"/></div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="container bg-lines pt-1 pb-4">
+    <section class="container bg-lines pt-1 pb-4 pt-md-0 pb-xs-2 pb-md-2">
       <div class="row">
-        <div class="col-3 col-md-6 mt-3"><a class="preview preview_project text-center" href="#">
+        <div class="col-3 col-lg-4 col-md-6 mt-3 col-xs-12 mt-xs-1 mt-md-2"><a class="preview preview_project text-center" href="#">
             <div class="preview_project__logo" style="background-image:url('../logo/01.png')"></div>
             <div class="preview__title">Олимпийский парк: проектирование и монтаж</div>
             <div class="preview__subinfo">г. Сочи, бул. Жуковского, д. 32</div></a></div>
-        <div class="col-3 col-md-6 mt-3"><a class="preview preview_project text-center" href="#">
+        <div class="col-3 col-lg-4 col-md-6 mt-3 col-xs-12 mt-xs-1 mt-md-2"><a class="preview preview_project text-center" href="#">
             <div class="preview_project__logo" style="background-image:url('../logo/04.png')"></div>
             <div class="preview__title">Больница №23: монтаж, проектирование, поставка</div>
             <div class="preview__subinfo">г. СПб, пр. Ветеранов, д. 14</div></a></div>
-        <div class="col-3 col-md-6 mt-3"><a class="preview preview_project text-center" href="#">
+        <div class="col-3 col-lg-4 col-md-6 mt-3 col-xs-12 mt-xs-1 mt-md-2"><a class="preview preview_project text-center" href="#">
             <div class="preview_project__image" style="background-image:url('../img/demo-small.png')"></div>
             <div class="preview__title">Дом в ЖК “Кристал” проектирование и монтаж</div>
             <div class="preview__subinfo">г. Сочи, бул. Жуковского, д. 32</div></a></div>
-        <div class="col-3 col-md-6 mt-3"><a class="preview preview_project text-center" href="#">
+        <div class="col-3 col-lg-4 col-md-6 mt-3 col-xs-12 mt-xs-1 mt-md-2"><a class="preview preview_project text-center" href="#">
             <div class="preview_project__logo" style="background-image:url('../logo/07.png')"></div>
             <div class="preview__title">Олимпийский парк: проектирование и монтаж</div>
             <div class="preview__subinfo">г. Сочи, бул. Жуковского, д. 32</div></a></div>
-        <div class="col-3 col-md-6 mt-3"><a class="preview preview_project text-center" href="#">
+        <div class="col-3 col-lg-4 col-md-6 mt-3 col-xs-12 mt-xs-1 mt-md-2"><a class="preview preview_project text-center" href="#">
             <div class="preview_project__image" style="background-image:url('../img/demo-small.png')"></div>
             <div class="preview__title">Дом в ЖК “Кристал” проектирование и монтаж</div>
             <div class="preview__subinfo">г. Сочи, бул. Жуковского, д. 32</div></a></div>
       </div>
-      <div class="mt-3">
+      <div class="mt-3 mt-sm-1">
         <ul class="pagination">
           <li class="pagination__item"><a class="pagination__link" href="?page=1">1</a></li>
           <li class="pagination__item"><span class="pagination__active">2</span></li>
@@ -182,9 +185,9 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container bg-lines pt-3 pb-3">
+      <div class="container bg-lines pt-3 pb-3 pt-sm-1 pb-sm-1">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Лифты</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Коттеджные</a></div>
@@ -199,7 +202,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Грузовые для кафе и ресторанов</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Подъемники</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Платформы для инвалидов</a></div>
@@ -210,7 +213,7 @@
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Запчасти</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 mb-xs-1 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Услуги</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Проектирование</a></div>
@@ -224,7 +227,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Лизинг</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Документы</a></div>
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">О компании</a></div>
@@ -239,13 +242,13 @@
     <div class="subfooter">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 col-sm-12 text-sm-center">
             <p class="subfooter__text">© 2005-2020. Все права защищены.</p>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-4 text-center col-sm-12">
             <p class="subfooter__text">Могилевлифт - поставки лифтов, подъемников, запчастей.</p>
           </div>
-          <div class="col-4 text-right">
+          <div class="col-4 text-right col-sm-12 text-sm-center">
             <p class="subfooter__text">Сайт разработан <a class="subfooter__link" href="https://websoho.ru">студией «SOHO»</a></p>
           </div>
         </div>

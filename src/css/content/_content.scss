@@ -19,13 +19,16 @@
 
     p{
         color: $light-grey;
+        line-height: 1.6;
+    }
+    .blockquote, blockquote{
+        line-height: 1.6;
     }
     img{
         @extend .img-fluid;
     }
     ul{
         @extend .list;
-        // @extend .list_circle;
         color: $light-grey;
         li{
             @extend .list_circle__item;
@@ -49,6 +52,7 @@
         &__title{
             font-size: 1.7rem;
             font-weight: 300;
+            margin-bottom: $spacer/3;
         }
         &__item{
             margin-bottom: $spacer/3;
@@ -65,4 +69,28 @@
             }
         }
     }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .content{
+        @extend .pt-xl-2;
+        @extend .pb-xl-2;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .content{
+        @extend .pt-sm-1;
+        @extend .pb-sm-1;
+        &__image{
+            @extend .mb-sm-1;
+            height: 240px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .content{
+        &__image{
+            height: 140px;
+        }
+    }
+
 }

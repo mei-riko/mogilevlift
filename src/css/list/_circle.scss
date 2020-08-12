@@ -38,3 +38,16 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .list_circle{
+        &__item{
+            padding-left: $spacer/2;
+            &:before{
+                width: 6px;
+                height: 6px;
+                top: .5rem;              
+            }
+        }
+    }
+}

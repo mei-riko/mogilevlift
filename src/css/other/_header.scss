@@ -27,14 +27,31 @@
         }
     }
 }
-
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .header{
+        &__phone{
+            font-size: 18px;
+        }
+        &__btn{
+            font-size: 13px;
+            margin-top: $spacer/4;
+            .btn_action__inside{
+                padding: 8px 16px;
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
     .header{
         &__btn{
-            font-size: map-get($font-size, 'sm');
-            .btn_action__inside{
-                padding: 10px 20px;
-            }
+            margin-top: 0;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .header{
+        &__phone{
+            font-size: 24px;
         }
     }
 }

@@ -26,8 +26,46 @@
         position: unset;
         padding: $spacer map-get($map: $spacers, $key: 2);
     }
-    .slick-prev{
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .slider_border{
+        &__title{
+            padding: $spacer;
+        }
     }
-    .slick-next{
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider_border{
+        padding: 0 $spacer;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        border-top: 1px solid $border-color;
+
+        &__item{
+            padding: $spacer 0;
+        }
+
+        .slick-prev{
+            left: 10px;
+            top: calc(50% - 30px);
+        }
+        .slick-next{
+            right: 10px;
+            top: calc(50% - 30px);
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider_border{
+        &__title{
+            padding: $spacer/2;
+        }
+        &__item{
+            padding: $spacer/2 0;
+        }
+        .slick-dots{
+            padding: $spacer/2;
+        }
     }
 }

@@ -75,3 +75,33 @@ a.preview_service{
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .preview_service{
+        padding-left: 30px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .preview_service{
+        height: 90px;
+        padding-left: 60px;
+        margin-top: $spacer/2;
+
+        &__num{
+            line-height: 90px;
+            font-size: 60px;
+            left: -18px;
+        }
+        &__title{
+            font-size: 16px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .preview_service{
+        padding-left: 100px;
+        &__num{
+            line-height: 90px;
+            left: $spacer/2;
+        }
+    }
+}

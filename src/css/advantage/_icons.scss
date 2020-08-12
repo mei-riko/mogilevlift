@@ -83,3 +83,22 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .advantage_icon{
+        padding-left: $spacer;
+        &__image-block{
+            display: none;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .advantage_icon{
+        padding-left: 100px;
+
+        &__image-block{
+            display: block;
+            bottom: $spacer/2;
+            left: $spacer/2;
+        }
+    }
+}

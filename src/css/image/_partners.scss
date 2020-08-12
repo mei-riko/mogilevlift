@@ -14,6 +14,7 @@
         padding: 0 5px;
     }
 
+    // Style Block
     &_figure{
         margin: 0;
         &__item{
@@ -49,11 +50,39 @@
             flex: 0 0 calc(100%/3);
             width: calc(100%/3);
         }
-
-        
     }
-
     &_preview{
         flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    &-container{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .partners{
+        &_preview{
+            width: 1040px;
+            margin-bottom: $spacer/3;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .partners{
+        &_figure{
+            &__item{
+                flex: 0 0 50%;
+                width: 50%;
+                height: 60px;
+            }
+            &__inside{
+                background-size: 70px;
+            }
+            &__line-break{
+                display: none;
+            }
+        }
     }
 }

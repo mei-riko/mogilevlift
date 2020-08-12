@@ -8,3 +8,15 @@
         @extend .heading;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .content-header{
+        @extend .pt-xl-2;
+        @extend .pb-xl-2;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .content-header{
+        @extend .pt-sm-1;
+        @extend .pb-sm-1;
+    }
+}

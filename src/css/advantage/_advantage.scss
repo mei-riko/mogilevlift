@@ -12,3 +12,29 @@
         padding: 0;
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .advantage{
+        &__title{
+            font-size: 1rem;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .advantage{
+        &__title{
+            font-weight: 400;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .advantage{
+        padding: $spacer/2;
+
+        &__title{
+            font-weight: 700;
+        }
+        &-container{
+            padding: 15px;
+        }
+    }
+}

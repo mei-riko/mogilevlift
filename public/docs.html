@@ -12,16 +12,17 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <header class="header">
       <div class="header__element"></div>
+      <div class="navbar-overlay"></div>
       <div class="container">
-        <div class="row align-items-end">
-          <div class="col-2"><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
-          <div class="col-8"><a class="navbar-toggle" id="nav" data-trigger="click"></a>
-            <div class="navbar-collapse">
-              <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
-              <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
-            </div>
+        <div class="row align-items-end align-items-sm-center">
+          <div class="col-2 col-xs-8 col-md-7 d-flex align-items-center justify-content-sm-between"><a class="navbar-toggle" id="nav" data-trigger="click"></a><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
+          <div class="col-8 navbar-collapse">
+            <div class="navbar-close"></div>
+            <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
+            <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
+            <div class="d-none d-sm-block"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a></div>
           </div>
-          <div class="col-2 text-right"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-sm-none">лифта</span></span></a></div>
+          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-md-none" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-lg-none" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-xs-none d-md-inline d-lg-none">лифта</span></span></a></div>
         </div>
       </div>
     </header><a class="scrollTop" id="scrollTop" href="#" data-trigger="click"></a>
@@ -43,7 +44,7 @@
           <p class="subtitle">Документы</p>
           <h1 class="h2 text-bold">Ab illo inventore veritatis et harum quidem rerum facilis est</h1>
         </div>
-        <div class="col-12 col-md-12">
+        <div class="col-12 col-md-12 mt-1">
           <p class="text-grey text-light">Lorem ipsum dolor sit amet. Est, omnis voluptas sit, amet, consectetur, adipisci velit, sed quia dolor. Soluta nobis est eligendi optio, cumque nihil impedit, quo minus. Velit esse, quam nihil impedit, quo voluptas sit aspernatur. Ea commodi autem vel illum. Reiciendis voluptatibus maiores alias consequatur aut fugit, sed quia dolor repellendus. Illo inventore veritatis et dolorum fuga veritatis et quas. Vel illum, qui ratione voluptatem sequi nesciunt.</p>
         </div>
       </div>
@@ -51,56 +52,56 @@
     <nav class="page-nav p-sticky">
       <div class="container"><a class="page-nav__item" href="#section-1">Пример блока с jpg</a><a class="page-nav__item" href="#section-2">Пример блока с pdf</a><a class="page-nav__item" href="#section-3">Пример блока с jpg+pdf</a></div>
     </nav>
-    <section class="pt-3 pb-3" id="section-1">
+    <section class="pt-3 pb-2 pt-sm-1 pb-sm-0" id="section-1">
       <div class="container">
         <p class="subtitle">Пример блока с jpg</p>
         <div class="row">
-          <div class="col-3 col-md-6">
-            <div class="docs"><a class="docs__img" data-fancybox="data-fancybox" href="../img/demo-doc.png"><img class="img-fluid" src="../img/demo-doc.png" alt="" title=""/></a>
+          <div class="col-3 col-lg-4 col-md-6 col-xs-12 mb-1">
+            <div class="docs"><a class="docs__img" data-fancybox="data-fancybox" href="../demo/demo-doc.png"><img class="img-fluid" src="../demo/demo-doc.png" alt="" title=""/></a>
               <p class="docs__title">2015 Дилерский договор 001</p>
             </div>
           </div>
-          <div class="col-3 col-md-6">
+          <div class="col-3 col-lg-4 col-md-6 col-xs-12 mb-1">
             <div class="docs">
-              <div class="docs__img"><img class="img-fluid" src="../img/demo-doc.png" alt="" title=""/></div>
+              <div class="docs__img"><img class="img-fluid" src="../demo/demo-doc.png" alt="" title=""/></div>
               <p class="docs__title">Благодарственное письмо 2010&nbsp;г. Могилёвлифт</p>
             </div>
           </div>
-          <div class="col-3 col-md-6">
+          <div class="col-3 col-lg-4 col-md-6 col-xs-12 mb-1">
             <div class="docs">
-              <div class="docs__img"><img class="img-fluid" src="../img/demo-doc.png" alt="" title=""/></div>
+              <div class="docs__img"><img class="img-fluid" src="../demo/demo-doc.png" alt="" title=""/></div>
               <p class="docs__title">Росжилкоммун сертификация 2010&nbsp;г. Могилёвлифт</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="border-top pt-3 pb-3" id="section-2">
+    <section class="border-top pt-3 pb-2 pt-sm-1 pb-sm-0" id="section-2">
       <div class="container">
         <p class="subtitle">Пример блока с pdf</p>
         <div class="row">
-          <div class="col-4 col-md-6 docs-pdf">
+          <div class="col-4 col-md-6 docs-pdf col-xs-12 mb-1">
             <p class="docs-pdf__title">Лицензия Росатом на сооружение</p>
             <p><a class="btn btn_link" href="#">Просмотреть pdf-файл
                 <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
                   <path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z "></path>
                 </svg></a></p>
           </div>
-          <div class="col-4 col-md-6 docs-pdf">
+          <div class="col-4 col-md-6 docs-pdf col-xs-12 mb-1">
             <p class="docs-pdf__title">Сертификат ГОСТ 56002-2014</p>
             <p><a class="btn btn_link" href="#">Просмотреть pdf-файл
                 <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
                   <path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z "></path>
                 </svg></a></p>
           </div>
-          <div class="col-4 col-md-6 docs-pdf">
+          <div class="col-4 col-md-6 docs-pdf col-xs-12 mb-1">
             <p class="docs-pdf__title">Лицензия Росатом на проектирование</p>
             <p><a class="btn btn_link" href="#">Просмотреть pdf-файл
                 <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
                   <path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z "></path>
                 </svg></a></p>
           </div>
-          <div class="col-4 col-md-6 docs-pdf mt-2">
+          <div class="col-4 col-md-6 docs-pdf col-xs-12 mb-1">
             <p class="docs-pdf__title">Лицензия Росатом на проектирование</p>
             <p><a class="btn btn_link" href="#">Просмотреть pdf-файл
                 <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
@@ -110,49 +111,49 @@
         </div>
       </div>
     </section>
-    <section class="border-top pt-3 pb-3" id="section-3">
+    <section class="border-top pt-3 pb-2 pt-sm-1 pb-sm-0" id="section-3">
       <div class="container">
         <p class="subtitle">Пример блока с jpg+pdf</p>
         <div class="row">
-          <div class="col-3 col-md-6">
-            <div class="docs"><a class="docs__img" data-fancybox="data-fancybox" href="../img/demo-doc.png"><img class="img-fluid" src="../img/demo-doc.png" alt="" title=""/></a>
+          <div class="col-3 col-lg-4 col-md-6 col-xs-12 mb-1">
+            <div class="docs"><a class="docs__img" data-fancybox="data-fancybox" href="../demo/demo-doc.png"><img class="img-fluid" src="../demo/demo-doc.png" alt="" title=""/></a>
               <p class="docs__title">2015 Дилерский договор 001</p>
             </div>
           </div>
-          <div class="col-3 col-md-6">
+          <div class="col-3 col-lg-4 col-md-6 col-xs-12 mb-1">
             <div class="docs">
-              <div class="docs__img"><img class="img-fluid" src="../img/demo-doc.png" alt="" title=""/></div>
+              <div class="docs__img"><img class="img-fluid" src="../demo/demo-doc.png" alt="" title=""/></div>
               <p class="docs__title">Благодарственное письмо 2010&nbsp;г. Могилёвлифт</p>
             </div>
           </div>
-          <div class="col-3 col-md-6">
+          <div class="col-3 col-lg-4 col-md-6 col-xs-12 mb-1">
             <div class="docs">
-              <div class="docs__img"><img class="img-fluid" src="../img/demo-doc.png" alt="" title=""/></div>
+              <div class="docs__img"><img class="img-fluid" src="../demo/demo-doc.png" alt="" title=""/></div>
               <p class="docs__title">Росжилкоммун сертификация 2010&nbsp;г. Могилёвлифт</p>
             </div>
           </div>
-          <div class="col-3 col-md-6">
-            <div class="docs"><a class="docs__img" data-fancybox="data-fancybox" href="../img/demo-doc.png"><img class="img-fluid" src="../img/demo-doc.png" alt="" title=""/></a>
+          <div class="col-3 col-lg-4 col-md-6 col-xs-12 mb-1">
+            <div class="docs"><a class="docs__img" data-fancybox="data-fancybox" href="../demo/demo-doc.png"><img class="img-fluid" src="../demo/demo-doc.png" alt="" title=""/></a>
               <p class="docs__title">2015 Дилерский договор 001</p>
             </div>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-4 col-md-6 docs-pdf">
+        <div class="row mt-3 mt-sm-2">
+          <div class="col-4 col-md-6 docs-pdf col-xs-12 mb-1">
             <p class="docs-pdf__title">Лицензия Росатом на сооружение</p>
             <p><a class="btn btn_link" href="#">Просмотреть pdf-файл
                 <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
                   <path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z "></path>
                 </svg></a></p>
           </div>
-          <div class="col-4 col-md-6 docs-pdf">
+          <div class="col-4 col-md-6 docs-pdf col-xs-12 mb-1">
             <p class="docs-pdf__title">Сертификат ГОСТ 56002-2014</p>
             <p><a class="btn btn_link" href="#">Просмотреть pdf-файл
                 <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
                   <path fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z "></path>
                 </svg></a></p>
           </div>
-          <div class="col-4 col-md-6 docs-pdf">
+          <div class="col-4 col-md-6 docs-pdf col-xs-12 mb-1">
             <p class="docs-pdf__title">Лицензия Росатом на проектирование</p>
             <p><a class="btn btn_link" href="#">Просмотреть pdf-файл
                 <svg class="btn_link__arrow" width="24" height="24" viewBox="0 0 24.00 24.00">
@@ -163,9 +164,9 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container bg-lines pt-3 pb-3">
+      <div class="container bg-lines pt-3 pb-3 pt-sm-1 pb-sm-1">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Лифты</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Коттеджные</a></div>
@@ -180,7 +181,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Грузовые для кафе и ресторанов</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Подъемники</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Платформы для инвалидов</a></div>
@@ -191,7 +192,7 @@
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Запчасти</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 mb-xs-1 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Услуги</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Проектирование</a></div>
@@ -205,7 +206,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Лизинг</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Документы</a></div>
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">О компании</a></div>
@@ -220,13 +221,13 @@
     <div class="subfooter">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 col-sm-12 text-sm-center">
             <p class="subfooter__text">© 2005-2020. Все права защищены.</p>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-4 text-center col-sm-12">
             <p class="subfooter__text">Могилевлифт - поставки лифтов, подъемников, запчастей.</p>
           </div>
-          <div class="col-4 text-right">
+          <div class="col-4 text-right col-sm-12 text-sm-center">
             <p class="subfooter__text">Сайт разработан <a class="subfooter__link" href="https://websoho.ru">студией «SOHO»</a></p>
           </div>
         </div>

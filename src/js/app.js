@@ -83,8 +83,39 @@ $(document).ready(() =>{
 			slidesToScroll: 1,
 			arrows      : true,
 			dots        : true,
-			
-			autoplay  : false,
+      autoplay  : false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            arrows: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            arrows: false,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
     });
     // Review Block Full Screen
     let $slickReviewFull = $('#reviews-full');
@@ -127,34 +158,37 @@ $(document).ready(() =>{
     });
   }
 	// Mobile Navbar
-  $(".navbar-toggle#nav").on("click", function(){
-    if( !$(this).hasClass("navbar-toggle--active")){
-        $(this).addClass("navbar-toggle--active");
-        // $(".navbar-mobile").addClass("navbar-mobile--active");
-        // $(".navbar-mobile").slideDown();
-    }else{
-        $(this).removeClass("navbar-toggle--active");
-        // $(".navbar-mobile").removeClass("navbar-mobile--active");
-        // $(".navbar-mobile").slideUp();
-    }
+  $(".navbar-toggle#nav").on("click", function(e){
+		e.preventDefault();
+    let navbar = $(".navbar-collapse");
+		if( !navbar.hasClass("navbar-collapse--active")){
+			navbar.addClass("navbar-collapse--active");
+			$(".navbar-overlay").addClass("navbar-overlay--active");
+		}else{
+			navbar.removeClass("navbar-collapse--active");
+			$(".navbar-overlay").removeClass("navbar-overlay--active");
+		}
+  });
+  $(".navbar-close").on("click", function(e){
+    e.preventDefault();
+    $(".navbar-collapse").removeClass("navbar-collapse--active");
+    $(".navbar-overlay").removeClass("navbar-overlay--active");
   });
   $(document).mouseup(function (e){ // событие клика по веб-документу
-    let dropdownActive = $(".navbar-mobile.navbar-mobile--active"); // элемент
-      
+    let dropdownActive = $(".navbar-collapse.navbar-collapse--active"); // элемент
     if (!dropdownActive.is(e.target) // клик был не по блоку
           && dropdownActive.has(e.target).length === 0 // и не по его дочерним элементам
           && !$(".navbar-toggle#nav").is(e.target) ) { 
-              $(".navbar-toggle").removeClass("navbar-toggle--active");
-              dropdownActive.removeClass("navbar-mobile--active");
-              $(".navbar-mobile").slideUp();
-    }
+              $(".navbar-collapse").removeClass("navbar-collapse--active");
+              $(".navbar-overlay").removeClass("navbar-overlay--active");
+            }
   });
   // Hide Navigation on Desktop
   $(window).resize(function(){
     if ( $(window).width() > 991 || !window.matchMedia('screen and (max-width: 992px)').matches ){
       $(".navbar-toggle").removeClass("navbar-toggle--active");
-      // $(".navbar-mobile.navbar-mobile--active").removeClass("navbar-mobile--active");
-      // $(".navbar-mobile").slideUp();
+        $(".navbar-collapse").removeClass("navbar-collapse--active");
+        $(".navbar-overlay").removeClass("navbar-overlay--active");
     }
   });
 });

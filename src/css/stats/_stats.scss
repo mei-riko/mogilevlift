@@ -12,3 +12,11 @@
         max-width: 100%;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .stats{
+        &__title{
+            font-size: 20px;
+        }
+    }
+}

@@ -12,16 +12,17 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <header class="header">
       <div class="header__element"></div>
+      <div class="navbar-overlay"></div>
       <div class="container">
-        <div class="row align-items-end">
-          <div class="col-2"><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
-          <div class="col-8"><a class="navbar-toggle" id="nav" data-trigger="click"></a>
-            <div class="navbar-collapse">
-              <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
-              <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
-            </div>
+        <div class="row align-items-end align-items-sm-center">
+          <div class="col-2 col-xs-8 col-md-7 d-flex align-items-center justify-content-sm-between"><a class="navbar-toggle" id="nav" data-trigger="click"></a><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
+          <div class="col-8 navbar-collapse">
+            <div class="navbar-close"></div>
+            <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
+            <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
+            <div class="d-none d-sm-block"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a></div>
           </div>
-          <div class="col-2 text-right"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-sm-none">лифта</span></span></a></div>
+          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-md-none" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-lg-none" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-xs-none d-md-inline d-lg-none">лифта</span></span></a></div>
         </div>
       </div>
     </header><a class="scrollTop" id="scrollTop" href="#" data-trigger="click"></a>
@@ -40,16 +41,16 @@
     <section class="container bg-lines pt-4 pb-4 content-header">
       <p class="subtitle">Услуги «Могилевлифт»</p>
       <h1 class="content-header__title">Применяем современные передовые&nbsp;технологии, механизмы и&nbsp;материалы.</h1>
-      <div class="row justify-content-end mt-2 mb-2">
-        <div class="col-3 col-md-12 stats">
+      <div class="row justify-content-end mt-3 mb-2 mt-md-1 mb-md-1">
+        <div class="col-3 col-md-4 col-xs-12 stats">
           <p class="stats__title">1927 дней</p>
           <p class="stats__content">гарантия на&nbsp;все выполненные работы</p>
         </div>
-        <div class="col-3 col-md-12 stats">
+        <div class="col-3 col-md-4 col-xs-12 stats mt-xs-1">
           <p class="stats__title">900 проектов</p>
           <p class="stats__content">под&nbsp;ключ выполнено по&nbsp;России</p>
         </div>
-        <div class="col-3 col-md-12 stats">
+        <div class="col-3 col-md-4 col-xs-12 stats mt-xs-1">
           <p class="stats__title">3370&nbsp;лифтов</p>
           <p class="stats__content">поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России</p>
         </div>
@@ -61,10 +62,11 @@
             </svg></a></div>
       </div>
     </section>
-    <section class="pt-3 pb-3">
+    <!-- Преисущества-->
+    <section class="pt-3 pb-3 pt-md-2 pb-md-2">
       <div class="container advantage-container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 col-sm-12 mb-sm-1">
             <div class="advantage advantage_icon border">
               <svg class="advantage_icon__elem" viewBox="0 0 270 270">
                 <path fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z"></path>
@@ -78,7 +80,7 @@
               <p class="h5 advantage__title">Понимаем цели и задачи каждого клиента</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-sm-12 mb-sm-1">
             <div class="advantage advantage_icon border">
               <svg class="advantage_icon__elem" viewBox="0 0 270 270">
                 <path fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z"></path>
@@ -92,7 +94,7 @@
               <p class="h5 advantage__title">85% проектов сдаём раньше указанного срока</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-sm-12">
             <div class="advantage advantage_icon border">
               <svg class="advantage_icon__elem" viewBox="0 0 270 270">
                 <path fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z"></path>
@@ -103,51 +105,52 @@
                 </svg>
               </div>
               <p class="advantage_icon__subtitle">Ответственность</p>
-              <p class="h5 advantage__title">Действует гарантия 5&nbsp;лет на&nbsp;все выполненные работы</p>
+              <p class="h5 advantage__title">На выполненные работы действует гарантия 5&nbsp;лет</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="border-top pt-1 pb-3">
+    <!-- Перечень услуг-->
+    <section class="border-top pt-1 pb-3 pb-sm-1">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-3 mt-1">
+          <div class="col-3 col-xs-12 col-sm-6 col-lg-12">
             <h2 class="h1">Услуги компании</h2>
           </div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">01</div>
               <p class="preview__title preview_service__title text-uppercase">Проектирование</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">02</div>
               <p class="preview__title preview_service__title text-uppercase">Монтаж</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">03</div>
               <p class="preview__title preview_service__title text-uppercase">Строительство</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">04</div>
               <p class="preview__title preview_service__title text-uppercase">Ремонт и&nbsp;замена</p>
               <p class="preview__subinfo"> капитальный ремонт и&nbsp;замена</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">05</div>
               <p class="preview__title preview_service__title text-uppercase">Продажа</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">06</div>
               <p class="preview__title preview_service__title text-uppercase">Консультации</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">07</div>
               <p class="preview__title preview_service__title text-uppercase">Регистрация</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">08</div>
               <p class="preview__title preview_service__title text-uppercase">Демонтаж</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
-          <div class="col-3 mt-1"><a class="preview preview_service border" href="text.html">
+          <div class="col-3 mt-1 mt-sm-0 col-xs-12 col-sm-6 col-lg-4"><a class="preview preview_service border" href="text.html">
               <div class="preview_service__num">09</div>
               <p class="preview__title preview_service__title text-uppercase">Лизинг</p>
               <p class="preview__subinfo"> лифтов и подъемников</p></a></div>
@@ -157,7 +160,7 @@
     <section class="border-top">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-7 pt-2 pb-2">
+          <div class="col-7 pt-2 pb-2 col-md-12">
             <h3 class="heading-secondary">Нам доверяют многие&nbsp;компании</h3>
             <p class="text-grey text-light">Репутация надежного, ответственного и опытного партнера, всегда выполняющего свои  обязательства, позволила компании Могилевлифт построить прочные отношения с компаниями разных масштабов. </p>
             <div class="partners partners_figure">
@@ -182,19 +185,19 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 col-md-12">
             <div class="slider slider_border">
               <p class="slider_border__title text-uppercase text-bold text-center">Отзывы о сотрудничестве</p>
-              <div class="slider_border__content" id="reviews"><a class="slider__item slider_border__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_border__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a><a class="slider__item slider_border__item" href="../img/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../img/scan.png" alt="" title=""/></a></div>
+              <div class="slider_border__content" id="reviews"><a class="slider__item slider_border__item" href="../demo/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_border__item" href="../demo/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_border__item" href="../demo/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_border__item" href="../demo/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_border__item" href="../demo/demo.jpg" data-fancybox="review"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a></div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="container bg-lines pt-3 pb-3">
+      <div class="container bg-lines pt-3 pb-3 pt-sm-1 pb-sm-1">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Лифты</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Коттеджные</a></div>
@@ -209,7 +212,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Грузовые для кафе и ресторанов</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Подъемники</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Платформы для инвалидов</a></div>
@@ -220,7 +223,7 @@
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Запчасти</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 mb-xs-1 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Услуги</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Проектирование</a></div>
@@ -234,7 +237,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Лизинг</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Документы</a></div>
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">О компании</a></div>
@@ -249,13 +252,13 @@
     <div class="subfooter">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 col-sm-12 text-sm-center">
             <p class="subfooter__text">© 2005-2020. Все права защищены.</p>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-4 text-center col-sm-12">
             <p class="subfooter__text">Могилевлифт - поставки лифтов, подъемников, запчастей.</p>
           </div>
-          <div class="col-4 text-right">
+          <div class="col-4 text-right col-sm-12 text-sm-center">
             <p class="subfooter__text">Сайт разработан <a class="subfooter__link" href="https://websoho.ru">студией «SOHO»</a></p>
           </div>
         </div>

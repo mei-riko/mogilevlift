@@ -13,16 +13,16 @@ html(lang="ru")
         include chunks/header.pug
         section.container.bg-lines.error
             .row.align-items-end
-                .col-6.col-md-12
+                .col-6.col-sm-12
                     h1.error__title Ошибка 
                         span.text-decoration.text-gold 404
                         span . Упс!
-                .col-6.col-md-12
+                .col-6.col-sm-12
                     p.error__text Страница удалена или не существует. Возможно, в адресе допущена ошибка? 
                         | Проверьте корректность ссылки или вернитесь 
                         a.link.link-underline.text-bold(href="index.html") на главную страницу
-            .row.justify-content-end.mt-2
-                .col-6.col-md-12
+            .row.justify-content-end.mt-2.mt-md-1
+                .col-6.col-sm-12
                     a.btn.btn_secondary(href="#") 
                         span.btn__inside Получить консультацию
         include chunks/footer.pug

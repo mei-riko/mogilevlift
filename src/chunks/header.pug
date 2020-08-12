@@ -1,12 +1,14 @@
 header.header
     .header__element
+    .navbar-overlay
     .container
-        .row.align-items-end
-            .col-2.col-sm-7
+        .row.align-items-end.align-items-sm-center
+            .col-2.col-xs-8.col-md-7.d-flex.align-items-center.justify-content-sm-between
                 a.navbar-toggle#nav(data-trigger="click")
                 a.logo.logo_header(href="index.html") 
                     span.logo__intro С нами путь быстрее!
             .col-8.navbar-collapse
+                .navbar-close
                 .nav.nav_secondary
                     a.nav_secondary__item(href="#") Документы
                     a.nav_secondary__item(href="#") О компании
@@ -21,12 +23,12 @@ header.header
                 .d-none.d-sm-block
                     a.header__phone(href="8 812 214 55 00") 8 812 214 55 00 
                     a.link.header__link(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
-            .col-2.col-sm-5.text-right
-                a.header__phone.d-sm-none(href="8 812 214 55 00") 8 812 214 55 00 
-                a.link.header__link.d-sm-none(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
+            .col-2.col-xs-4.col-md-5.text-right
+                a.header__phone.d-md-none(href="8 812 214 55 00") 8 812 214 55 00 
+                a.link.header__link.d-lg-none(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
                 a.btn.btn_action.header__btn(href="#") 
                     span.btn_action__inside Расчёт 
-                        span.d-sm-none лифта
+                        span.d-xs-none.d-md-inline.d-lg-none лифта
 a.scrollTop#scrollTop(href="#" data-trigger="click")
 .modal#callback
     p.h3 Наш менеджер свяжется с вами!

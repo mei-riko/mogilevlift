@@ -1,7 +1,6 @@
 .docs{
     display: flex;
     flex-wrap: nowrap;
-
     &__img{
         flex: 0 0 50%;
         max-width: 50%;
@@ -14,7 +13,6 @@
         color: $light-grey;
         line-height: 1.2;
         font-size: map-get($map: $font-size, $key: md);
-
     }
 }
 
@@ -24,5 +22,30 @@
         font-weight: $font-weight-bold;
         line-height: 1.2;
         margin-bottom: $spacer/2;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .docs{
+        &__img{
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+        &__title{
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .docs{
+        &__title{
+            font-size: 1rem;
+            padding-left: $spacer/2;
+        }
+    }
+    .docs-pdf{
+        &__title{
+            font-size: 1rem;
+        }
     }
 }

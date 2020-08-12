@@ -14,14 +14,14 @@ html(lang="ru")
         section.container.bg-lines.pt-4.pb-4.content-header
                 p.subtitle Услуги «Могилевлифт»
                 h1.content-header__title Применяем современные передовые&nbsp;технологии, механизмы и&nbsp;материалы.
-                .row.justify-content-end.mt-2.mb-2
-                    .col-3.col-md-12.stats
+                .row.justify-content-end.mt-3.mb-2.mt-md-1.mb-md-1
+                    .col-3.col-md-4.col-xs-12.stats
                         p.stats__title 1927 дней
                         p.stats__content гарантия на&nbsp;все выполненные работы
-                    .col-3.col-md-12.stats
+                    .col-3.col-md-4.col-xs-12.stats.mt-xs-1
                         p.stats__title 900 проектов
                         p.stats__content под&nbsp;ключ выполнено по&nbsp;России
-                    .col-3.col-md-12.stats
+                    .col-3.col-md-4.col-xs-12.stats.mt-xs-1
                         p.stats__title 3370&nbsp;лифтов
                         p.stats__content поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России
                 .row.justify-content-end
@@ -29,10 +29,11 @@ html(lang="ru")
                         a.btn.btn_link(href="#") Получить консультацию
                             svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
                                 path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
-        section.pt-3.pb-3
+        // Преисущества
+        section.pt-3.pb-3.pt-md-2.pb-md-2
             .container.advantage-container
                 .row
-                    .col-4
+                    .col-4.col-sm-12.mb-sm-1
                         .advantage.advantage_icon.border
                             svg.advantage_icon__elem(viewBox="0 0 270 270")
                                 path(fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z")
@@ -42,7 +43,7 @@ html(lang="ru")
                                     path(fill-rule="evenodd" d="M99.453,50.000 L61.674,99.480 L0.547,80.580 L0.547,19.420 L61.674,0.520 L99.453,50.000 Z")
                             p.advantage_icon__subtitle Фокусировка
                             p.h5.advantage__title Понимаем цели и задачи каждого клиента
-                    .col-4
+                    .col-4.col-sm-12.mb-sm-1
                         .advantage.advantage_icon.border
                             svg.advantage_icon__elem(viewBox="0 0 270 270")
                                 path(fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z")
@@ -52,7 +53,7 @@ html(lang="ru")
                                     path(fill-rule="evenodd" d="M99.453,50.000 L61.674,99.480 L0.547,80.580 L0.547,19.420 L61.674,0.520 L99.453,50.000 Z")
                             p.advantage_icon__subtitle Скорость
                             p.h5.advantage__title 85% проектов сдаём раньше указанного срока
-                    .col-4
+                    .col-4.col-sm-12
                         .advantage.advantage_icon.border
                             svg.advantage_icon__elem(viewBox="0 0 270 270")
                                 path(fill-rule="evenodd" d="M270.957,136.500 L167.477,272.030 L0.042,220.262 L0.042,52.738 L167.477,0.970 L270.957,136.500 Z")
@@ -61,53 +62,54 @@ html(lang="ru")
                                 svg.advantage_icon__elem-in(viewBox="0 0 100 100")
                                     path(fill-rule="evenodd" d="M99.453,50.000 L61.674,99.480 L0.547,80.580 L0.547,19.420 L61.674,0.520 L99.453,50.000 Z")
                             p.advantage_icon__subtitle Ответственность
-                            p.h5.advantage__title Действует гарантия 5&nbsp;лет на&nbsp;все выполненные работы
-        section.border-top.pt-1.pb-3
+                            p.h5.advantage__title На выполненные работы действует гарантия 5&nbsp;лет
+        // Перечень услуг
+        section.border-top.pt-1.pb-3.pb-sm-1
             .container
                 .row.align-items-center
-                    .col-3.mt-1
+                    .col-3.col-xs-12.col-sm-6.col-lg-12
                         h2.h1 Услуги компании
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 01
                             p.preview__title.preview_service__title.text-uppercase Проектирование
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 02
                             p.preview__title.preview_service__title.text-uppercase Монтаж
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 03
                             p.preview__title.preview_service__title.text-uppercase Строительство
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 04
                             p.preview__title.preview_service__title.text-uppercase Ремонт и&nbsp;замена
                             p.preview__subinfo  капитальный ремонт и&nbsp;замена
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 05
                             p.preview__title.preview_service__title.text-uppercase Продажа
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 06
                             p.preview__title.preview_service__title.text-uppercase Консультации
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 07
                             p.preview__title.preview_service__title.text-uppercase Регистрация
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 08
                             p.preview__title.preview_service__title.text-uppercase Демонтаж
                             p.preview__subinfo  лифтов и подъемников
-                    .col-3.mt-1
+                    .col-3.mt-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 09
                             p.preview__title.preview_service__title.text-uppercase Лизинг
@@ -115,7 +117,7 @@ html(lang="ru")
         section.border-top
             .container
                 .row.align-items-center.justify-content-between
-                    .col-7.pt-2.pb-2
+                    .col-7.pt-2.pb-2.col-md-12
                         h3.heading-secondary Нам доверяют многие&nbsp;компании
                         p.text-grey.text-light Репутация надежного, ответственного и опытного партнера, всегда выполняющего свои  обязательства, позволила компании Могилевлифт построить прочные отношения с компаниями разных масштабов. 
                         .partners.partners_figure
@@ -132,16 +134,20 @@ html(lang="ru")
                             .partners_figure__line-break
                             .partners_figure__item.border-gradient
                                 .partners_figure__inside(style="background-image:url('../logo/3.png')")
-                    .col-4
+                    .col-4.col-md-12
                         .slider.slider_border
                             p.slider_border__title.text-uppercase.text-bold.text-center Отзывы о сотрудничестве
                             .slider_border__content#reviews
-                                a.slider__item.slider_border__item(href="../img/demo.jpg" data-fancybox="review")
-                                    img.img-fluid(src="../img/scan.png" alt="" title="")
-                                a.slider__item.slider_border__item(href="../img/demo.jpg" data-fancybox="review")
-                                    img.img-fluid(src="../img/scan.png" alt="" title="")
-                                a.slider__item.slider_border__item(href="../img/demo.jpg" data-fancybox="review")
-                                    img.img-fluid(src="../img/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
+                                a.slider__item.slider_border__item(href="../demo/demo.jpg" data-fancybox="review")
+                                    img.img-fluid(src="../demo/scan.png" alt="" title="")
         include chunks/footer.pug
 
         link(href='./css/jquery.fancybox.min.css', rel='stylesheet')

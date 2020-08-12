@@ -52,3 +52,36 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .nav_header{
+        &__item{
+            font-size: map-get($font-size, 'sm');
+            padding: 8px 16px 0;
+            & + .nav_header__item--active{
+                &:before{
+                    display: none;
+                }
+            }
+            &--active{
+                & + .nav_header__item{
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .nav_header{
+        flex-wrap: wrap;
+        font-size: map-get($font-size, 'md');
+        margin: $spacer 0;
+        &__item{
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 8px 0;
+        }
+    }
+}

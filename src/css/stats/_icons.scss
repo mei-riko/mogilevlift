@@ -24,3 +24,21 @@
         margin-bottom: $spacer/2;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .stats_icon{
+        &__image{
+            flex: 0 0 40px;
+            max-width: 40px;
+            .img-fluid{
+                height: 30px;
+            }
+        }
+        &__title{
+            flex: 0 0 calc(100% - 40px);
+            max-width: calc(100% - 40px);
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+}

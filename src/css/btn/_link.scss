@@ -24,3 +24,9 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .btn_link{
+        font-size: map-get($map: $font-size, $key: sm);
+    }
+}

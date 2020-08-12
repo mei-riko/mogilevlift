@@ -1,7 +1,73 @@
-.navbar-collapse{}
+.navbar-toggle{
+    display: none;
+    max-width: 40px;
+    flex: 0 0 40px;
+    height: 40px;
+    background: url("../img/menu.svg") no-repeat center / 20px;
+}
+.navbar-close{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url("../img/close.svg") no-repeat center / 20px;
+}
 
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
     .navbar-collapse{
+        position: fixed;
+        
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+        width: 260px;
+        max-width: 100%;
+        padding-top: $spacer;
+        padding-bottom: $spacer;
+
+        background-color: $border-color;
+
+        z-index: 9999;
+
+        transform: translateX(-260px);
+        transition: .4s;
+
+        &--active{
+            transform: translateX(0);
+        }
+    }
+    .navbar-overlay{
+        position: fixed;
+        
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: $body-color;
+        opacity: 0.5;
+
         display: none;
+        z-index: 99;
+
+        &--active{
+            display: block;
+        }
+    }
+    .navbar-close{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .navbar-toggle{
+        display: inline-block;
+        margin-right: $spacer/2;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .navbar-toggle{
+        margin-right: 0;
     }
 }

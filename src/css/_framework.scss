@@ -47,16 +47,19 @@ h1, h2, h3, h4, h5, h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
     margin-top: map-get($spacers, 3);
 }
-.h1,h1          {font-size: 2.3rem;}
-.h2,h2          {font-size: 1.9rem;}
-.h3,h3          {font-size: 1.7rem;}
-.h4,h4          {font-size: 1.5rem;}
-.h5,h5          {font-size: 1.2rem;}
-.h6,h6          {font-size: 1rem;}
+.h1,h1              {font-size: 2.3rem;}
+.h2,h2              {font-size: 1.9rem;}
+.h3,h3              {font-size: 1.7rem;}
+.h4,h4              {font-size: 1.5rem;}
+.h5,h5              {font-size: 1.2rem;}
+.h6,h6              {font-size: 1rem;}
 
-.heading          {font-size: 72px;}
-.heading-secondary{font-size: 60px;}
+.heading            {font-size: 72px;}
+.heading-secondary  {font-size: 60px;}
 
+table{
+    font-size: 1rem;
+}
 p {
     font-size: 1rem;
     margin-top: 0;
@@ -99,7 +102,7 @@ a{
     }
 }
 .blockquote, blockquote{
-    padding: $spacer/2 0 $spacer $spacer;
+    padding: $spacer/2 0 $spacer/2 $spacer;
     border-left: 4px solid $white;
 }
 .blockquote-gold{
@@ -163,8 +166,8 @@ a{
     html,body {
         font-size: map-get($font-size, 'lg');
     }
-    .heading        {font-size: 60px;}
-    .heading-secondary        {font-size: 52px;}
+    .heading            {font-size: 60px;}
+    .heading-secondary  {font-size: 52px;}
     .d-xl{
         &-flex{display: flex;}
         &-none{display: none;}
@@ -172,6 +175,8 @@ a{
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .heading            {font-size: 42px;}
+    .heading-secondary  {font-size: 30px;}
     .d-lg{
         &-flex{display: flex;}
         &-none{display: none;}
@@ -179,6 +184,19 @@ a{
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6,
+    .heading,.heading-secondary{
+        margin-bottom: $spacer/2;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
+    * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
+        margin-top: map-get($spacers, 1);
+    }
     .d-md{
         &-flex{display: flex;}
         &-none{display: none;}
@@ -186,6 +204,18 @@ a{
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    html,body {
+        font-size: map-get($font-size, 'sm');
+    }
+    .h1,h1              {font-size: 1.9rem;}
+    .h2,h2              {font-size: 1.7rem;}
+    .h3,h3              {font-size: 1.5rem;}
+    .h4,h4              {font-size: 1.2rem;}
+    .h5,h5              {font-size: 1.2rem;}
+    .h6,h6              {font-size: 1rem;}
+    
+    .heading            {font-size: 1.9rem;}
+    .heading-secondary  {font-size: 1.5rem;}
     .d-sm{
         &-flex{display: flex;}
         &-none{display: none;}

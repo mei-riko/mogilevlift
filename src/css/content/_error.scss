@@ -3,6 +3,29 @@
 
     &__title{
         font-size: 80px;
+        line-height: 70px;
         margin-bottom: 0;
     }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .error{
+        padding: map-get($map: $spacers, $key: 2) $spacer/2;
+    
+        &__title{
+            font-size: 52px;
+            line-height: 48px;
+        }
+    }    
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .error{
+        padding: $spacer $spacer/2;
+    
+        &__title{
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }    
 }

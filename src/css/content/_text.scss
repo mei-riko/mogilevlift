@@ -147,6 +147,9 @@
         &-center{text-align: center;}
         &-right{text-align: right;}
     }
+    .subtitle{
+        margin-bottom: $spacer;
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .text-md{
