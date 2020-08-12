@@ -104,6 +104,13 @@
         height: 2px;
         background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
     }
+
+    &_link{
+        color: $white;
+        &:hover, &:focus{
+            color: $gold;
+        }
+    }
 }
 .lines{
     width: 60px;

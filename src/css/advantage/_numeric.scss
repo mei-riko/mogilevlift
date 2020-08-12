@@ -13,4 +13,7 @@
         font-weight: 300;
     }
 
+    &--last{
+        border-right: 1px solid $border-color;
+    }
 }

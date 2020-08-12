@@ -1,0 +1,350 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Product Page
+
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&display=swap" rel="stylesheet")
+        link(href='./css/style.css', rel='stylesheet')
+
+    body
+        script(src="http://code.jquery.com/jquery-3.3.1.min.js")
+        include chunks/header.pug
+        section.container.bg-lines.pt-4.pb-4.content-header
+                a.subtitle.subtitle_link(href="catalog.html") Пассажирские лифты
+                h1.content-header__title Панорамные пассажирские лифты
+                .row.justify-content-end.mt-2.mb-2
+                    .col-3.col-md-12.stats
+                        p.stats__title 1927 дней
+                        p.stats__content гарантия на&nbsp;все выполненные работы
+                    .col-3.col-md-12.stats
+                        p.stats__title 900 проектов
+                        p.stats__content под&nbsp;ключ выполнено по&nbsp;России
+                    .col-3.col-md-12.stats
+                        p.stats__title 3370&nbsp;лифтов
+                        p.stats__content поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России
+                .row.justify-content-end
+                    .col-3.col-md-12
+                        a.btn.btn_link(href="#") Получить консультацию
+                            svg.btn_link__arrow(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        // Преимущества и текст
+        section.border-top
+            .container.bg-lines.pt-3.pb-3
+                .row
+                    .col-8.col-md-12
+                        p.text-grey Lorem ipsum dolor sit amet. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Doloremque laudantium, totam rem aperiam. Voluptas sit, aspernatur aut perferendis doloribus asperiores repellat.. Libero tempore, cum soluta nobis. Animi, id est eligendi optio, cumque nihil impedit, quo minus.
+                .row.justify-content-end.mt-3
+                    .col-3.col-md-12
+                        .list.list_check
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
+                                p.text-grey.text-light на&nbsp;электроэнергии
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
+                                p.text-grey.text-light вес всех пассажиров
+                    .col-3.col-md-12.stats
+                        .list.list_check
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
+                                p.text-grey.text-light на&nbsp;электроэнергии
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
+                                p.text-grey.text-light вес всех пассажиров
+                    .col-3.col-md-12.stats
+                        .list.list_check
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
+                                p.text-grey.text-light на&nbsp;электроэнергии
+                            .list__item.list_check__item
+                                p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
+                            p.text-grey.text-light вес всех пассажиров
+        // Ссылки опционально
+        section.border-top.border-bottom.pt-1.pb-1
+            .container.btn-container
+                .btn-group
+                    .btn-group__item
+                        a.btn.btn_icon(href="#")
+                            span.btn_icon__content Соответствие оборудования ГОСТ и регламентам
+                            span.btn_icon__img
+                                svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(d="M15,13h-1v-2.3l-6.7,6.7l-0.7-0.7l6.7-6.7H11V9h4V13z M20,16h-9l1-1h7V5H9v7l-1,1V4h12V16z M6,9v1H4v10h10v-2h1	v3H3V9H6z")
+                    .btn-group__item
+                        a.btn.btn_icon(href="#")
+                            span.btn_icon__content Соответствие СРО
+                            span.btn_icon__img
+                                svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                    .btn-group__item
+                        a.btn.btn_icon(href="#")
+                            span.btn_icon__content Соответствие ISO
+                            span.btn_icon__img
+                                svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+                    .btn-group__item
+                        a.btn.btn_icon(href="#")
+                            span.btn_icon__content Дилерский договор
+                            span.btn_icon__img
+                                svg(width="24" height="24" viewBox="0 0 24.00 24.00")
+                                    path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
+        // Варианты дизайна
+        section.container.pt-1.pb-1
+            .row.align-items-center
+                .col-3
+                    p.h5.text-uppercase.text-grey 51 вариант дизайна&nbsp;для&nbsp;кабины
+                .col-9.tabs-container
+                    ul.list.tabs
+                        li.tabs__item.tabs__item--active
+                            a.tabs__link.tabs__link--active(href="section-1" data-trigger="click") 
+                                span.tabs__inside Classic
+                        li.tabs__item
+                            a.tabs__link(href="section-2" data-trigger="click") 
+                                span.tabs__inside Modern
+                        li.tabs__item
+                            a.tabs__link(href="section-3" data-trigger="click") 
+                                span.tabs__inside Natural
+                        li.tabs__item
+                            a.tabs__link(href="section-4" data-trigger="click") 
+                                span.tabs__inside Elite
+                        li.tabs__item
+                            a.tabs__link(href="section-5" data-trigger="click") 
+                                span.tabs__inside Elite Gold
+        section.border-top
+            .container.bg-lines.pt-3.pb-3
+                .slider.slider_inside-container.tabs-content#section-1
+                    .slider__content(data-slider="slick")
+                        a.slider__item(href="../demo/01.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/01.png" alt="" title="")
+                        a.slider__item(href="../demo/02.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/02.png" alt="" title="")
+                        a.slider__item(href="../demo/03.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/03.png" alt="" title="")
+                        a.slider__item(href="../demo/04.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/04.png" alt="" title="")
+                        a.slider__item(href="../demo/05.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/05.png" alt="" title="")
+                        a.slider__item(href="../demo/06.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/06.png" alt="" title="")
+                        a.slider__item(href="../demo/01.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/01.png" alt="" title="")
+                        a.slider__item(href="../demo/02.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/02.png" alt="" title="")
+                        a.slider__item(href="../demo/03.png" data-fancybox="review")
+                            img.img-fluid(src="../demo/03.png" alt="" title="")
+        // Лифтовое оборудование
+        section.border-top.border-bottom
+            .container.pt-3.pb-3
+                .row
+                    .col-8.col-md-12
+                        p.subtitle Оборудование
+                        h4.h1 Лифты, подходящий под любые задачи
+                        p.text-grey Lorem ipsum dolor sit amet. Omnis dolor sit, amet, consectetur, adipisci velit, sed quia. Dolorum fuga cum soluta nobis est et quas molestias. Possimus, omnis voluptas nulla vero eos et dolorum fuga. Unde omnis dolor repellendus accusantium doloremque laudantium totam. Laudantium, totam rem aperiam eaque ipsa quae. Perspiciatis, unde omnis iste natus error sit voluptatem. Tempore, cum soluta nobis est. Eaque ipsa, quae ab illo inventore.
+        section.container.pt-3.pb-2
+            .row
+                .col-6.col-sm-12.mb-1
+                    .preview.preview_product.preview_product-details
+                        .row.align-items-center
+                            .col-5
+                                a.preview_product-details__link(href="product.html" title="")
+                                    img.preview_product-details__image(src="../demo/01-full.png")
+                            .col-7
+                                a.preview__title.preview_product__title.preview_product__title--link.text-uppercase(href="product.html") Гидравлический лифт для&nbsp;коттеджа
+                                ul.list.text-light.preview_product__param
+                                    li.list__item грузоподъемность: до 1000 кг
+                                    li.list__item высота подъема: до 22 метров
+                                    li.list__item скорость: 1,6 м/с
+                                p.text-bold.text-uppercase Плюсы:
+                                ul.list.list_circle.text-light
+                                    li.list_circle__item Одна несущая стена
+                                    li.list_circle__item Бесшумная работа
+                                    li.list_circle__item Экономия электроэнергии
+                                a.preview_product-details__btn(href="product.html" title="") Подробнее
+                .col-6.col-sm-12.mb-1
+                    .preview.preview_product.preview_product-details
+                        .row.align-items-center
+                            .col-5
+                                a.preview_product-details__link(href="product.html" title="")
+                                    img.preview_product-details__image(src="../demo/01-full.png")
+                            .col-7
+                                a.preview__title.preview_product__title.preview_product__title--link.text-uppercase(href="product.html") Гидравлический лифт для&nbsp;коттеджа
+                                ul.list.text-light.preview_product__param
+                                    li.list__item грузоподъемность: до 1000 кг
+                                    li.list__item высота подъема: до 22 метров
+                                    li.list__item скорость: 1,6 м/с
+                                p.text-bold.text-uppercase Плюсы:
+                                ul.list.list_circle.text-light
+                                    li.list_circle__item Одна несущая стена
+                                    li.list_circle__item Бесшумная работа
+                                    li.list_circle__item Экономия электроэнергии
+                                a.preview_product-details__btn(href="product.html" title="") Подробнее
+            p.text-center.text-grey Ознакомьтесь со всеми моделями лифтов 
+            p.text-center
+                a.btn.btn_action(href="#") 
+                    span.btn_action__inside Скачать каталог
+        // CTA
+        section.border-top.border-bottom.pt-3.pb-3(style="overflow:hidden;")
+            .container
+                .row.justify-content-center
+                    .col-9.text-center
+                        p.heading.text-bold 
+                            span.p-relative(style="z-index:2;") Узнайте стоимость и выберите дизайн кабины 
+                            span.text-decoration
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__content.text-gold онлайн
+                        a.btn.btn_main(href="#") 
+                            span.btn__inside Конструктор лифта
+        // Преимущества и текст
+        section.border-top
+            .container.bg-lines.pt-3.pb-3
+                .row
+                    .col-6.col-md-12.mb-1
+                        p.subtitle Комплектация
+                        h3.h2 Дополнительная комплектация для коттеджного лифта
+                    .col-8.col-md-12
+                        p.text-grey Lorem ipsum dolor sit amet. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Doloremque laudantium, totam rem aperiam. Voluptas sit, aspernatur aut perferendis doloribus asperiores repellat.. Libero tempore, cum soluta nobis. Animi, id est eligendi optio, cumque nihil impedit, quo minus.
+                .row.justify-content-end.mt-3
+                    .col-3.col-md-12
+                        ul.list.list_circle
+                            li.list_circle__item 30% экономия на&nbsp;электроэнергии
+                            li.list_circle__item max - 1275 кг вес всех пассажиров
+                    .col-3.col-md-12
+                        ul.list.list_circle
+                            li.list_circle__item 30% экономия на&nbsp;электроэнергии
+                            li.list_circle__item max - 1275 кг вес всех пассажиров
+                    .col-3.col-md-12
+                        ul.list.list_circle
+                            li.list_circle__item 30% экономия на&nbsp;электроэнергии
+                            li.list_circle__item max - 1275 кг вес всех пассажиров
+        // Преимущества
+        .border-top.border-bottom
+            .container
+                .row
+                    .col-6(style="padding-left: 0;")
+                        .advantage.advantage_numeric
+                            p.advantage__title.h2 Оперативность
+                            p.text-grey 85% проектов сдаем раньше зафиксированных сроков
+                    .col-6(style="padding-left: 0;padding-right: 0;")
+                        .advantage.advantage_numeric.advantage_numeric--last
+                            p.advantage__title.h2 Ответственность
+                            p.text-grey Поставки лифтового оборудования от&nbsp;3&nbsp;недель
+        // Отзывы
+        .container.bg-lines.pt-3.pb-3
+            .slider.slider_inside-container
+                .slider__content#reviews-full
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+                    a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
+                        img.img-fluid(src="../demo/scan.png" alt="" title="")
+        // Реализованные проекты
+        aside.bg-separate.border-top.pt-3.pb-3
+            .container
+                .row
+                    .col-6 
+                        h4.h3 Реализованные проекты
+                    .col-6.text-right 
+                        a.text-uppercase(href="#") Вcе выполненные проекты
+                .row
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__logo(style="background-image:url('../logo/01.png')")
+                            .preview__title.preview_project__title Олимпийский парк: проектирование и монтаж
+                            .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__logo(style="background-image:url('../logo/04.png')")
+                            .preview__title.preview_project__title Больница №23: монтаж, проектирование, поставка
+                            .preview__subinfo.preview_project__subinfo г. СПб, пр. Ветеранов, д. 14
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__image(style="background-image:url('../demo/demo-small.png')")
+                            .preview__title.preview_project__title Дом в ЖК “Кристал” проектирование и монтаж
+                            .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
+                    .col-3.col-md-6.mt-3
+                        a.preview.preview_project.text-center(href="#")
+                            .preview_project__logo(style="background-image:url('../logo/07.png')")
+                            .preview__title.preview_project__title Олимпийский парк: проектирование и монтаж
+                            .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
+        section.pt-1.pb-3.bg-white.text-black(style="overflow:hidden;")
+            .container
+                .row.justify-content-center
+                    .col-9.text-center
+                        p.heading.text-bold 
+                            span.p-relative(style="z-index:2;") Рассчитаем стоимость лифтового оборудования за  
+                            span.text-decoration.text-decoration_light
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__elem
+                                span.text-decoration__content.text-dark-gold 30
+                            span.p-relative(style="z-index:2;")  минут
+                        p.lead.text-light.mb-2(style="width:500px;max-width:100%;margin-left:auto;margin-right:auto;") Заполните и отправьте форму. Менеджер перезвонит и предложит оптимальный вариант.
+                        a.btn.btn_action(href="#") 
+                            span.btn_action__inside.btn_action__inside--light Скачать опросный лист
+                        a.btn.btn_main(href="#") 
+                            span.btn__inside Отправить форму
+        // Услуги
+        aside.pt-1.pb-1
+            .container
+                h5.subtitle.text-uppercase Сопутствующие услуги
+                .row
+                    .col-3.col-md-6.col-sm-12
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 01
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Проектирование
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.col-md-6.col-sm-12
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 02
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Монтаж
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.col-md-6.col-sm-12
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 03
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Строительство
+                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
+                    .col-3.col-md-6.col-sm-12
+                        a.preview.preview_service.border(href="text.html")
+                            .preview_service__num 04
+                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Ремонт и&nbsp;замена
+                            p.preview__subinfo.preview_project__subinfo  капитальный ремонт и&nbsp;замена
+        // Контент
+        section.pt-2.pb-2.content.border-top
+            .container
+                .row.justify-content-center
+                    .col-8.col-md-12
+                        h1 Cupiditate non recusandae reiciendis voluptatibus et dolore magnam aliquam quaerat voluptatem
+                        p Maxime placeat, facere possimus, omnis voluptas nulla vero eos. Quam nihil molestiae non recusandae corrupti, quos dolores eos, qui. Id est eligendi optio, cumque nihil impedit, quo minus id, quod maxime. Eligendi optio, cumque nihil molestiae consequatur, vel illum. Temporibus autem quibusdam et expedita distinctio. Saepe eveniet, ut perspiciatis, unde omnis dolor. Provident, similique sunt in ea commodi autem quibusdam et voluptates repudiandae sint.
+                        img(src="../img/demo.jpg" alt="" title="")
+                        h2 Заголовок h2
+                        p Velit, sed quia non provident, similique sunt in culpa, qui dolorem. Ducimus, qui dolorem ipsum, quia. Quibusdam et accusamus et accusamus et quas. Quo voluptas sit, amet, consectetur, adipisci velit, sed quia voluptas. Veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut enim ipsam. Esse, quam nihil impedit, quo voluptas. Eaque ipsa, quae ab illo inventore veritatis et voluptates.
+                        h3 Заголовок h3
+                        p Quo voluptas sit, amet, consectetur, adipisci velit, sed quia voluptas. Veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut enim ipsam. Esse, quam nihil impedit, quo voluptas. Eaque ipsa, quae ab illo inventore veritatis et voluptates.
+        include chunks/footer.pug
+
+        link(href='./css/jquery.fancybox.min.css', rel='stylesheet')
+        script(src="./js/jquery.fancybox.min.js")
+
+        link(href='./css/slick.css', rel='stylesheet')
+        link(href='./css/slick-theme.css', rel='stylesheet')
+        script(src="./js/slick.min.js")
+
+        script(src="./js/jquery.inputmask.js")
+        script(src="./js/app.min.js")
