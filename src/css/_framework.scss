@@ -33,7 +33,7 @@ html,body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
-.heading{
+.heading,.heading-secondary{
     font-family: $font-family-base;
     font-weight: $font-weight-heading;
     line-height: $line-height-heading;
@@ -54,7 +54,8 @@ h1, h2, h3, h4, h5, h6,
 .h5,h5          {font-size: 1.2rem;}
 .h6,h6          {font-size: 1rem;}
 
-.heading        {font-size: 72px;}
+.heading          {font-size: 72px;}
+.heading-secondary{font-size: 60px;}
 
 p {
     font-size: 1rem;
@@ -163,6 +164,7 @@ a{
         font-size: map-get($font-size, 'lg');
     }
     .heading        {font-size: 60px;}
+    .heading-secondary        {font-size: 52px;}
     .d-xl{
         &-flex{display: flex;}
         &-none{display: none;}

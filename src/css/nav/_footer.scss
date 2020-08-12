@@ -10,7 +10,8 @@
     }
     &__subtitle{
         color: $light-grey;
-        font-size: map-get($font-size, 'sm');
+        font-size: 13px;
+        font-weight: 300;
         
         &:last-child{
             margin-bottom: 0;

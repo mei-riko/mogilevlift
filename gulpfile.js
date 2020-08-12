@@ -18,7 +18,7 @@ var gulp = require("gulp"),
     browserSync.init({
       server: {
         baseDir: './public',
-      }
+      },
     })
   });
   

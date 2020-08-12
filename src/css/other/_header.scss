@@ -1,5 +1,5 @@
 .header{
-    padding: map-get($map: $spacers, $key: 1) 0;
+    padding: $spacer/2 0;
     border-bottom: 1px solid $border-color;
 
     &__phone{
@@ -14,17 +14,27 @@
         }
     }
     &__link{
-        font-size: map-get($font-size, 'sm');
+        font-size: 13px;
         color: $light-grey;
         @extend .text-spacing-50;
-        margin-top: $spacer/4;
-        margin-bottom: $spacer/2;
+        margin-top: 5px;
+        margin-bottom: $spacer/3;
     }
 
     &__btn{
-        // font-size: map-get($font-size, 'sm');
         .btn_action__inside{
             padding: 12px 24px;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .header{
+        &__btn{
+            font-size: map-get($font-size, 'sm');
+            .btn_action__inside{
+                padding: 10px 20px;
+            }
         }
     }
 }

@@ -369,7 +369,7 @@ html, body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 .heading,
-.content-header__title {
+.content-header__title, .heading-secondary {
   font-family: "Fira Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
@@ -379,7 +379,7 @@ h1, h2, h3, h4, h5, h6,
 h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child,
 .h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child,
 .heading:last-child,
-.content-header__title:last-child {
+.content-header__title:last-child, .heading-secondary:last-child {
   margin-bottom: 0;
 }
 
@@ -416,6 +416,10 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 .heading,
 .content-header__title {
   font-size: 72px;
+}
+
+.heading-secondary {
+  font-size: 60px;
 }
 
 p {
@@ -572,6 +576,9 @@ a:hover, a:focus {
   .heading,
   .content-header__title {
     font-size: 60px;
+  }
+  .heading-secondary {
+    font-size: 52px;
   }
   .d-xl-flex {
     display: -webkit-box;
@@ -2824,6 +2831,12 @@ a:hover, a:focus {
   margin-top: 15px;
 }
 
+@media all and (max-width: 768px) {
+  .navbar-collapse {
+    display: none;
+  }
+}
+
 .nav_secondary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2840,7 +2853,7 @@ a:hover, a:focus {
   padding: 8px 20px;
   color: #c2c2c2;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -2965,7 +2978,8 @@ a:hover, a:focus {
 
 .nav_footer__subtitle {
   color: #c2c2c2;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 300;
 }
 
 .nav_footer__subtitle:last-child {
@@ -3066,7 +3080,7 @@ a:hover, a:focus {
 }
 
 .header {
-  padding: 30px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #28282f;
 }
 
@@ -3083,14 +3097,23 @@ a:hover, a:focus {
 }
 
 .header__link {
-  font-size: 14px;
+  font-size: 13px;
   color: #c2c2c2;
-  margin-top: 7.5px;
-  margin-bottom: 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .header__btn .btn_action__inside {
   padding: 12px 24px;
+}
+
+@media all and (max-width: 768px) {
+  .header__btn {
+    font-size: 14px;
+  }
+  .header__btn .btn_action__inside {
+    padding: 10px 20px;
+  }
 }
 
 .modal {
@@ -3646,6 +3669,19 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+@media all and (max-width: 768px) {
+  .logo_header {
+    width: 210px;
+    height: 50px;
+    max-width: 100%;
+    padding-top: 0;
+    background: url("../img/logo-mobile.png") no-repeat center left/contain;
+  }
+  .logo__intro {
+    display: none;
+  }
+}
+
 .partners {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4147,7 +4183,7 @@ a.preview_project:hover, a.preview_project:focus {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  height: 180px;
+  height: 140px;
   background-color: #191a1e;
 }
 
@@ -4156,9 +4192,9 @@ a.preview_project:hover, a.preview_project:focus {
   top: 0;
   left: 15px;
   z-index: 3;
-  font-size: 180px;
+  font-size: 140px;
   font-weight: 800;
-  line-height: 180px;
+  line-height: 140px;
   color: #232427;
 }
 

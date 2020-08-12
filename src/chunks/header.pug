@@ -2,26 +2,28 @@ header.header
     .header__element
     .container
         .row.align-items-end
-            .col-2
+            .col-2.col-sm-7
+                a.navbar-toggle#nav(data-trigger="click")
                 a.logo.logo_header(href="index.html") 
                     span.logo__intro С нами путь быстрее!
-            .col-8
-                a.navbar-toggle#nav(data-trigger="click")
-                .navbar-collapse
-                    .nav.nav_secondary
-                        a.nav_secondary__item(href="#") Документы
-                        a.nav_secondary__item(href="#") О компании
-                        a.nav_secondary__item(href="#") Проекты
-                        a.nav_secondary__item(href="#") Контакты
-                    .nav.nav_header
-                        a.nav_header__item(href="#") Лифты
-                        a.nav_header__item(href="#") Эскалаторы
-                        a.nav_header__item(href="#") Подъемники и платформы
-                        a.nav_header__item.nav_header__item--active(href="#") Услуги
-                        a.nav_header__item(href="#") Запчасти
-            .col-2.text-right
-                a.header__phone(href="8 812 214 55 00") 8 812 214 55 00 
-                a.link.header__link(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
+            .col-8.navbar-collapse
+                .nav.nav_secondary
+                    a.nav_secondary__item(href="#") Документы
+                    a.nav_secondary__item(href="#") О компании
+                    a.nav_secondary__item(href="#") Проекты
+                    a.nav_secondary__item(href="#") Контакты
+                .nav.nav_header
+                    a.nav_header__item(href="#") Лифты
+                    a.nav_header__item(href="#") Эскалаторы
+                    a.nav_header__item(href="#") Подъемники и платформы
+                    a.nav_header__item.nav_header__item--active(href="#") Услуги
+                    a.nav_header__item(href="#") Запчасти
+                .d-none.d-sm-block
+                    a.header__phone(href="8 812 214 55 00") 8 812 214 55 00 
+                    a.link.header__link(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
+            .col-2.col-sm-5.text-right
+                a.header__phone.d-sm-none(href="8 812 214 55 00") 8 812 214 55 00 
+                a.link.header__link.d-sm-none(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
                 a.btn.btn_action.header__btn(href="#") 
                     span.btn_action__inside Расчёт 
                         span.d-sm-none лифта

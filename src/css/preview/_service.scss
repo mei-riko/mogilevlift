@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
 
-    height:180px;
+    height:140px;
     background-color: $body-color;
 
     &__num{
@@ -16,9 +16,9 @@
         left: $spacer/2;
         z-index: 3;
 
-        font-size: 180px;
+        font-size: 140px;
         font-weight: 800;
-        line-height: 180px;
+        line-height: 140px;
         color: #232427;
     }
     &__title{

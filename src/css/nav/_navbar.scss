@@ -1,0 +1,7 @@
+.navbar-collapse{}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .navbar-collapse{
+        display: none;
+    }
+}
