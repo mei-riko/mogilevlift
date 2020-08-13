@@ -124,8 +124,30 @@ $(document).ready(() =>{
 			slidesToScroll: 6,
 			arrows      : true,
 			dots        : false,
-			
-			autoplay  : false,
+      autoplay  : false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        }
+      ]
     });
     let $slickGallery = $('.gallery-slider');
 		$slickGallery.slick({
@@ -133,8 +155,25 @@ $(document).ready(() =>{
 			slidesToScroll: 3,
 			arrows      : true,
 			dots        : true,
-			
-			autoplay  : false,
+      autoplay  : false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows      : true,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows      : false,
+          }
+        }
+      ]
     });
     let $slickPhoto = $('[data-slider="slick"]');
     $slickPhoto.slick({

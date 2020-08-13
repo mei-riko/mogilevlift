@@ -91,3 +91,22 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider{
+        .slick-arrow{
+            width: 42px;
+            height: 42px;
+            border-radius: 21px;
+        }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .slider{
+        .slick-arrow{
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+        }
+    }
+}

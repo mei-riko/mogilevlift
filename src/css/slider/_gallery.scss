@@ -7,3 +7,9 @@
         padding: $spacer 0;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider_gallery{
+        padding: 0;
+    }
+}

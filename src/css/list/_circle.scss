@@ -48,6 +48,11 @@
                 height: 6px;
                 top: .5rem;              
             }
+            &_secondary{
+                &:after{
+                    display: none;
+                }
+            }
         }
     }
 }

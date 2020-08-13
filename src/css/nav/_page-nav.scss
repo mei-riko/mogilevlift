@@ -39,7 +39,7 @@
     }
 }
 
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .page-nav{
         padding: $spacer/2 0;
         font-size: map-get($map: $font-size, $key: sm);

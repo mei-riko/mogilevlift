@@ -182,6 +182,14 @@ a{
         &-none{display: none;}
         &-block{display: block;}
     }
+    .blockquote-person{      
+        .blockquote-gold{
+            background-position-x: 16px;
+            background-position-y: map-get($map: $spacers, $key: 2);
+            background-size: 24px;
+            padding: map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 3);
+        }
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     h1, h2, h3, h4, h5, h6,
@@ -202,6 +210,14 @@ a{
         &-none{display: none;}
         &-block{display: block;}
     }
+    .blockquote-person{      
+        .blockquote-gold{
+            background-position-x: 10px;
+            background-position-y: 16px;
+            background-size: 20px;
+            padding: map-get($map: $spacers, $key: 2);
+        }
+    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     html,body {
@@ -220,5 +236,14 @@ a{
         &-flex{display: flex;}
         &-none{display: none;}
         &-block{display: block;}
+    }
+
+    .blockquote-person{      
+        .blockquote-gold{
+            background-position-x: 10px;
+            background-position-y: 26px;
+            background-size: 12px;
+            padding: map-get($map: $spacers, $key: 1);
+        }
     }
 }

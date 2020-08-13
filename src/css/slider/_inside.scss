@@ -2,3 +2,10 @@
     margin-left: -15px;
     margin-right: -15px;
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .slider_inside-container{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
