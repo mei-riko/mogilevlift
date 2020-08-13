@@ -19,8 +19,6 @@
         position: relative;
         z-index: 2;
     }
-
-
 }
 
 .btn-container{
@@ -37,5 +35,15 @@
 
     &__item{
         padding: $spacer/4 $spacer/2;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .btn-group{
+        justify-content: left;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .btn-container{
+        padding: 0 15px;
     }
 }

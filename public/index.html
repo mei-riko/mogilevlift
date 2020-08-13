@@ -12,16 +12,17 @@
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     <header class="header">
       <div class="header__element"></div>
+      <div class="navbar-overlay"></div>
       <div class="container">
-        <div class="row align-items-end">
-          <div class="col-2"><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
-          <div class="col-8"><a class="navbar-toggle" id="nav" data-trigger="click"></a>
-            <div class="navbar-collapse">
-              <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
-              <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
-            </div>
+        <div class="row align-items-end align-items-sm-center">
+          <div class="col-2 col-xs-8 col-md-7 d-flex align-items-center justify-content-sm-between"><a class="navbar-toggle" id="nav" data-trigger="click"></a><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
+          <div class="col-8 navbar-collapse">
+            <div class="navbar-close"></div>
+            <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
+            <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
+            <div class="d-none d-sm-block"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a></div>
           </div>
-          <div class="col-2 text-right"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-sm-none">лифта</span></span></a></div>
+          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-md-none" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-lg-none" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-xs-none d-md-inline d-lg-none">лифта</span></span></a></div>
         </div>
       </div>
     </header><a class="scrollTop" id="scrollTop" href="#" data-trigger="click"></a>
@@ -312,9 +313,9 @@
       </div>
     </aside>
     <footer class="footer">
-      <div class="container bg-lines pt-3 pb-3">
+      <div class="container bg-lines pt-3 pb-3 pt-sm-1 pb-sm-1">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Лифты</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Коттеджные</a></div>
@@ -329,7 +330,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Грузовые для кафе и ресторанов</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6 mb-sm-1">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Подъемники</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Платформы для инвалидов</a></div>
@@ -340,7 +341,7 @@
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Запчасти</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 mb-xs-1 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Услуги</a></div>
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Проектирование</a></div>
@@ -354,7 +355,7 @@
               <div class="nav__item"><a class="nav_footer__subtitle" href="#">Лизинг</a></div>
             </nav>
           </div>
-          <div class="col-3">
+          <div class="col-3 col-xs-12 col-sm-6">
             <nav class="nav nav_footer">
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">Документы</a></div>
               <div class="nav__item nav__item_group"><a class="nav_footer__title" href="#">О компании</a></div>
@@ -369,13 +370,13 @@
     <div class="subfooter">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 col-sm-12 text-sm-center">
             <p class="subfooter__text">© 2005-2020. Все права защищены.</p>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-4 text-center col-sm-12">
             <p class="subfooter__text">Могилевлифт - поставки лифтов, подъемников, запчастей.</p>
           </div>
-          <div class="col-4 text-right">
+          <div class="col-4 text-right col-sm-12 text-sm-center">
             <p class="subfooter__text">Сайт разработан <a class="subfooter__link" href="https://websoho.ru">студией «SOHO»</a></p>
           </div>
         </div>

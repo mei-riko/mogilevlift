@@ -19,3 +19,10 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .list_check{
+        &__item{
+            margin-bottom: $spacer/2;
+        }
+    }
+}

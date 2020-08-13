@@ -11,17 +11,17 @@ html(lang="ru")
     body
         script(src="http://code.jquery.com/jquery-3.3.1.min.js")
         include chunks/header.pug
-        section.container.bg-lines.pt-4.pb-4.content-header
+        section.container.bg-lines.pt-4.pb-4.content-header.pt-md-2.pt-md-2
                 a.subtitle.subtitle_link(href="catalog.html") Пассажирские лифты
                 h1.content-header__title Панорамные пассажирские лифты
-                .row.justify-content-end.mt-2.mb-2
-                    .col-3.col-md-12.stats
+                .row.justify-content-end.mt-3.mb-2.mt-md-1.mb-md-1
+                    .col-3.col-md-4.col-xs-12.stats
                         p.stats__title 1927 дней
                         p.stats__content гарантия на&nbsp;все выполненные работы
-                    .col-3.col-md-12.stats
+                    .col-3.col-md-4.col-xs-12.stats.mt-xs-1
                         p.stats__title 900 проектов
                         p.stats__content под&nbsp;ключ выполнено по&nbsp;России
-                    .col-3.col-md-12.stats
+                    .col-3.col-md-4.col-xs-12.stats.mt-xs-1
                         p.stats__title 3370&nbsp;лифтов
                         p.stats__content поставленно за&nbsp;16&nbsp;лет по&nbsp;всей&nbsp;России
                 .row.justify-content-end
@@ -31,12 +31,12 @@ html(lang="ru")
                                 path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
         // Преимущества и текст
         section.border-top
-            .container.bg-lines.pt-3.pb-3
+            .container.bg-lines.pt-3.pb-3.pt-sm-1.pb-sm-1.pt-md-2.pb-sm-1
                 .row
                     .col-8.col-md-12
                         p.text-grey Lorem ipsum dolor sit amet. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Doloremque laudantium, totam rem aperiam. Voluptas sit, aspernatur aut perferendis doloribus asperiores repellat.. Libero tempore, cum soluta nobis. Animi, id est eligendi optio, cumque nihil impedit, quo minus.
-                .row.justify-content-end.mt-3
-                    .col-3.col-md-12
+                .row.justify-content-end.justify-content-sm-start.mt-3.mt-sm-1
+                    .col-3.col-xs-12.col-sm-6.col-md-4
                         .list.list_check
                             .list__item.list_check__item
                                 p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
@@ -44,7 +44,7 @@ html(lang="ru")
                             .list__item.list_check__item
                                 p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
                                 p.text-grey.text-light вес всех пассажиров
-                    .col-3.col-md-12.stats
+                    .col-3.col-xs-12.col-sm-6.col-md-4.mt-sm-1
                         .list.list_check
                             .list__item.list_check__item
                                 p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
@@ -52,14 +52,14 @@ html(lang="ru")
                             .list__item.list_check__item
                                 p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
                                 p.text-grey.text-light вес всех пассажиров
-                    .col-3.col-md-12.stats
+                    .col-3.col-xs-12.col-sm-6.col-md-4.mt-sm-1
                         .list.list_check
                             .list__item.list_check__item
                                 p.text-gold.text-bold.text-uppercase.mb-0 30% экономия
                                 p.text-grey.text-light на&nbsp;электроэнергии
                             .list__item.list_check__item
                                 p.text-gold.text-bold.text-uppercase.mb-0 max - 1275 кг
-                            p.text-grey.text-light вес всех пассажиров
+                                p.text-grey.text-light вес всех пассажиров
         // Ссылки опционально
         section.border-top.border-bottom.pt-1.pb-1
             .container.btn-container
@@ -88,12 +88,12 @@ html(lang="ru")
                             span.btn_icon__img
                                 svg(width="24" height="24" viewBox="0 0 24.00 24.00")
                                     path(fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 4,12L 16.25,12L 11,6.74994L 11.6643,6L 18.1642,12.5L 11.6642,19L 11,18.25L 16.25,13L 4,13L 4,12 Z ")
-        // Варианты дизайна
+                // Варианты дизайна
         section.container.pt-1.pb-1
             .row.align-items-center
-                .col-3
+                .col-3.col-md-12
                     p.h5.text-uppercase.text-grey 51 вариант дизайна&nbsp;для&nbsp;кабины
-                .col-9.tabs-container
+                .col-9.col-md-12.tabs-container.mt-md-1.mt-sm-0
                     ul.list.tabs
                         li.tabs__item.tabs__item--active
                             a.tabs__link.tabs__link--active(href="section-1" data-trigger="click") 
@@ -140,15 +140,15 @@ html(lang="ru")
                         p.subtitle Оборудование
                         h4.h1 Лифты, подходящий под любые задачи
                         p.text-grey Lorem ipsum dolor sit amet. Omnis dolor sit, amet, consectetur, adipisci velit, sed quia. Dolorum fuga cum soluta nobis est et quas molestias. Possimus, omnis voluptas nulla vero eos et dolorum fuga. Unde omnis dolor repellendus accusantium doloremque laudantium totam. Laudantium, totam rem aperiam eaque ipsa quae. Perspiciatis, unde omnis iste natus error sit voluptatem. Tempore, cum soluta nobis est. Eaque ipsa, quae ab illo inventore.
-        section.container.pt-3.pb-2
+        section.container.pt-3.pb-2.pt-md-1.pb-md-0
             .row
                 .col-6.col-sm-12.mb-1
                     .preview.preview_product.preview_product-details
-                        .row.align-items-center
-                            .col-5
+                        .row.align-items-center.justify-content-md-center
+                            .col-5.col-xs-6.col-sm-4.col-md-6
                                 a.preview_product-details__link(href="product.html" title="")
                                     img.preview_product-details__image(src="../demo/01-full.png")
-                            .col-7
+                            .col-7.col-xs-12.mt-xs-1.col-sm-8.mt-sm-0.col-lg-12.mt-lg-1
                                 a.preview__title.preview_product__title.preview_product__title--link.text-uppercase(href="product.html") Гидравлический лифт для&nbsp;коттеджа
                                 ul.list.text-light.preview_product__param
                                     li.list__item грузоподъемность: до 1000 кг
@@ -162,11 +162,11 @@ html(lang="ru")
                                 a.preview_product-details__btn(href="product.html" title="") Подробнее
                 .col-6.col-sm-12.mb-1
                     .preview.preview_product.preview_product-details
-                        .row.align-items-center
-                            .col-5
+                        .row.align-items-center.justify-content-md-center
+                            .col-5.col-xs-6.col-sm-4.col-md-6
                                 a.preview_product-details__link(href="product.html" title="")
                                     img.preview_product-details__image(src="../demo/01-full.png")
-                            .col-7
+                            .col-7.col-xs-12.mt-xs-1.col-sm-8.mt-sm-0.col-lg-12.mt-lg-1
                                 a.preview__title.preview_product__title.preview_product__title--link.text-uppercase(href="product.html") Гидравлический лифт для&nbsp;коттеджа
                                 ul.list.text-light.preview_product__param
                                     li.list__item грузоподъемность: до 1000 кг
@@ -186,7 +186,7 @@ html(lang="ru")
         section.border-top.border-bottom.pt-3.pb-3(style="overflow:hidden;")
             .container
                 .row.justify-content-center
-                    .col-9.text-center
+                    .col-9.text-center.col-md-12.col-lg-10
                         p.heading.text-bold 
                             span.p-relative(style="z-index:2;") Узнайте стоимость и выберите дизайн кабины 
                             span.text-decoration
@@ -199,23 +199,23 @@ html(lang="ru")
                             span.btn__inside Конструктор лифта
         // Преимущества и текст
         section.border-top
-            .container.bg-lines.pt-3.pb-3
+            .container.bg-lines.pt-3.pb-3.pt-md-1.pt-md-1
                 .row
-                    .col-6.col-md-12.mb-1
+                    .col-6.col-md-12.col-lg-8.mb-1
                         p.subtitle Комплектация
                         h3.h2 Дополнительная комплектация для коттеджного лифта
                     .col-8.col-md-12
                         p.text-grey Lorem ipsum dolor sit amet. Dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti quos. Doloremque laudantium, totam rem aperiam. Voluptas sit, aspernatur aut perferendis doloribus asperiores repellat.. Libero tempore, cum soluta nobis. Animi, id est eligendi optio, cumque nihil impedit, quo minus.
-                .row.justify-content-end.mt-3
-                    .col-3.col-md-12
+                .row.justify-content-end.mt-3.mt-md-1
+                    .col-3.col-md-12.col-lg-4
                         ul.list.list_circle
                             li.list_circle__item 30% экономия на&nbsp;электроэнергии
                             li.list_circle__item max - 1275 кг вес всех пассажиров
-                    .col-3.col-md-12
+                    .col-3.col-md-12.mt-md-1.col-lg-4
                         ul.list.list_circle
                             li.list_circle__item 30% экономия на&nbsp;электроэнергии
                             li.list_circle__item max - 1275 кг вес всех пассажиров
-                    .col-3.col-md-12
+                    .col-3.col-md-12.mt-md-1.col-lg-4
                         ul.list.list_circle
                             li.list_circle__item 30% экономия на&nbsp;электроэнергии
                             li.list_circle__item max - 1275 кг вес всех пассажиров
@@ -223,16 +223,16 @@ html(lang="ru")
         .border-top.border-bottom
             .container
                 .row
-                    .col-6(style="padding-left: 0;")
+                    .col-6(style="padding-left: 0;").col-md-12
                         .advantage.advantage_numeric
-                            p.advantage__title.h2 Оперативность
+                            p.advantage__title.advantage_numeric__title Оперативность
                             p.text-grey 85% проектов сдаем раньше зафиксированных сроков
-                    .col-6(style="padding-left: 0;padding-right: 0;")
+                    .col-6(style="padding-left: 0;padding-right: 0;").col-md-12
                         .advantage.advantage_numeric.advantage_numeric--last
-                            p.advantage__title.h2 Ответственность
+                            p.advantage__title.advantage_numeric__title Ответственность
                             p.text-grey Поставки лифтового оборудования от&nbsp;3&nbsp;недель
         // Отзывы
-        .container.bg-lines.pt-3.pb-3
+        .container.bg-lines.pt-3.pb-3.pt-md-1.pb-md-1
             .slider.slider_inside-container
                 .slider__content#reviews-full
                     a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
@@ -254,38 +254,41 @@ html(lang="ru")
                     a.slider__item(href="../demo/demo.jpg" data-fancybox="section-1")
                         img.img-fluid(src="../demo/scan.png" alt="" title="")
         // Реализованные проекты
-        aside.bg-separate.border-top.pt-3.pb-3
+        aside.bg-separate.border-top.pt-3.pb-3.pt-md-1.pb-md-1
             .container
                 .row
-                    .col-6 
+                    .col-6.col-md-12
                         h4.h3 Реализованные проекты
-                    .col-6.text-right 
+                    .col-6.text-right.d-md-none 
                         a.text-uppercase(href="#") Вcе выполненные проекты
                 .row
-                    .col-3.col-md-6.mt-3
+                    .col-3.col-md-6.mt-3.col-sm-12.mt-sm-1
                         a.preview.preview_project.text-center(href="#")
                             .preview_project__logo(style="background-image:url('../logo/01.png')")
                             .preview__title.preview_project__title Олимпийский парк: проектирование и монтаж
                             .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
-                    .col-3.col-md-6.mt-3
+                    .col-3.col-md-6.mt-3.col-sm-12.mt-sm-1
                         a.preview.preview_project.text-center(href="#")
                             .preview_project__logo(style="background-image:url('../logo/04.png')")
                             .preview__title.preview_project__title Больница №23: монтаж, проектирование, поставка
                             .preview__subinfo.preview_project__subinfo г. СПб, пр. Ветеранов, д. 14
-                    .col-3.col-md-6.mt-3
+                    .col-3.col-md-6.mt-3.col-sm-12.mt-sm-1
                         a.preview.preview_project.text-center(href="#")
                             .preview_project__image(style="background-image:url('../demo/demo-small.png')")
                             .preview__title.preview_project__title Дом в ЖК “Кристал” проектирование и монтаж
                             .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
-                    .col-3.col-md-6.mt-3
+                    .col-3.col-md-6.mt-3.col-sm-12.mt-sm-1
                         a.preview.preview_project.text-center(href="#")
                             .preview_project__logo(style="background-image:url('../logo/07.png')")
                             .preview__title.preview_project__title Олимпийский парк: проектирование и монтаж
                             .preview__subinfo.preview_project__subinfo г. Сочи, бул. Жуковского, д. 32
+                .d-none.d-md-block.mt-1.text-center
+                    a.text-uppercase.link-inverse(href="#") Вcе выполненные проекты
+        // CTA
         section.pt-1.pb-3.bg-white.text-black(style="overflow:hidden;")
             .container
                 .row.justify-content-center
-                    .col-9.text-center
+                    .col-9.text-center.col-md-12.col-lg-10
                         p.heading.text-bold 
                             span.p-relative(style="z-index:2;") Рассчитаем стоимость лифтового оборудования за  
                             span.text-decoration.text-decoration_light
@@ -295,36 +298,36 @@ html(lang="ru")
                                 span.text-decoration__elem
                                 span.text-decoration__content.text-dark-gold 30
                             span.p-relative(style="z-index:2;")  минут
-                        p.lead.text-light.mb-2(style="width:500px;max-width:100%;margin-left:auto;margin-right:auto;") Заполните и отправьте форму. Менеджер перезвонит и предложит оптимальный вариант.
-                        a.btn.btn_action(href="#") 
+                        p.lead.text-light.mb-2.mb-xs-0(style="width:500px;max-width:100%;margin-left:auto;margin-right:auto;") Заполните и отправьте форму. Менеджер перезвонит и предложит оптимальный вариант.
+                        a.btn.btn_action.mt-xs-1(href="#")
                             span.btn_action__inside.btn_action__inside--light Скачать опросный лист
-                        a.btn.btn_main(href="#") 
+                        a.btn.btn_main.mt-xs-1(href="#")
                             span.btn__inside Отправить форму
         // Услуги
-        aside.pt-1.pb-1
+        aside.pt-1.pb-1.pb-lg-0
             .container
                 h5.subtitle.text-uppercase Сопутствующие услуги
                 .row
-                    .col-3.col-md-6.col-sm-12
+                    .col-3.mb-lg-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 01
-                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Проектирование
-                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
-                    .col-3.col-md-6.col-sm-12
+                            p.preview__title.preview_service__title.text-uppercase Проектирование
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3.mb-lg-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 02
-                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Монтаж
-                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
-                    .col-3.col-md-6.col-sm-12
+                            p.preview__title.preview_service__title.text-uppercase Монтаж
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3.mb-lg-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 03
-                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Строительство
-                            p.preview__subinfo.preview_project__subinfo  лифтов и подъемников
-                    .col-3.col-md-6.col-sm-12
+                            p.preview__title.preview_service__title.text-uppercase Строительство
+                            p.preview__subinfo  лифтов и подъемников
+                    .col-3.mb-lg-1.mt-sm-0.col-xs-12.col-sm-6.col-lg-4
                         a.preview.preview_service.border(href="text.html")
                             .preview_service__num 04
-                            p.preview__title.preview_project__title.preview_service__title.text-uppercase Ремонт и&nbsp;замена
-                            p.preview__subinfo.preview_project__subinfo  капитальный ремонт и&nbsp;замена
+                            p.preview__title.preview_service__title.text-uppercase Ремонт и&nbsp;замена
+                            p.preview__subinfo  капитальный ремонт и&nbsp;замена
         // Контент
         section.pt-2.pb-2.content.border-top
             .container

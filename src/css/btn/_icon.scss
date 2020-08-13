@@ -1,14 +1,23 @@
 .btn_icon{
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+    height: 48px;
+    overflow: hidden;
+
     &__content{
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        padding: 14px 30px;
+
         font-size: map-get($map: $font-size, $key: md);
         line-height: map-get($map: $font-size, $key: xl);
         font-weight: $font-weight-bold;
+
         color: $white;
         background-color: $border-color;
-        padding: 14px 30px;
+
         transition: .4s;
     }
     &__img{
@@ -27,6 +36,16 @@
             background-color: lighten($color: $border-color, $amount: 8);
             // color: $dark-grey;
             // background-color: $grey;
+        }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .btn_icon{
+        &__content{
+            font-size: map-get($map: $font-size, $key: sm);
+            line-height: map-get($map: $font-size, $key: md);
+            padding: 8px 20px;
         }
     }
 }

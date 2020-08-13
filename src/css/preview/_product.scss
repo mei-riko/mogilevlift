@@ -64,3 +64,11 @@
         }
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .preview_product{
+        &__title{
+            font-size: 1.25rem;
+        }
+    }
+}

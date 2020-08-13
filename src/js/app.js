@@ -181,8 +181,25 @@ $(document).ready(() =>{
 			slidesToScroll: 6,
 			arrows      : true,
 			dots        : false,
-			
-			autoplay  : false,
+      autoplay  : false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows      : true,
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows      : true,
+          }
+        }
+      ]
     });
     // Gallery Full Screen
     let $slickFullScreen = $('#line-gallery');
