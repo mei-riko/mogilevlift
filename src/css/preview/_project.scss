@@ -30,3 +30,15 @@ a.preview_project{
         color: $gold;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .preview_project{
+        &__image{
+            height: 100px;
+        }
+        &__logo{
+            height: 100px;
+            background-size: 60px;
+        }
+    }
+}

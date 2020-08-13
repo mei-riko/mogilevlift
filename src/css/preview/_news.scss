@@ -35,3 +35,17 @@ a.preview_news__title{
         color: $dark-gold;
     }
 }
+
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
+    .preview_news{
+        height: auto;
+        
+        &__image{
+            height: 100px;
+        }
+
+        &--has-image{
+            height: auto;
+        }
+    }
+}

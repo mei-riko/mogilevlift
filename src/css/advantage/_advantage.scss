@@ -24,6 +24,9 @@
         &__title{
             font-weight: 400;
         }
+        .list{
+            font-size: 14px;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){

@@ -30,8 +30,13 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .advantage_numeric{
+        padding: map-get($map: $spacers, $key: 1);
+
+        &__step{
+            display: none;
+        }
         &__title{
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
     }
 }
@@ -39,6 +44,11 @@
     .advantage_numeric{
         padding: map-get($map: $spacers, $key: 1);
         border-bottom: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        
+        &__title{
+            font-size: 1rem;
+        }
         &--last{
             border-bottom: none;
         }

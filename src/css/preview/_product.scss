@@ -2,11 +2,15 @@
     padding: $spacer;
     background-color: $grey;
     color: $black;
+    
+    word-break: break-word;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    overflow: hidden;
 
     &__image{
         width: 100%;
@@ -15,7 +19,6 @@
         background: no-repeat center / contain;
         transition: .3s;
     }
-    // Product Title in Preview with Text
     &__title{
         font-size: 1.5rem;
         &--link{
@@ -70,5 +73,10 @@
         &__title{
             font-size: 1.25rem;
         }
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'md')){
+    .preview_product{
+        padding: $spacer/3;
     }
 }
