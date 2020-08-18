@@ -94,6 +94,7 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .advantage_icon{
         padding-left: 100px;
+        height: auto;
 
         &__image-block{
             display: block;

@@ -1,4 +1,4 @@
-.error{
+.error-page{
     padding: map-get($map: $spacers, $key: 4) 0;
 
     &__title{
@@ -9,7 +9,7 @@
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
-    .error{
+    .error-page{
         padding: map-get($map: $spacers, $key: 2) $spacer/2;
     
         &__title{
@@ -20,7 +20,7 @@
 }
 
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .error{
+    .error-page{
         padding: $spacer $spacer/2;
     
         &__title{

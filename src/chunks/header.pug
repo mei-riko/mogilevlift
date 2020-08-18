@@ -25,7 +25,7 @@ header.header
                     a.link.header__link(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
             .col-2.col-xs-4.col-md-5.text-right
                 a.header__phone.d-md-none(href="8 812 214 55 00") 8 812 214 55 00 
-                a.link.header__link.d-lg-none(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
+                a.link.header__link.d-lg-none(data-fancybox="" data-src="#callback" href="javascript:;") заказать звонок
                 a.btn.btn_action.header__btn(href="#") 
                     span.btn_action__inside Расчёт 
                         span.d-xs-none.d-md-inline.d-lg-none лифта
@@ -35,7 +35,10 @@ a.scrollTop#scrollTop(href="#" data-trigger="click")
     form.form(action="")
         input.form__input.input.input--full.phone.error(type="text" placeholder="Контактный телефон")
         .form-validation.error Обязательно для заполнения
-        button.btn.btn_action.form__btn Оставить заявку
+        input.form__input.input.input--full(type="text" placeholder="Имя")
+        input.form__input.form__input_file(type="file" name="file" id="file")
+        button.btn.btn_secondary.form__btn 
+            span.btn__inside Оставить заявку
         .form__agree.checkbox
             input.checkbox__input#agree(type="checkbox" name="agree" checked="checked" required="required")
             label.checkbox__label(for="agree") согласен с 

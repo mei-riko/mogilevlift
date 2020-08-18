@@ -2,6 +2,7 @@
     outline: none;
     box-shadow: none;
     border:none;
+    padding: 0;
 
     margin-right: 5px;
     &:last-of-type{
@@ -45,5 +46,10 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .btn-container{
         padding: 0 15px;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .btn_xs-offset + .btn_xs-offset{
+        margin-top: $spacer/2;
     }
 }

@@ -70,13 +70,25 @@
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .preview_product{
+        padding: $spacer/3;
         &__title{
             font-size: 1.25rem;
         }
     }
+    .preview_product-details{
+        padding: $spacer;
+    }
 }
-@media all and (max-width: map-get($grid-breakpoints, 'md')){
+@media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .preview_product{
-        padding: $spacer/3;
+        height: auto;
+    }
+}
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .preview_product-details{
+        &__btn{
+            width: 100%;
+            text-align: center;
+        }
     }
 }

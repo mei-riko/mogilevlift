@@ -1,3 +1,37 @@
 .form{
-    
+    &__input{
+        width: 100%;
+        padding: 8px 12px;
+        border-radius: 2px;
+        box-shadow: none;
+        outline: none;
+        border: 1px solid $border-color;
+
+        margin-top: $spacer/2;
+
+        &:first-of-type{
+            margin-top: 0;
+        }
+
+        &_file{
+            padding: 0;
+            font-size: 14px;
+        }
+    }
+    &__agree{
+        font-size: 12px;
+        margin-top: $spacer/2;
+    }
+    &__btn{
+        width: 100%;
+        margin-top: $spacer/2;
+    }
+}
+
+.form-validation{
+    font-size: 12px;
+    &.error{
+        color: #ff4444!important;
+        margin: 6px 0 0;
+    }
 }
