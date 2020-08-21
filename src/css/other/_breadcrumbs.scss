@@ -1,0 +1,33 @@
+.breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    line-height: 16px;
+
+    list-style: none;
+    &__item{
+        position: relative;
+        padding-left: 0;
+        padding-right: 10px;
+        margin-right: 10px;
+
+        &:after{
+            display: block;
+            content:'';
+            width: 20px;
+            height: 16px;
+            background: url("../img/arrow-gold.svg") no-repeat center / contain;
+
+            position: absolute;
+            top: 0;
+            right: -10px;
+        }
+        &--active{
+            padding-right: 0px;
+            margin-right: 0px;
+            &:after{
+                display: none;
+            }
+        }
+    }
+}

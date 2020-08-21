@@ -13,10 +13,24 @@
         @extend .mb-4;
     }
     &__image-intro{
-        font-size: map-get($font-size, 'md');
+        font-size: map-get($font-size, 'sm');
+        color: $light-grey;
         margin-top: $spacer/2;
+        margin-bottom: $spacer;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
-
+    &__image-row{
+        margin-bottom: $spacer/2;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    table{
+        color: $light-grey;
+        line-height: 1.4;
+    }
     p{
         color: $light-grey;
         line-height: 1.6;
@@ -27,9 +41,10 @@
     img{
         @extend .img-fluid;
     }
-    ul{
+    ul:not(.breadcrumbs){
         @extend .list;
         color: $light-grey;
+        margin-bottom: $spacer/2;
         li{
             @extend .list_circle__item;
         }

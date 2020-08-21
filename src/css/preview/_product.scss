@@ -70,7 +70,7 @@
 
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .preview_product{
-        padding: $spacer/3;
+        padding: $spacer/2;
         &__title{
             font-size: 1.25rem;
         }
@@ -82,6 +82,9 @@
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .preview_product{
         height: auto;
+        &__title-sm{
+            min-height: 2.4rem;
+        }
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){

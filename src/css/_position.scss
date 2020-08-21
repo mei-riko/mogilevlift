@@ -23,6 +23,7 @@
     -ms-flex-direction: column-reverse!important;
     flex-direction: column-reverse!important
 }
+.flex-row-reverse > *,
 .flex-column-reverse > * {
     flex: 1;
 }
@@ -214,6 +215,7 @@
         -ms-flex-direction: column-reverse!important;
         flex-direction: column-reverse!important
     }
+    .flex-xl-row-reverse > *,
     .flex-xl-column-reverse > * {
         flex: 1;
     }
@@ -405,6 +407,7 @@
         -ms-flex-direction: column-reverse!important;
         flex-direction: column-reverse!important
     }
+    .flex-lg-row-reverse > *,
     .flex-lg-column-reverse > * {
         flex: 1;
     }
@@ -596,6 +599,7 @@
         -ms-flex-direction: column-reverse!important;
         flex-direction: column-reverse!important
     }
+    .flex-md-row-reverse > *,
     .flex-md-column-reverse > * {
         flex: 1;
     }
@@ -788,6 +792,7 @@
         -ms-flex-direction: column-reverse!important;
         flex-direction: column-reverse!important
     }
+    .flex-sm-row-reverse > *,
     .flex-sm-column-reverse > * {
         flex: 1;
     }

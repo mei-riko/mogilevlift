@@ -6,5 +6,25 @@
 
     &.fancybox-content{
         background-color: $border-color;
+        padding: map-get($spacers, 2);
+    }
+
+    &_partners{
+        width: 720px;
+        &__item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 90px;
+
+            background-color: $grey;
+            padding: $spacer/3;
+            margin-bottom: $spacer;
+        }
+
+        &.fancybox-content{
+            padding-bottom: $spacer/2;
+        }
     }
 }

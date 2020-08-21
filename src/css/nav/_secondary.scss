@@ -47,11 +47,11 @@
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .nav_secondary{
         flex-wrap: wrap;
+        order:2;
 
         &__item{
             flex: 0 0 100%;
             max-width: 100%;
-            font-size: map-get($font-size, 'md');
             padding: 8px 0;
             & + .nav_secondary__item{
                 &:before{

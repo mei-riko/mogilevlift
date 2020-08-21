@@ -1,13 +1,13 @@
 .list_circle{
     &__item{
         position: relative;
-        padding-left: map-get($map: $spacers, $key: 1);
+        padding-left: 20px;
         margin-bottom: 5px;
         &:before{
             content:'';
             display: block;
-            width: 12px;
-            height: 12px;
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
 
             background: linear-gradient( 90deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
@@ -24,8 +24,8 @@
             &:after{
                 content:'';
                 display: block;
-                width: 8px;
-                height: 8px;
+                width: 4px;
+                height: 4px;
                 border-radius: 50%;
     
                 background: $body-color;
