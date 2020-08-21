@@ -265,4 +265,24 @@ $(document).ready(() =>{
         $(".navbar-overlay").removeClass("navbar-overlay--active");
     }
   });
+  // Preloading Animation
+  new WOW().init();
+
+  // $(".bg-lines .row > [class ^= col]").each(function(){
+  //   $(this).addClass("animate__animated");
+  //   $(this).addClass("wow");
+  // });
+  
+  // function animation() {
+  //   $(".bg-lines .row > [class ^= col]").each(function(i){
+  //     $(this).addClass("animate__fadeInLeft");
+  //   });
+  // }
+  // $(window).on("load", function(){
+  //   $(".preloading").addClass("loading--ready");
+  //   $(".preloading").delay(600).fadeOut(400);
+  
+  //   window.setTimeout(animation, 600);
+  // });
+  
 });

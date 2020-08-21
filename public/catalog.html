@@ -7,6 +7,7 @@
     <title>Catalog</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
     <link href="./css/style.css" rel="stylesheet"/>
+    <link href="./css/animate.css" rel="stylesheet"/>
   </head>
   <body>
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -20,9 +21,9 @@
             <div class="navbar-close"></div>
             <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
             <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
-            <div class="d-none d-sm-block"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a></div>
+            <div class="d-none d-sm-block navbar-collapse__contact"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a></div>
           </div>
-          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-md-none" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-lg-none" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-xs-none d-md-inline d-lg-none">лифта</span></span></a></div>
+          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-md-none" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-lg-none" data-fancybox="" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-xs-none d-md-inline d-lg-none">лифта</span></span></a></div>
         </div>
       </div>
     </header><a class="scrollTop" id="scrollTop" href="#" data-trigger="click"></a>
@@ -31,7 +32,9 @@
       <form class="form" action="">
         <input class="form__input input input--full phone error" type="text" placeholder="Контактный телефон"/>
         <div class="form-validation error">Обязательно для заполнения</div>
-        <button class="btn btn_action form__btn">Оставить заявку</button>
+        <input class="form__input input input--full" type="text" placeholder="Имя"/>
+        <input class="form__input form__input_file" type="file" name="file" id="file"/>
+        <button class="btn btn_secondary form__btn"> <span class="btn__inside">Оставить заявку</span></button>
         <div class="form__agree checkbox">
           <input class="checkbox__input" id="agree" type="checkbox" name="agree" checked="checked" required="required"/>
           <label class="checkbox__label" for="agree">согласен с <a class="link-underline" href="/policy.pdf" target="_blank">обработкой персональных данных</a></label>
@@ -301,6 +304,7 @@
     <link href="./css/slick.css" rel="stylesheet"/>
     <link href="./css/slick-theme.css" rel="stylesheet"/>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/jquery.inputmask.min.js"></script>
     <script src="./js/app.min.js"></script>
   </body>

@@ -14,16 +14,18 @@
         color: $white;
 
         &:after{
-            transform: translateY(-5px);
+            // transform: translateY(-5px);
+            filter: brightness(1.2);
         }
     }
     &:after{
         content: '';
         display: block;
         width: 100%;
-        height: calc(100% + 15px);
+        height: 100%;
+        border-radius: 32px;
         background: linear-gradient( 0deg, rgb(115,87,49) 0%, rgb(230,225,157) 100%);
-        transform: translateY(-15px);
+        // transform: translateY(-15px);
 
         transition: .4s;
 
