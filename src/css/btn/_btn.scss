@@ -1,10 +1,14 @@
 .btn{
+    font-size: map-get($map: $font-size, $key: sm);
+    line-height: 1;
+
     outline: none;
     box-shadow: none;
     border:none;
     padding: 0;
 
     margin-right: 5px;
+
     &:last-of-type{
         margin-right: 0;
     }
@@ -20,6 +24,10 @@
         position: relative;
         z-index: 2;
     }
+
+    &_full{
+        width: 100%;
+    }
 }
 
 .btn-container{
@@ -27,8 +35,13 @@
     padding-right: 0;
 }
 .btn-group{
+    // display: grid;
+    // grid-gap: $spacer/2;
+    // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
 
     margin-left: -($spacer/2);
@@ -40,7 +53,7 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .btn-group{
-        justify-content: left;
+        justify-content: start;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){

@@ -11,8 +11,9 @@
         color: $light-grey;
         text-transform: uppercase;
 
-        font-size: 15px;
-        font-weight: 300;
+        font-size: map-get($map: $font-size, $key: sm);
+        font-weight: $font-weight-light;
+        line-height: $line-height-heading;
 
         &:hover, &:focus{
             color: $white;
@@ -33,6 +34,22 @@
                 opacity: .8;
 
                 background-color: $light-grey;
+            }
+        }
+
+        &[data-status=search]{
+            text-transform: none;
+            font-size: 0;
+            background: url("../img/search.svg") no-repeat center/ 12px;
+            filter: opacity(.7);
+            transition: .3s;
+
+            &:before{
+                display: none;
+            }
+
+            &:hover, &:focus{
+                filter: opacity(1);
             }
         }
     }

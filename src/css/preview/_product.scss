@@ -20,24 +20,18 @@
         transition: .3s;
     }
     &__title{
-        font-size: 1.5rem;
-        &--link{
-            color: $body-color;
-            &:hover, &:focus{
-                color: $dark-gold;
-            }
-        }
+        font-size: 1.25rem;
     }
     &__param{
         line-height: 1.2;
         margin-bottom: $spacer/2;
     }
 
-    &--link{
+    &--hovered{
+        color: $black;
         &:hover, &:focus{
-            .preview_product__image{
-                opacity: 0.7;
-            }
+            background-color: $white;
+            color: $black;
         }
     }
 }

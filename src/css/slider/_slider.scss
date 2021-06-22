@@ -64,6 +64,11 @@
         border-radius: 26px;
         z-index: 11;
         transition: .4s;
+
+        &.slick-disabled{
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
     }
     .slick-prev{
         left: 0;
@@ -71,10 +76,11 @@
 
         background: $border-color url("../img/eject-left.svg") no-repeat center / 18px;
         background-position-x: calc(50% - 3px);
+
         &:before{content: '';}
 
         &:hover, &:focus{
-            background: lighten($color: $border-color, $amount: 2) url("../img/eject-left.svg") no-repeat center / 18px;
+            background: lighten($color: $border-color, $amount: 4) url("../img/eject-left.svg") no-repeat center / 18px;
             background-position-x: calc(50% - 3px);
         }
     }
@@ -84,10 +90,11 @@
 
         background: $border-color url("../img/eject-right.svg") no-repeat center / 18px;
         background-position-x: calc(50% + 3px);
+
         &:before{content: '';}
 
         &:hover, &:focus{ 
-            background: lighten($color: $border-color, $amount: 2) url("../img/eject-right.svg") no-repeat center / 18px;
+            background: lighten($color: $border-color, $amount: 4) url("../img/eject-right.svg") no-repeat center / 18px;
             background-position-x: calc(50% + 3px);
         }
     }

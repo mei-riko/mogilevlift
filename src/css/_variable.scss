@@ -44,17 +44,22 @@ $font-weight-base: 400;
 $line-height-base: 1.4;
 
 $font-size: (
-  xs: 0,
+  xs: 10px,
   sm: 14px,
-  md: 16px,
+  md: 15px,
   lg: 16px,
   xl: 18px
 ) !default;
+
+$font-weight-light  : 300;
 $font-weight        : 400;
 $font-weight-heading: 700;
 $font-weight-bold   : 700;
+
 $line-height        : 1.6;
 $line-height-heading: 1.2;
+
+$letter-spacing     : .05em;
 
 $dt-font-weight: $font-weight-bold !default;
 

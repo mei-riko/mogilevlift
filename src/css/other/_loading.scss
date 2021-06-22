@@ -9,13 +9,15 @@
     height: 100%;
     max-height: 100vh;
 
+    background: $body-color;
+
     &:before, &:after{
         content: '';
         display: block;
         width: calc( 50% - 820px );
         height: 100%;
 
-        background-color: $grey;
+        background-color: $dark-grey;
 
         position: absolute;
         top: 0;
@@ -39,11 +41,12 @@
     &__col{
         @extend .col-3;
         height: 100%;
-        background-color: $grey;
+        background-color: $dark-grey;
 
-        border-left: 1px solid #28282f;
+        border-left: 1px solid $body-color;
 
         transition: .6s;
+
         &:before{
             content: '';
             display: block;
@@ -62,6 +65,7 @@
     &--ready{
         &:before,
         &:after{
+            // opacity: 0;
             width: 0;
         }
         .preloading__col:before{
@@ -81,6 +85,7 @@
         &--ready{
             &:before,
             &:after{
+                // opacity: 0;
                 width: 0;
             }
         }
@@ -97,6 +102,7 @@
         &--ready{
             &:before,
             &:after{
+                // opacity: 0;
                 width: 0;
             }
         }
@@ -113,6 +119,7 @@
         &--ready{
             &:before,
             &:after{
+                // opacity: 0;
                 width: 0;
             }
         }
@@ -129,16 +136,18 @@
         &--ready{
             &:before,
             &:after{
+                // opacity: 0;
                 width: 0;
             }
         }
     }
 }
 
-
+// Свойства wow анимации
 .animate__animated{
     &.animate__delay-02 {animation-delay: .2s;}
     &.animate__delay-04 {animation-delay: .4s;}
     &.animate__delay-06 {animation-delay: .6s;}
     &.animate__delay-08 {animation-delay: .8s;}
 }
+// animate__animated wow animate__fadeInLeft animate__delay-02

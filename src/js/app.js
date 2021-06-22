@@ -1,5 +1,6 @@
 import $ from 'jquery'
 $(document).ready(() =>{
+
   $("a.scroll").click(function() {
     $("html, body").animate({
        scrollTop: $($(this).attr("href")).offset().top + "px"
@@ -50,12 +51,13 @@ $(document).ready(() =>{
   });
 
   // Modal
-  $('[data-fancybox="modal"]').fancybox({
-    autoFocus: false
+  $('[data-fancybox]').fancybox({
+    autoFocus: false,
+    touch: false
   });
 
   // Отмена стандартного поведения ссылки
-  $('a[data-trigger="click"]').click(function(e){
+  $('[data-trigger="click"]').click(function(e){
     e.preventDefault();
   })
   // Слайдер
@@ -67,8 +69,8 @@ $(document).ready(() =>{
 			slidesToScroll: 1,
 			arrows      : true,
 			dots        : false,
-			infinite: true,
-      draggable: true,
+			infinite    : true,
+      draggable   : true,
       // prevArrow: '<div class="slider_stats__prev"></div>',
       // nextArrow: '<div class="slider_stats__next"></div>',
       variableWidth: true,
@@ -155,7 +157,8 @@ $(document).ready(() =>{
 			slidesToScroll: 3,
 			arrows      : true,
 			dots        : true,
-      autoplay  : false,
+      autoplay    : false,
+      infinite    : false,
       responsive: [
         {
           breakpoint: 992,
@@ -267,22 +270,5 @@ $(document).ready(() =>{
   });
   // Preloading Animation
   new WOW().init();
-
-  // $(".bg-lines .row > [class ^= col]").each(function(){
-  //   $(this).addClass("animate__animated");
-  //   $(this).addClass("wow");
-  // });
-  
-  // function animation() {
-  //   $(".bg-lines .row > [class ^= col]").each(function(i){
-  //     $(this).addClass("animate__fadeInLeft");
-  //   });
-  // }
-  // $(window).on("load", function(){
-  //   $(".preloading").addClass("loading--ready");
-  //   $(".preloading").delay(600).fadeOut(400);
-  
-  //   window.setTimeout(animation, 600);
-  // });
   
 });

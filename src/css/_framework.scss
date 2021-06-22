@@ -1,5 +1,5 @@
 html,body {
-    font-size: map-get($font-size, 'xl');
+    font-size: map-get($font-size, 'lg');
     line-height: $line-height-base;
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
@@ -153,7 +153,7 @@ a{
 }
 
 .p-relative{position: relative;}
-.p-sticky{position: sticky; top: 0; left: 0; z-index: 101;}
+.p-sticky{position: sticky; top: 110px; left: 0; z-index: 101;}
 .p-absolute{position: absolute; top: 0; left: 0; z-index: 101;}
 
 .d{
@@ -164,10 +164,10 @@ a{
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     html,body {
-        font-size: map-get($font-size, 'lg');
+        font-size: map-get($font-size, 'md');
     }
-    .heading            {font-size: 60px;}
-    .heading-secondary  {font-size: 52px;}
+    .heading            {font-size: 56px;}
+    .heading-secondary  {font-size: 46px;}
     .d-xl{
         &-flex{display: flex;}
         &-none{display: none;}

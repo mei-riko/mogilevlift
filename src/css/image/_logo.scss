@@ -1,4 +1,9 @@
 .logo{
+    &__intro{
+        font-size: map-get($map: $font-size, $key: xs);
+        letter-spacing: $letter-spacing;
+    }
+    // Modificator
     &_header{
         font-size: map-get($font-size, 'sm');
         font-weight: $font-weight-bold;
@@ -7,12 +12,12 @@
         text-align: center;
         text-transform: uppercase;
 
-        width: 210px;
+        width: 160px;
         max-width: 100%;
 
-        padding-top: 110px;
+        padding-top: 80px;
 
-        background: url("../img/logo.png") no-repeat top center / 170px;
+        background: url("../img/logo.png") no-repeat top center / 124px;
 
         &:hover, &:focus{
             text-decoration: none;
