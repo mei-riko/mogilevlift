@@ -20,23 +20,14 @@
             text-decoration: none;
         }
 
-        & + .nav_secondary__item{
-            &:before{
-                content: '';
-                display: block;
-
-                width: 1px;
-                height: 16px;
-
-                position: absolute;
-                top: calc(50% - 8px);
-                left: 0;
-                opacity: .8;
-
-                background-color: $light-grey;
+        &--active{
+            color: $gold;
+            &:hover, &:focus{
+                color: $gold;
             }
         }
 
+        // Search Icon
         &[data-status=search]{
             text-transform: none;
             font-size: 0;
@@ -53,11 +44,29 @@
             }
         }
     }
+
+    .nav_secondary__item + .nav_secondary__item{
+        &:before{
+            content: '';
+            display: block;
+
+            width: 1px;
+            height: 16px;
+
+            position: absolute;
+            top: calc(50% - 8px);
+            left: 0;
+            opacity: .8;
+
+            background-color: $light-grey;
+        }
+    }
 }
-@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .nav_secondary{
         &__item{
             font-size: map-get($font-size, 'sm');
+            padding: 8px 14px;
         }
     }
 }
@@ -70,10 +79,16 @@
             flex: 0 0 100%;
             max-width: 100%;
             padding: 8px 0;
-            & + .nav_secondary__item{
-                &:before{
-                    display: none;
-                }
+
+            &[data-status=search]{
+                font-size: map-get($font-size, 'sm');
+                padding-left: $spacer;
+                background-position-x: left;
+            }
+        }
+        .nav_secondary__item + .nav_secondary__item{
+            &:before{
+                display: none;
             }
         }
     }

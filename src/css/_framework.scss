@@ -47,11 +47,11 @@ h1, h2, h3, h4, h5, h6,
 * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
     margin-top: map-get($spacers, 2);
 }
-.h1,h1              {font-size: 2.3rem;}
-.h2,h2              {font-size: 1.9rem;}
-.h3,h3              {font-size: 1.7rem;}
+.h1,h1              {font-size: 2.25rem;}
+.h2,h2              {font-size: 2rem;}
+.h3,h3              {font-size: 1.75rem;}
 .h4,h4              {font-size: 1.5rem;}
-.h5,h5              {font-size: 1.2rem;}
+.h5,h5              {font-size: 1.25rem;}
 .h6,h6              {font-size: 1rem;}
 
 .heading            {font-size: 72px;}
@@ -223,13 +223,14 @@ a{
     html,body {
         font-size: map-get($font-size, 'sm');
     }
-    .h1,h1              {font-size: 1.9rem;}
-    .h2,h2              {font-size: 1.7rem;}
-    .h3,h3              {font-size: 1.5rem;}
-    .h4,h4              {font-size: 1.2rem;}
-    .h5,h5              {font-size: 1.2rem;}
+
+    .h1,h1              {font-size: 1.75rem;}
+    .h2,h2              {font-size: 1.5rem;}
+    .h3,h3              {font-size: 1.25rem;}
+    .h4,h4              {font-size: 1.25rem;}
+    .h5,h5              {font-size: 1rem;}
     .h6,h6              {font-size: 1rem;}
-    
+
     .heading            {font-size: 28px;}
     .heading-secondary  {font-size: 20px;}
     .d-sm{
@@ -245,5 +246,13 @@ a{
             background-size: 12px;
             padding: map-get($map: $spacers, $key: 1);
         }
+    }
+}
+
+@media all and (max-width: map-get($grid-breakpoints, 'xs')){
+    .d-xs{
+        &-flex{display: flex;}
+        &-none{display: none;}
+        &-block{display: block;}
     }
 }

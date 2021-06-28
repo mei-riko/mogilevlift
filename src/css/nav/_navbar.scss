@@ -35,10 +35,12 @@
 
         &--active{
             transform: translateX(0);
+            overflow-y: auto;
         }
 
         display: flex;
         flex-direction: column;
+
         &__contact{
             order: 3;
             margin-top: $spacer;
@@ -71,10 +73,5 @@
     .navbar-toggle{
         display: inline-block;
         margin-right: $spacer/2;
-    }
-}
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .navbar-toggle{
-        margin-right: 0;
     }
 }

@@ -1,19 +1,21 @@
-.checkbox{
+.radio{
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+
     margin-bottom: $spacer/3;
 
     &__input{
         display: none;
 
-        &:checked + .checkbox__label:after {
+        &:checked + .radio__label:after {
             content: '';
             display: block;
             background-color: $gold;
 
             width: 5px;
             height: 5px;
+            border-radius: 50%;
 
             position: absolute;
             left: 4px;
@@ -36,6 +38,7 @@
 
             width: 13px;
             height: 13px;
+            border-radius: 50%;
 
             position: absolute;
             left: 0;
@@ -45,24 +48,5 @@
 
     &:last-child{
         margin-bottom: 0;
-    }
-
-    &_size_xl{
-        .checkbox__label{
-            line-height: 22px;
-            &:before{
-                width: 18px;
-                height: 18px;
-            }
-        }
-        .checkbox__input{
-            &:checked + .checkbox__label:after {
-                width: 9px;
-                height: 9px;
-
-                left: 5px;
-                top: 4px;
-            }
-        }
     }
 }

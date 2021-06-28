@@ -41,6 +41,16 @@
         }
     }
 }
+@media all and (max-width: map-get($grid-breakpoints, 'xl')){
+    .header{
+        &__phone{
+            font-size: map-get($map: $font-size, $key: lg);
+        }
+        &__email{
+            font-size: map-get($map: $font-size, $key: xs);
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header{
     }

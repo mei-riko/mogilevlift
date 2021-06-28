@@ -7,7 +7,6 @@
 @import "grid";
 @import "position";
 
-@import "content/offset";
 @import "content/text";
 @import "content/table";
 
@@ -40,6 +39,7 @@
 @import "btn/icon";
 
 @import "form/checkbox";
+@import "form/radio";
 @import "form/form";
 @import "form/input";
 @import "form/jGrowl";
@@ -74,3 +74,5 @@
 @import "content/content-header";
 @import "content/content";
 @import "content/error";
+
+@import "content/offset";

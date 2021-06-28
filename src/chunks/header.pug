@@ -3,7 +3,7 @@ header.header
     .navbar-overlay
     .container
         .row.align-items-center
-            .col-2.col-xs-8.col-md-7.d-flex.align-items-center.justify-content-sm-between
+            .col-2.col-xs-8.col-md-7.d-flex.align-items-center
                 a.navbar-toggle#nav(data-trigger="click")
                 a.logo.logo_header(href="index.html") 
                     span.logo__intro С нами путь быстрее!
@@ -12,22 +12,56 @@ header.header
                 .nav.nav_secondary
                     a.nav_secondary__item(href="#") Документы
                     a.nav_secondary__item(href="#") О компании
-                    a.nav_secondary__item(href="#") Проекты
+                    a.nav_secondary__item.nav_secondary__item--active(href="#") Проекты
                     a.nav_secondary__item(href="#") Контакты
                     a.nav_secondary__item(href="#" data-status="search") Поиск
                 .nav.nav_header
-                    a.nav_header__item(href="#") Лифты
-                    a.nav_header__item(href="#") Эскалаторы
-                    a.nav_header__item(href="#") Подъемники и платформы
-                    a.nav_header__item.nav_header__item--active(href="#") Услуги
+                    .nav_header__parent.nav__parent
+                        a.nav__link.nav_header__item.nav_header__item--active(href="#" data-nav="#nav1") Лифты
+                        .nav__children#nav1
+                            .nav__children-col
+                                a.nav__children-title(href="product.html") Пассажирские лифты
+                                a.nav__children-item(href="product.html") С машинным помещением
+                                a.nav__children-item(href="product.html") Без машинного помещения
+                                a.nav__children-item(href="product.html") Коттеджные
+                                a.nav__children-item(href="product.html") Панорамные
+                                a.nav__children-item(href="product.html") Для маломобильных групп населения
+                            .nav__children-col
+                                a.nav__children-title(href="product.html") Грузовые лифты
+                                a.nav__children-item(href="product.html") С верхним машинным помещением
+                                a.nav__children-item(href="product.html") С нижним машинным помещением
+                                a.nav__children-item(href="product.html") Малые грузовые лифты
+                                a.nav__children-item(href="product.html") Без машинного помещения
+                            .nav__children-col
+                                a.nav__children-title(href="product.html") Больничные лифты
+                                a.nav__children-item(href="product.html") С автоматическими дверями
+                                a.nav__children-item(href="product.html") С дверями ручного открывания
+                                a.nav__children-item(href="product.html") Без машинного помещения
+                    .nav_header__parent.nav__parent
+                        a.nav__link.nav_header__item(href="#" data-nav="#nav2") Эскалаторы
+                        .nav__children#nav2
+                            .nav__children-col
+                                a.nav__children-title(href="product.html") Пассажирские лифты
+                                a.nav__children-item(href="product.html") С машинным помещением
+                                a.nav__children-item(href="product.html") Без машинного помещения
+                                a.nav__children-item(href="product.html") Коттеджные
+                                a.nav__children-item(href="product.html") Панорамные
+                                a.nav__children-item(href="product.html") Для маломобильных групп населения
+                            .nav__children-col
+                                a.nav__children-title(href="product.html") Грузовые лифты
+                                a.nav__children-item(href="product.html") С верхним машинным помещением
+                                a.nav__children-item(href="product.html") С нижним машинным помещением
+                    a.nav_header__item(href="#") Подъемники
+                    a.nav_header__item(href="#") Услуги
                     a.nav_header__item(href="#") Запчасти
                     a.nav_header__item(href="#" data-status="action") Расчёт лифта
-                .d-none.d-sm-block.navbar-collapse__contact
-                    a.header__phone(href="8 812 214 55 00") 8 812 214 55 00 
-                    a.link.header__link(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
+                .d-none.d-md-block.navbar-collapse__contact
+                    a.header__phone.d-md-block(href="8 812 214 55 00") 8 812 214 55 00 
+                    a.link.header__link.d-md-block(data-fancybox="modal" data-src="#callback" href="javascript:;") заказать звонок
+                    a.header__email.d-md-block(href="mailto:info@mogilevlift.ru") info@mogilevlift.ru
             .col-2.col-xs-4.col-md-5.text-right
-                a.header__phone.d-md-none(href="tel:8 812 214 55 00") 8 812 214 55 00 
-                a.link.header__link.d-lg-none(data-fancybox="" data-src="#callback" href="javascript:;") заказать звонок
+                a.header__phone.d-xs-none(href="tel:8 812 214 55 00") 8 812 214 55 00 
+                a.link.header__link.d-md-none(data-fancybox="" data-src="#callback" href="javascript:;") заказать звонок
                 a.header__email.d-md-none(href="mailto:info@mogilevlift.ru") info@mogilevlift.ru
                 //- a.btn.btn_action.header__btn(href="#") 
                 //-     span.btn_action__inside Расчёт 
