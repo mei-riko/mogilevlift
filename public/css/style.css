@@ -606,6 +606,9 @@ a:hover, a:focus {
   .heading-secondary {
     font-size: 30px;
   }
+  .p-sticky {
+    top: 95px;
+  }
   .d-lg-flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -641,6 +644,10 @@ a:hover, a:focus {
   * + h1, * + h2, * + h3, * + h4, * + h5, * + h6,
   * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6 {
     margin-top: 30px;
+  }
+  .p-sticky {
+    top: 70px;
+    z-index: 98;
   }
   .d-md-flex {
     display: -webkit-box;
@@ -2584,6 +2591,12 @@ a:hover, a:focus {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
+@media all and (max-width: 1400px) {
+  .nav__children-item {
+    white-space: normal;
+  }
+}
+
 @media all and (max-width: 992px) {
   .nav__children {
     position: inherit;
@@ -2593,9 +2606,6 @@ a:hover, a:focus {
   }
   .nav__children-col:last-child {
     padding-bottom: 15px;
-  }
-  .nav__children-item {
-    white-space: normal;
   }
 }
 
@@ -3313,6 +3323,18 @@ a:hover, a:focus {
   }
   .header__email {
     font-size: 12px;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  .header {
+    max-height: 95px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .header {
+    max-height: 70px;
   }
 }
 
@@ -4106,8 +4128,8 @@ a:hover, a:focus {
   text-transform: uppercase;
   width: 160px;
   max-width: 100%;
-  padding-top: 80px;
-  background: url("../img/logo.png") no-repeat top center/124px;
+  padding-top: 75px;
+  background: url("../img/logo.png") no-repeat top center/115px;
 }
 
 .logo_header:hover, .logo_header:focus {

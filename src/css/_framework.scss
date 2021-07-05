@@ -168,6 +168,7 @@ a{
     }
     .heading            {font-size: 56px;}
     .heading-secondary  {font-size: 46px;}
+
     .d-xl{
         &-flex{display: flex;}
         &-none{display: none;}
@@ -177,6 +178,9 @@ a{
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .heading            {font-size: 42px;}
     .heading-secondary  {font-size: 30px;}
+
+    .p-sticky{top: 95px;}
+
     .d-lg{
         &-flex{display: flex;}
         &-none{display: none;}
@@ -205,6 +209,9 @@ a{
     * + .h1, * + .h2, * + .h3, * + .h4, * + .h5, * + .h6{
         margin-top: map-get($spacers, 1);
     }
+    
+    .p-sticky{top: 70px;z-index: 98;}
+    
     .d-md{
         &-flex{display: flex;}
         &-none{display: none;}

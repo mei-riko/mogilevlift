@@ -10,18 +10,18 @@ function navbarHover( itemNav ){
     if( parentHeader.find(".nav__link.nav__link--active").length > 0 && !item.hasClass("nav__link--active") ){
         let navActive = $(".nav__link.nav__link--active");
         navActive.removeClass("nav__link--active");
-        parentHeader.find(".nav .nav__children" + navActive.data("nav")).removeClass("nav__children--active");
+        parentHeader.find(".nav.nav--desktop .nav__children" + navActive.data("nav")).removeClass("nav__children--active");
     }
 
     item.addClass("nav__link--active");
-    parentHeader.find(".nav .nav__children" + nav).addClass("nav__children--active");
+    parentHeader.find(".nav.nav--desktop .nav__children" + nav).addClass("nav__children--active");
 }
 function navbarUnHover(){
     let item = $('.nav').find(".nav__link.nav__link--active");
     let nav = item.data("nav");
 
     item.removeClass("nav__link--active");
-    $(".nav .nav__children" + nav).removeClass("nav__children--active");
+    $(".nav.nav--desktop .nav__children" + nav).removeClass("nav__children--active");
 }
 function navbarDesktopInitialize( itemNav ){
     // Desktop Hover Nav
@@ -115,7 +115,8 @@ $(window).on("resize", function(){
         $(".navbar-toggle").removeClass("navbar-toggle--active");
         $(".navbar-collapse").removeClass("navbar-collapse--active");
         $(".navbar-overlay").removeClass("navbar-overlay--active");
-
+        $(".nav .nav__children").removeAttr("style");
+        
         // Desktop Navbar
         navbarDesktopInitialize( $('.nav.nav--desktop .nav__parent') );
 

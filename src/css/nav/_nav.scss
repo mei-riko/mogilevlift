@@ -72,7 +72,15 @@
         }
     }
 }
-
+@media all and (max-width: map-get($grid-breakpoints, 'lg')){
+    .nav{
+        &__children{
+            &-item{
+                white-space: normal;
+            }
+        }
+    }
+}
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .nav{
         &__children{
@@ -85,9 +93,7 @@
                     padding-bottom: $spacer/2;
                 }
             }
-            &-item{
-                white-space: normal;
-            }
+            
         }
     }
 }

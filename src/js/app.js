@@ -55,5 +55,5 @@ $(function() {
   });
 
   // Preloading Animation
-  // new WOW().init();
+  new WOW().init();
 });

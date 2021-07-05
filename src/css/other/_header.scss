@@ -53,10 +53,12 @@
 }
 @media all and (max-width: map-get($grid-breakpoints, 'lg')){
     .header{
+        max-height: 95px;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'md')){
     .header{
+        max-height: 70px;
     }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
