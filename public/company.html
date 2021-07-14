@@ -14,15 +14,29 @@
       <div class="header__element"></div>
       <div class="navbar-overlay"></div>
       <div class="container">
-        <div class="row align-items-end align-items-sm-center">
-          <div class="col-2 col-xs-8 col-md-7 d-flex align-items-center justify-content-sm-between"><a class="navbar-toggle" id="nav" data-trigger="click"></a><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
+        <div class="row align-items-center">
+          <div class="col-2 col-xs-8 col-md-7 d-flex align-items-center"><a class="navbar-toggle" id="nav" data-trigger="click"></a><a class="logo logo_header" href="index.html"> <span class="logo__intro">С нами путь быстрее!</span></a></div>
           <div class="col-8 navbar-collapse">
             <div class="navbar-close"></div>
-            <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a></div>
-            <div class="nav nav_header"><a class="nav_header__item" href="#">Лифты</a><a class="nav_header__item" href="#">Эскалаторы</a><a class="nav_header__item" href="#">Подъемники и платформы</a><a class="nav_header__item nav_header__item--active" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a></div>
-            <div class="d-none d-sm-block navbar-collapse__contact"><a class="header__phone" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a></div>
+            <div class="nav nav_secondary"><a class="nav_secondary__item" href="#">Документы</a><a class="nav_secondary__item" href="#">О компании</a><a class="nav_secondary__item nav_secondary__item--active" href="#">Проекты</a><a class="nav_secondary__item" href="#">Контакты</a><a class="nav_secondary__item" href="#" data-status="search">Поиск</a></div>
+            <div class="nav nav_header">
+              <div class="nav_header__parent nav__parent"><a class="nav__link nav_header__item nav_header__item--active" href="#" data-nav="#nav1">Лифты</a>
+                <div class="nav__children" id="nav1">
+                  <div class="nav__children-col"><a class="nav__children-title" href="product.html">Пассажирские лифты</a><a class="nav__children-item" href="product.html">С машинным помещением</a><a class="nav__children-item" href="product.html">Без машинного помещения</a><a class="nav__children-item" href="product.html">Коттеджные</a><a class="nav__children-item" href="product.html">Панорамные</a><a class="nav__children-item" href="product.html">Для маломобильных групп населения</a></div>
+                  <div class="nav__children-col"><a class="nav__children-title" href="product.html">Грузовые лифты</a><a class="nav__children-item" href="product.html">С верхним машинным помещением</a><a class="nav__children-item" href="product.html">С нижним машинным помещением</a><a class="nav__children-item" href="product.html">Малые грузовые лифты</a><a class="nav__children-item" href="product.html">Без машинного помещения</a></div>
+                  <div class="nav__children-col"><a class="nav__children-title" href="product.html">Больничные лифты</a><a class="nav__children-item" href="product.html">С автоматическими дверями</a><a class="nav__children-item" href="product.html">С дверями ручного открывания</a><a class="nav__children-item" href="product.html">Без машинного помещения</a></div>
+                </div>
+              </div>
+              <div class="nav_header__parent nav__parent"><a class="nav__link nav_header__item" href="#" data-nav="#nav2">Эскалаторы</a>
+                <div class="nav__children" id="nav2">
+                  <div class="nav__children-col"><a class="nav__children-title" href="product.html">Пассажирские лифты</a><a class="nav__children-item" href="product.html">С машинным помещением</a><a class="nav__children-item" href="product.html">Без машинного помещения</a><a class="nav__children-item" href="product.html">Коттеджные</a><a class="nav__children-item" href="product.html">Панорамные</a><a class="nav__children-item" href="product.html">Для маломобильных групп населения</a></div>
+                  <div class="nav__children-col"><a class="nav__children-title" href="product.html">Грузовые лифты</a><a class="nav__children-item" href="product.html">С верхним машинным помещением</a><a class="nav__children-item" href="product.html">С нижним машинным помещением</a></div>
+                </div>
+              </div><a class="nav_header__item" href="#">Подъемники</a><a class="nav_header__item" href="#">Услуги</a><a class="nav_header__item" href="#">Запчасти</a><a class="nav_header__item" href="#" data-status="action">Расчёт лифта</a>
+            </div>
+            <div class="d-none d-md-block navbar-collapse__contact"><a class="header__phone d-md-block" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-md-block" data-fancybox="modal" data-src="#callback" href="javascript:;">заказать звонок</a><a class="header__email d-md-block" href="mailto:info@mogilevlift.ru">info@mogilevlift.ru</a></div>
           </div>
-          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-md-none" href="8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-lg-none" data-fancybox="" data-src="#callback" href="javascript:;">заказать звонок</a><a class="btn btn_action header__btn" href="#"> <span class="btn_action__inside">Расчёт <span class="d-xs-none d-md-inline d-lg-none">лифта</span></span></a></div>
+          <div class="col-2 col-xs-4 col-md-5 text-right"><a class="header__phone d-xs-none" href="tel:8 812 214 55 00">8 812 214 55 00 </a><a class="link header__link d-md-none" data-fancybox="" data-src="#callback" href="javascript:;">заказать звонок</a><a class="header__email d-md-none" href="mailto:info@mogilevlift.ru">info@mogilevlift.ru</a></div>
         </div>
       </div>
     </header><a class="scrollTop" id="scrollTop" href="#" data-trigger="click"></a>
@@ -80,7 +94,7 @@
             <p class="text-bold mt-2 mt-lg-1">Генеральный директор «Могилёвлифт»</p>
           </div>
         </div>
-        <div class="col-4 col-sm-12"><img class="img-fluid" src="../demo/person.png" alt="" title=""/></div>
+        <div class="col-4 col-sm-12"><img class="img-fluid" src="./demo/person.png" alt="" title=""/></div>
       </div>
     </section>
     <section class="border-top pt-3 pb-3 pt-md-1 pb-md-1">
@@ -99,22 +113,22 @@
       <div class="modal modal_partners" id="partners">
         <div class="row">
           <div class="col-3 col-md-4 col-sm-6">
-            <div class="modal_partners__item"><img class="img-fluid" src="../logo/01.png"/></div>
+            <div class="modal_partners__item"><img class="img-fluid" src="./logo/01.png"/></div>
           </div>
           <div class="col-3 col-md-4 col-sm-6">
-            <div class="modal_partners__item"><img class="img-fluid" src="../logo/02.png"/></div>
+            <div class="modal_partners__item"><img class="img-fluid" src="./logo/02.png"/></div>
           </div>
           <div class="col-3 col-md-4 col-sm-6">
-            <div class="modal_partners__item"><img class="img-fluid" src="../logo/03.png"/></div>
+            <div class="modal_partners__item"><img class="img-fluid" src="./logo/03.png"/></div>
           </div>
           <div class="col-3 col-md-4 col-sm-6">
-            <div class="modal_partners__item"><img class="img-fluid" src="../logo/04.png"/></div>
+            <div class="modal_partners__item"><img class="img-fluid" src="./logo/04.png"/></div>
           </div>
           <div class="col-3 col-md-4 col-sm-6">
-            <div class="modal_partners__item"><img class="img-fluid" src="../logo/05.png"/></div>
+            <div class="modal_partners__item"><img class="img-fluid" src="./logo/05.png"/></div>
           </div>
           <div class="col-3 col-md-4 col-sm-6">
-            <div class="modal_partners__item"><img class="img-fluid" src="../logo/06.png"/></div>
+            <div class="modal_partners__item"><img class="img-fluid" src="./logo/06.png"/></div>
           </div>
         </div>
       </div>
@@ -123,24 +137,24 @@
       <div class="container pt-1 pb-1">
         <div class="partners-container">
           <div class="partners partners_preview">
-            <div class="partners__item"><img class="img-fluid" src="../logo/01.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/02.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/03.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/04.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/05.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/06.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/07.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/08.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/09.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/10.png"/></div>
-            <div class="partners__item"><img class="img-fluid" src="../logo/11.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/01.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/02.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/03.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/04.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/05.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/06.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/07.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/08.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/09.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/10.png"/></div>
+            <div class="partners_preview__item"><img class="img-fluid partners_preview__logo" src="./logo/11.png"/></div>
           </div>
         </div>
       </div>
     </section>
     <section class="container bg-lines pt-3 pb-3 pt-sm-1 pb-sm-1">
       <div class="slider slider_inside-container">
-        <div class="slider__content" id="reviews-full"><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a></div>
+        <div class="slider__content" id="reviews-full"><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a></div>
       </div>
     </section>
     <!-- Сильные стороны-->
@@ -190,19 +204,19 @@
       </div>
       <div class="row">
         <div class="col-3 mt-1 col-sm-6">
-          <div class="img-hover"><img class="img-fluid img-hover__main" src="../demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../demo/after.png" alt="" title=""/></div>
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="./demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="./demo/after.png" alt="" title=""/></div>
           <p class="img-descrition">Ведущий специалист по&nbsp;проектированию</p>
         </div>
         <div class="col-3 mt-1 col-sm-6">
-          <div class="img-hover"><img class="img-fluid img-hover__main" src="../demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../demo/after.png" alt="" title=""/></div>
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="./demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="./demo/after.png" alt="" title=""/></div>
           <p class="img-descrition">Ведущий специалист по&nbsp;поставкам</p>
         </div>
         <div class="col-3 mt-1 col-sm-6">
-          <div class="img-hover"><img class="img-fluid img-hover__main" src="../demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../demo/after.png" alt="" title=""/></div>
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="./demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="./demo/after.png" alt="" title=""/></div>
           <p class="img-descrition">Главный инженер</p>
         </div>
         <div class="col-3 mt-1 col-sm-6">
-          <div class="img-hover"><img class="img-fluid img-hover__main" src="../demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="../demo/after.png" alt="" title=""/></div>
+          <div class="img-hover"><img class="img-fluid img-hover__main" src="./demo/before.png" alt="" title=""/><img class="img-fluid img-hover__secondary" src="./demo/after.png" alt="" title=""/></div>
           <p class="img-descrition">Старший менеджер по&nbsp;продажам</p>
         </div>
       </div>
@@ -215,7 +229,7 @@
             С 2005 года Могилевлифт является официальным диллером с эксклюзивными правами на реализацию оборудования. Мы предоставляем своим клиентам цены ниже, чем напрямую через завод.</p>
           <p class="text-grey">Могилёвлифтмаш — завод по производству лифтового оборудования. Он занимает 100 Га и в год производит в среднем 12 000 лифтового оборудования. Около 67% продаж приходится на Россию. Востребованность лифтового оборудования объясняется качеством, вариативностью и надежностью.</p>
         </div>
-        <div class="col-6 col-md-12 mt-md-1"><img class="img-fluid" src="../demo/demo.jpg" alt="" title=""/></div>
+        <div class="col-6 col-md-12 mt-md-1"><img class="img-fluid" src="./demo/demo.jpg" alt="" title=""/></div>
       </div>
       <p class="h5">Благодаря «Могилёвлифтмаш» <br/> мы&nbsp;можем предложить:</p>
       <div class="row mt-1 text-grey">
@@ -322,7 +336,7 @@
             </div>
             <div class="col-6 col-sm-12 col-md-5">
               <div class="slider slider_gallery slider_border">
-                <div class="slider_border__content gallery-slider"><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a></div>
+                <div class="slider_border__content gallery-slider"><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a></div>
               </div>
             </div>
           </div>
@@ -333,7 +347,7 @@
           <div class="row align-items-center justify-content-between flex-sm-column-reverse">
             <div class="col-6 col-sm-12 col-md-5">
               <div class="slider slider_gallery slider_border">
-                <div class="slider_border__content gallery-slider"><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="../demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="../demo/scan.png" alt="" title=""/></a></div>
+                <div class="slider_border__content gallery-slider"><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a><a class="slider__item slider_gallery__item" href="./demo/demo.jpg" data-fancybox="section-1"><img class="img-fluid" src="./demo/scan.png" alt="" title=""/></a></div>
               </div>
             </div>
             <div class="col-5 pt-1 pb-1 col-sm-12 col-md-6">
